@@ -1,0 +1,13 @@
+My config files
+===============
+
+This repo contains my config files.
+
+Most of them are supposed to be located in $HOME, but some are not.
+
+
+Usage
+-----
+
+Check out the repo somewhere and use symlinks to specific
+configuration files.
