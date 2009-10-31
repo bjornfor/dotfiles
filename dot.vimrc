@@ -35,8 +35,8 @@ set laststatus=2 "always show status bar/line
 "set lines=51
 "set columns=80
 
-" Get gvim colorschemes in vim (the csapprox plugin is required).
-" When the csapprox plugin is installed we just need to tell vim that
+" Get gvim colorschemes in vim (the CSApprox plugin is required).
+" When the CSApprox plugin is installed we just need to tell vim that
 " we have a terminal with lots of colors.
 set t_Co=256
 
@@ -51,7 +51,7 @@ autocmd BufWritePost /media/raid/bjornfor/documents/vim-wiki/* :helptags /media/
 
 " eases Python work: :make invokes python and errors are directed to offending
 " line
-autocmd BufNewFile,BufRead *.py compiler python
+"autocmd BufNewFile,BufRead *.py compiler python
 
 " let vim recognize Sup (MUA) temp files
 autocmd BufRead *sup.reply-mode set ft=mail
