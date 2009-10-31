@@ -1,94 +1,94 @@
 # My 'mr' (Multiple Repository) tool config file
 
-[projects/config-files]
+[raid/projects/config-files]
 checkout = git clone /media/raid/bjornfor/bare-repos/config-files.git
 
-[projects/documents]
+[raid/projects/documents]
 checkout = git clone /media/raid/bjornfor/bare-repos/documents.git
 
-[projects/dvr-control]
+[raid/projects/dvr-control]
 checkout = git clone /media/raid/bjornfor/bare-repos/dvr-control.git
 
 #[projects/email]
 #checkout = git clone /media/raid/bjornfor/bare-repos/email.git
 #order = 20
 
-[projects/finance]
+[raid/projects/finance]
 checkout = git clone /media/raid/bjornfor/bare-repos/finance.git
 
-[projects/fortifyband.com]
+[raid/projects/fortifyband.com]
 checkout = git clone /media/raid/bjornfor/bare-repos/fortifyband.com.git
 
-[projects/fpga-forum-presentasjon]
+[raid/projects/fpga-forum-presentasjon]
 checkout = git clone /media/raid/bjornfor/bare-repos/fpga-forum-presentasjon.git
 
-[projects/hin]
+[raid/projects/hin]
 checkout = git clone /media/raid/bjornfor/bare-repos/hin.git
 order = 15
 
-[projects/learning-avr32]
+[raid/projects/learning-avr32]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-avr32.git
 
-[projects/learning-cmake]
+[raid/projects/learning-cmake]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-cmake.git
 
-[projects/learning-directfb]
+[raid/projects/learning-directfb]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-directfb.git
 
-[projects/learning-fltk]
+[raid/projects/learning-fltk]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-fltk.git
 
-[projects/learning-gnu-autotools]
+[raid/projects/learning-gnu-autotools]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-gnu-autotools.git
 
-[projects/learning-gstreamer]
+[raid/projects/learning-gstreamer]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-gstreamer.git
 
-[projects/learning-gtk]
+[raid/projects/learning-gtk]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-gtk.git
 
-[projects/learning-languages]
+[raid/projects/learning-languages]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-languages.git
 
-[projects/learning-lkm]
+[raid/projects/learning-lkm]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-lkm.git
 
-[projects/learning-opencv]
+[raid/projects/learning-opencv]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-opencv.git
 
-[projects/learning-opengl]
+[raid/projects/learning-opengl]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-opengl.git
 
-[projects/learning-pic]
+[raid/projects/learning-pic]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-pic.git
 
-[projects/learning-sdl]
+[raid/projects/learning-sdl]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-sdl.git
 
-[projects/learning-stm32]
+[raid/projects/learning-stm32]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-stm32.git
 
-[projects/learning-x86]
+[raid/projects/learning-x86]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-x86.git
 
-[projects/libcfr]
+[raid/projects/libcfr]
 checkout = git clone /media/raid/bjornfor/bare-repos/libcfr.git
 
-[projects/minibuildroot]
+[raid/projects/minibuildroot]
 checkout = git clone /media/raid/bjornfor/bare-repos/minibuildroot.git
 
-[projects/mp3parser]
+[raid/projects/mp3parser]
 checkout = git clone /media/raid/bjornfor/bare-repos/mp3parser.git
 
-[projects/ntnu]
+[raid/projects/ntnu]
 checkout = git clone /media/raid/bjornfor/bare-repos/ntnu.git
 order = 15
 
-[projects/simple-crosstool]
+[raid/projects/simple-crosstool]
 checkout = git clone /media/raid/bjornfor/bare-repos/simple-crosstool.git
 
 [todo]
 checkout = git clone /media/raid/bjornfor/bare-repos/todo.git
 
-[projects/vim-wiki]
+[raid/projects/vim-wiki]
 checkout = git clone /media/raid/bjornfor/bare-repos/vim-wiki.git
