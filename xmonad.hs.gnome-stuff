@@ -1,0 +1,20 @@
+-- This XMonad configuration file plays very well with Gnome.
+-- I also put "export WINDOW_MANAGER=xmonad" in ~/.gnomerc.
+import XMonad
+import XMonad.Config.Gnome
+import XMonad.ManageHook
+--import XMonad.Layout.NoBorders
+ 
+myManageHook :: [ManageHook]
+myManageHook = 
+    [ resource  =? "Do"   --> doIgnore ]
+ 
+main = xmonad gnomeConfig
+    { manageHook = manageHook gnomeConfig <+> composeAll myManageHook}
+
+-- using the smartBorder layout modifier (does not work with Gnome
+-- as-is below!)
+--main = xmonad $
+-- 	defaultConfig
+-- 		{ layoutHook = smartBorders $ layoutHook defaultConfig
+-- 		}

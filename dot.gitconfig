@@ -1,0 +1,13 @@
+[user]
+	name = Bjørn Forsman
+	email = bjorn.forsman@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	st = status
+	df = diff
+	ci = commit
+	co = checkout
+	wc = whatchanged

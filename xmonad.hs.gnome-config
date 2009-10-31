@@ -1,0 +1,6 @@
+-- xmonad configuration file for use with the gnome desktop environment
+-- I may also have to put "export WINDOW_MANAGER=xmonad" in ~/.gnomerc.
+import XMonad
+import XMonad.Config.Gnome
+ 
+main = xmonad gnomeConfig

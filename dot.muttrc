@@ -1,0 +1,35 @@
+# .muttrc for Gmail IMAP and SMTP setup
+set imap_user = "bjorn.forsman@gmail.com"
+set imap_pass = "<password>"
+set smtp_url = "smtp://username@smtp.gmail.com:587/"
+set smtp_pass = "<password>"
+#set spoolfile = "imaps://imap.gmail.com:993"
+set spoolfile = "imaps://imap.gmail.com:993/INBOX"
+set folder = "imaps://imap.gmail.com:993"
+set record = "imaps://imap.gmail.com/[Gmail]/Sent Mail"
+set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
+
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/certificates
+
+# non-important(?) settings
+set from = "bjorn.forsman@gmail.com"
+set realname = "Bjørn Forsman"
+
+# other trivial settings
+set move = no	# stop asking about "move to mbox"
+
+# a bit more vim/vimperator like
+#bind pager "j" next-line
+#bind pager "k" previous-line
+
+# other settings
+set sort = "threads"
+set sort_aux = "last-date-received"
+set imap_check_subscribed
+
+ignore "Authentication-Results:"
+ignore "DomaniKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc

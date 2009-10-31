@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!DOCTYPE stationlist PUBLIC "-//tvtime//DTD stationlist 1.0//EN" "http://tvtime.sourceforge.net/DTD/stationlist1.dtd">
+<stationlist xmlns="http://tvtime.sourceforge.net/DTD/">
+  <list norm="PAL" frequencies="europe" audio="bg">
+    <station name="NRK 1" active="1" position="1" band="VHF S1-S41" channel="S7" finetune="0" norm="PAL" audio="auto"/>
+    <station name="NRK 2" active="1" position="2" band="VHF S1-S41" channel="S14" finetune="0" norm="PAL" audio="auto"/>
+    <station name="NRK 3" active="1" position="3" band="VHF S1-S41" channel="S9" finetune="0" norm="PAL" audio="auto"/>
+    <station name="TV 2" active="1" position="4" band="VHF E2-E12" channel="E5" finetune="0" norm="PAL" audio="auto"/>
+    <station name="TV 2 Nyhetskanalen" active="1" position="5" band="VHF S1-S41" channel="S35" finetune="0" norm="PAL" audio="auto"/>
+    <station name="TV 2 Zebra" active="1" position="6" band="VHF S1-S41" channel="S37" finetune="0" norm="PAL" audio="auto"/>
+    <station name="TV 3" active="1" position="7" band="VHF E2-E12" channel="E7" finetune="0" norm="PAL" audio="auto"/>
+    <station name="TVNorge" active="1" position="8" band="VHF E2-E12" channel="E9" finetune="0" norm="PAL" audio="bg"/>
+    <station name="MTV" active="1" position="9" band="VHF S1-S41" channel="S8" finetune="0" norm="PAL" audio="auto"/>
+    <station name="Viasat 4" active="1" position="10" band="VHF S1-S41" channel="S10" finetune="0" norm="PAL" audio="auto"/>
+    <station name="Viasat SportN" active="1" position="12" band="VHF S1-S41" channel="S15" finetune="0" norm="PAL" audio="auto"/>
+    <station name="National Geographic" active="1" position="13" band="VHF S1-S41" channel="S11" finetune="0" norm="PAL" audio="auto"/>
+    <station name="EuroSport" active="1" position="14" band="VHF S1-S41" channel="S33" finetune="0" norm="PAL" audio="auto"/>
+    <station name="SVT1" active="1" position="20" band="VHF S1-S41" channel="S13" finetune="0" norm="PAL" audio="auto"/>
+    <station name="SVT2" active="1" position="21" band="VHF E2-E12" channel="E10" finetune="0" norm="PAL" audio="auto"/>
+    <station name="CNN" active="1" position="22" band="VHF S1-S41" channel="S36" finetune="0" norm="PAL" audio="auto"/>
+    <station name="Disney" active="1" position="23" band="UHF" channel="U23" finetune="0" norm="PAL" audio="auto"/>
+    <station name="travel" active="1" position="25" band="VHF E2-E12" channel="E11" finetune="0" norm="PAL" audio="auto"/>
+    <station name="Cartoon Network" active="1" position="26" band="UHF" channel="U21" finetune="0" norm="PAL" audio="auto"/>
+    <station name="100" active="1" position="102" band="UHF" channel="U29" finetune="0" norm="PAL" audio="auto"/>
+    <station name="50" active="0" position="52" band="VHF S1-S41" channel="S38" finetune="0" norm="PAL" audio="auto"/>
+    <station name="24" active="0" position="24" band="VHF S1-S41" channel="S12" finetune="0" norm="PAL" audio="auto"/>
+    <station name="1" active="0" position="144" band="VHF E2-E12" channel="E1" finetune="0" norm="PAL" audio="auto"/>
+    <station name="2" active="0" position="145" band="VHF E2-E12" channel="E2" finetune="0" norm="PAL" audio="auto"/>
+    <station name="3" active="0" position="146" band="VHF E2-E12" channel="E3" finetune="0" norm="PAL" audio="auto"/>
+    <station name="4" active="0" position="147" band="VHF E2-E12" channel="E4" finetune="0" norm="PAL" audio="auto"/>
+    <station name="6" active="0" position="148" band="VHF E2-E12" channel="E6" finetune="0" norm="PAL" audio="auto"/>
+    <station name="12" active="0" position="149" band="VHF E2-E12" channel="E12" finetune="0" norm="PAL" audio="auto"/>
+    <station name="13" active="0" position="150" band="VHF S1-S41" channel="S1" finetune="0" norm="PAL" audio="auto"/>
+    <station name="14" active="0" position="151" band="VHF S1-S41" channel="S2" finetune="0" norm="PAL" audio="auto"/>
+    <station name="15" active="0" position="15" band="VHF S1-S41" channel="S3" finetune="0" norm="PAL" audio="auto"/>
+    <station name="16" active="0" position="16" band="VHF S1-S41" channel="S4" finetune="0" norm="PAL" audio="auto"/>
+    <station name="17" active="0" position="17" band="VHF S1-S41" channel="S5" finetune="0" norm="PAL" audio="auto"/>
+    <station name="18" active="0" position="18" band="VHF S1-S41" channel="S6" finetune="0" norm="PAL" audio="auto"/>
+    <station name="28" active="0" position="28" band="VHF S1-S41" channel="S16" finetune="0" norm="PAL" audio="auto"/>
+    <station name="29" active="0" position="29" band="VHF S1-S41" channel="S17" finetune="0" norm="PAL" audio="auto"/>
+    <station name="30" active="0" position="30" band="VHF S1-S41" channel="S18" finetune="0" norm="PAL" audio="auto"/>
+    <station name="31" active="0" position="31" band="VHF S1-S41" channel="S19" finetune="0" norm="PAL" audio="auto"/>
+    <station name="32" active="0" position="32" band="VHF S1-S41" channel="S20" finetune="0" norm="PAL" audio="auto"/>
+    <station name="33" active="0" position="33" band="VHF S1-S41" channel="S21" finetune="0" norm="PAL" audio="auto"/>
+    <station name="34" active="0" position="34" band="VHF S1-S41" channel="S22" finetune="0" norm="PAL" audio="auto"/>
+    <station name="35" active="0" position="35" band="VHF S1-S41" channel="S23" finetune="0" norm="PAL" audio="auto"/>
+    <station name="36" active="0" position="36" band="VHF S1-S41" channel="S24" finetune="0" norm="PAL" audio="auto"/>
+    <station name="37" active="0" position="37" band="VHF S1-S41" channel="S25" finetune="0" norm="PAL" audio="auto"/>
+    <station name="38" active="0" position="38" band="VHF S1-S41" channel="S26" finetune="0" norm="PAL" audio="auto"/>
+    <station name="39" active="0" position="39" band="VHF S1-S41" channel="S27" finetune="0" norm="PAL" audio="auto"/>
+    <station name="40" active="0" position="40" band="VHF S1-S41" channel="S28" finetune="0" norm="PAL" audio="auto"/>
+    <station name="41" active="0" position="41" band="VHF S1-S41" channel="S29" finetune="0" norm="PAL" audio="auto"/>
+    <station name="42" active="0" position="42" band="VHF S1-S41" channel="S30" finetune="0" norm="PAL" audio="auto"/>
+    <station name="43" active="0" position="43" band="VHF S1-S41" channel="S31" finetune="0" norm="PAL" audio="auto"/>
+    <station name="44" active="0" position="44" band="VHF S1-S41" channel="S32" finetune="0" norm="PAL" audio="auto"/>
+    <station name="46" active="0" position="46" band="VHF S1-S41" channel="S34" finetune="0" norm="PAL" audio="auto"/>
+    <station name="51" active="0" position="53" band="VHF S1-S41" channel="S39" finetune="0" norm="PAL" audio="auto"/>
+    <station name="52" active="0" position="54" band="VHF S1-S41" channel="S40" finetune="0" norm="PAL" audio="auto"/>
+    <station name="53" active="0" position="55" band="VHF S1-S41" channel="S41" finetune="0" norm="PAL" audio="auto"/>
+    <station name="54" active="0" position="56" band="VHF Misc" channel="X" finetune="0" norm="PAL" audio="auto"/>
+    <station name="55" active="0" position="57" band="VHF Misc" channel="Y" finetune="0" norm="PAL" audio="auto"/>
+    <station name="56" active="0" position="58" band="VHF Misc" channel="Z" finetune="0" norm="PAL" audio="auto"/>
+    <station name="57" active="0" position="59" band="VHF Misc" channel="Z+1" finetune="0" norm="PAL" audio="auto"/>
+    <station name="58" active="0" position="60" band="VHF Misc" channel="Z+2" finetune="0" norm="PAL" audio="auto"/>
+    <station name="59" active="0" position="61" band="VHF Russia" channel="R1" finetune="0" norm="PAL" audio="auto"/>
+    <station name="60" active="0" position="62" band="VHF Russia" channel="R2" finetune="0" norm="PAL" audio="auto"/>
+    <station name="61" active="0" position="63" band="VHF Russia" channel="R3" finetune="0" norm="PAL" audio="auto"/>
+    <station name="62" active="0" position="64" band="VHF Russia" channel="R4" finetune="0" norm="PAL" audio="auto"/>
+    <station name="63" active="0" position="65" band="VHF Russia" channel="R5" finetune="0" norm="PAL" audio="auto"/>
+    <station name="64" active="0" position="66" band="VHF Russia" channel="R7" finetune="0" norm="PAL" audio="auto"/>
+    <station name="65" active="0" position="67" band="VHF Russia" channel="R8" finetune="0" norm="PAL" audio="auto"/>
+    <station name="66" active="0" position="68" band="VHF Russia" channel="R9" finetune="0" norm="PAL" audio="auto"/>
+    <station name="67" active="0" position="69" band="VHF Russia" channel="R10" finetune="0" norm="PAL" audio="auto"/>
+    <station name="68" active="0" position="70" band="VHF Russia" channel="R11" finetune="0" norm="PAL" audio="auto"/>
+    <station name="69" active="0" position="71" band="VHF Russia" channel="R12" finetune="0" norm="PAL" audio="auto"/>
+    <station name="70" active="0" position="72" band="VHF Russia" channel="SR1" finetune="0" norm="PAL" audio="auto"/>
+    <station name="71" active="0" position="73" band="VHF Russia" channel="SR3" finetune="0" norm="PAL" audio="auto"/>
+    <station name="72" active="0" position="74" band="VHF Russia" channel="SR4" finetune="0" norm="PAL" audio="auto"/>
+    <station name="73" active="0" position="75" band="VHF Russia" channel="SR5" finetune="0" norm="PAL" audio="auto"/>
+    <station name="74" active="0" position="76" band="VHF Russia" channel="SR6" finetune="0" norm="PAL" audio="auto"/>
+    <station name="75" active="0" position="77" band="VHF Russia" channel="SR7" finetune="0" norm="PAL" audio="auto"/>
+    <station name="77" active="0" position="79" band="VHF Russia" channel="SR12" finetune="0" norm="PAL" audio="auto"/>
+    <station name="78" active="0" position="80" band="VHF Russia" channel="SR13" finetune="0" norm="PAL" audio="auto"/>
+    <station name="79" active="0" position="81" band="VHF Russia" channel="SR14" finetune="0" norm="PAL" audio="auto"/>
+    <station name="80" active="0" position="82" band="VHF Russia" channel="SR15" finetune="0" norm="PAL" audio="auto"/>
+    <station name="81" active="0" position="83" band="VHF Russia" channel="SR16" finetune="0" norm="PAL" audio="auto"/>
+    <station name="82" active="0" position="84" band="VHF Russia" channel="SR17" finetune="0" norm="PAL" audio="auto"/>
+    <station name="83" active="0" position="85" band="VHF Russia" channel="SR19" finetune="0" norm="PAL" audio="auto"/>
+    <station name="84" active="0" position="86" band="VHF Italy" channel="A" finetune="0" norm="PAL" audio="auto"/>
+    <station name="85" active="0" position="87" band="VHF Italy" channel="C" finetune="0" norm="PAL" audio="auto"/>
+    <station name="86" active="0" position="88" band="VHF Italy" channel="E" finetune="0" norm="PAL" audio="auto"/>
+    <station name="87" active="0" position="89" band="VHF Italy" channel="F" finetune="0" norm="PAL" audio="auto"/>
+    <station name="88" active="0" position="90" band="VHF Italy" channel="G" finetune="0" norm="PAL" audio="auto"/>
+    <station name="89" active="0" position="91" band="VHF Ireland" channel="I1" finetune="0" norm="PAL" audio="auto"/>
+    <station name="90" active="0" position="92" band="VHF Ireland" channel="I3" finetune="0" norm="PAL" audio="auto"/>
+    <station name="91" active="0" position="93" band="VHF Ireland" channel="I7" finetune="0" norm="PAL" audio="auto"/>
+    <station name="93" active="0" position="95" band="UHF" channel="U22" finetune="0" norm="PAL" audio="auto"/>
+    <station name="96" active="0" position="98" band="UHF" channel="U25" finetune="0" norm="PAL" audio="auto"/>
+    <station name="97" active="0" position="99" band="UHF" channel="U26" finetune="0" norm="PAL" audio="auto"/>
+    <station name="98" active="0" position="100" band="UHF" channel="U27" finetune="0" norm="PAL" audio="auto"/>
+    <station name="99" active="0" position="101" band="UHF" channel="U28" finetune="0" norm="PAL" audio="auto"/>
+    <station name="101" active="0" position="103" band="UHF" channel="U30" finetune="0" norm="PAL" audio="auto"/>
+    <station name="102" active="0" position="104" band="UHF" channel="U31" finetune="0" norm="PAL" audio="auto"/>
+    <station name="103" active="0" position="105" band="UHF" channel="U32" finetune="0" norm="PAL" audio="auto"/>
+    <station name="104" active="0" position="106" band="UHF" channel="U33" finetune="0" norm="PAL" audio="auto"/>
+    <station name="105" active="0" position="107" band="UHF" channel="U34" finetune="0" norm="PAL" audio="auto"/>
+    <station name="106" active="0" position="108" band="UHF" channel="U35" finetune="0" norm="PAL" audio="auto"/>
+    <station name="107" active="0" position="109" band="UHF" channel="U36" finetune="0" norm="PAL" audio="auto"/>
+    <station name="108" active="0" position="110" band="UHF" channel="U37" finetune="0" norm="PAL" audio="auto"/>
+    <station name="109" active="0" position="111" band="UHF" channel="U38" finetune="0" norm="PAL" audio="auto"/>
+    <station name="110" active="0" position="112" band="UHF" channel="U39" finetune="0" norm="PAL" audio="auto"/>
+    <station name="111" active="0" position="113" band="UHF" channel="U40" finetune="0" norm="PAL" audio="auto"/>
+    <station name="112" active="0" position="114" band="UHF" channel="U41" finetune="0" norm="PAL" audio="auto"/>
+    <station name="113" active="0" position="115" band="UHF" channel="U42" finetune="0" norm="PAL" audio="auto"/>
+    <station name="114" active="0" position="116" band="UHF" channel="U43" finetune="0" norm="PAL" audio="auto"/>
+    <station name="115" active="0" position="117" band="UHF" channel="U44" finetune="0" norm="PAL" audio="auto"/>
+    <station name="116" active="0" position="118" band="UHF" channel="U45" finetune="0" norm="PAL" audio="auto"/>
+    <station name="117" active="0" position="119" band="UHF" channel="U46" finetune="0" norm="PAL" audio="auto"/>
+    <station name="118" active="0" position="120" band="UHF" channel="U47" finetune="0" norm="PAL" audio="auto"/>
+    <station name="119" active="0" position="121" band="UHF" channel="U48" finetune="0" norm="PAL" audio="auto"/>
+    <station name="120" active="0" position="122" band="UHF" channel="U49" finetune="0" norm="PAL" audio="auto"/>
+    <station name="121" active="0" position="123" band="UHF" channel="U50" finetune="0" norm="PAL" audio="auto"/>
+    <station name="122" active="0" position="124" band="UHF" channel="U51" finetune="0" norm="PAL" audio="auto"/>
+    <station name="123" active="0" position="125" band="UHF" channel="U52" finetune="0" norm="PAL" audio="auto"/>
+    <station name="124" active="0" position="126" band="UHF" channel="U53" finetune="0" norm="PAL" audio="auto"/>
+    <station name="125" active="0" position="127" band="UHF" channel="U54" finetune="0" norm="PAL" audio="auto"/>
+    <station name="126" active="0" position="128" band="UHF" channel="U55" finetune="0" norm="PAL" audio="auto"/>
+    <station name="127" active="0" position="129" band="UHF" channel="U56" finetune="0" norm="PAL" audio="auto"/>
+    <station name="128" active="0" position="130" band="UHF" channel="U57" finetune="0" norm="PAL" audio="auto"/>
+    <station name="129" active="0" position="131" band="UHF" channel="U58" finetune="0" norm="PAL" audio="auto"/>
+    <station name="130" active="0" position="132" band="UHF" channel="U59" finetune="0" norm="PAL" audio="auto"/>
+    <station name="131" active="0" position="133" band="UHF" channel="U60" finetune="0" norm="PAL" audio="auto"/>
+    <station name="132" active="0" position="134" band="UHF" channel="U61" finetune="0" norm="PAL" audio="auto"/>
+    <station name="133" active="0" position="135" band="UHF" channel="U62" finetune="0" norm="PAL" audio="auto"/>
+    <station name="134" active="0" position="136" band="UHF" channel="U63" finetune="0" norm="PAL" audio="auto"/>
+    <station name="135" active="0" position="137" band="UHF" channel="U64" finetune="0" norm="PAL" audio="auto"/>
+    <station name="136" active="0" position="138" band="UHF" channel="U65" finetune="0" norm="PAL" audio="auto"/>
+    <station name="137" active="0" position="139" band="UHF" channel="U66" finetune="0" norm="PAL" audio="auto"/>
+    <station name="138" active="0" position="140" band="UHF" channel="U67" finetune="0" norm="PAL" audio="auto"/>
+    <station name="139" active="0" position="141" band="UHF" channel="U68" finetune="0" norm="PAL" audio="auto"/>
+    <station name="140" active="0" position="142" band="UHF" channel="U69" finetune="0" norm="PAL" audio="auto"/>
+    <station name="Viasat4" active="1" position="152" band="VHF S1-S41" channel="S10" finetune="0" norm="PAL" audio="auto"/>
+    <station name="Viasat4 Russia" active="1" position="153" band="VHF Russia" channel="SR8" finetune="0" norm="PAL" audio="auto"/>
+  </list>
+</stationlist>

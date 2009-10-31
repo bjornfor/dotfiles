@@ -1,0 +1,27 @@
+# .offlineimaprc
+
+# add this to crontab:
+# 00 23 * * * offlineimap -u Noninteractive.Quiet
+
+# or this:
+# 00 23 * * * offlineimap -u Noninteractive.Basic
+
+[general]
+accounts = GMail
+
+[Account GMail]
+localrepository = MyLocal
+remoterepository = MyRemote
+#autorefresh = 10
+
+[Repository MyLocal]
+type = Maildir
+localfolders = /home/bjornfor/raid/email/gmail/maildir
+
+[Repository MyRemote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = bjorn.forsman@gmail.com
+ssl = yes
+remoteuser = bjorn.forsman@gmail.com
+remotepass = <password>

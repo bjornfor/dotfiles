@@ -1,0 +1,10 @@
+[ui]
+username = Bjørn Forsman <bjorn.forsman@gmail.com>
+
+[defaults]
+# suppress noisy extdiff header message
+cdiff = -q
+
+[extdiff]
+cmd.cdiff = colordiff
+opts.cdiff = -uprN
