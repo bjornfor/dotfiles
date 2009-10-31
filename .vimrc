@@ -38,7 +38,9 @@ set laststatus=2 "always show status bar/line
 " Get gvim colorschemes in vim (the CSApprox plugin is required).
 " When the CSApprox plugin is installed we just need to tell vim that
 " we have a terminal with lots of colors.
-set t_Co=256
+if &term =~ '^\(xterm\|screen\)$'
+  set t_Co=256
+endif
 
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
