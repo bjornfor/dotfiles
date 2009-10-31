@@ -1,7 +1,7 @@
 # My 'mr' (Multiple Repository) tool config file
 
-[raid/projects/config-files]
-checkout = git clone /media/raid/bjornfor/bare-repos/config-files.git
+[my-config-files]
+checkout = git clone /media/raid/bjornfor/bare-repos/my-config-files.git
 
 [raid/projects/documents]
 checkout = git clone /media/raid/bjornfor/bare-repos/documents.git
