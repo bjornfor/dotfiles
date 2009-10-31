@@ -29,6 +29,9 @@ order = 15
 [raid/projects/learning-avr32]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-avr32.git
 
+[raid/projects/learning-asciidoc]
+checkout = git clone /media/raid/bjornfor/bare-repos/learning-asciidoc.git
+
 [raid/projects/learning-cmake]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-cmake.git
 
