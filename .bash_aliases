@@ -83,7 +83,7 @@ export PATH=$PATH:/opt/arm-2009q3/bin
 #export PATH=$PATH:/opt/mv_pro_5.0/montavista/pro/devkit/arm/v5t_le/bin
 
 # OpenEmbedded (OE)
-export OEBASE=/media/raid/bjornfor/development/os/linux/oe-stuff
+export OEBASE=/media/raid/bjornfor/projects/oe-stuff
 export BBPATH=$OEBASE/build:$OEBASE/openembedded
 export PATH=$OEBASE/bitbake/bin:$PATH
 # allow bitbake to inherit OEBASE from the environment
