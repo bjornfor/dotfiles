@@ -16,7 +16,7 @@ remoterepository = MyRemote
 
 [Repository MyLocal]
 type = Maildir
-localfolders = /home/bjornfor/raid/email/gmail/maildir
+localfolders = /home/bjornfor/raid/projects/email/gmail/maildir
 
 [Repository MyRemote]
 type = IMAP
