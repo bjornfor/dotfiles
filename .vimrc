@@ -34,6 +34,8 @@ set laststatus=2 "always show status bar/line
 "set history=100 " how many command lines to store?
 "set lines=51
 "set columns=80
+" joinspaces: use two spaces after '.' when joining a line (or not: nojs)
+set nojs
 
 " Get gvim colorschemes in vim (the CSApprox plugin is required).
 " When the CSApprox plugin is installed we just need to tell vim that
