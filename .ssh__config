@@ -1,0 +1,10 @@
+# put in ~/.ssh/config
+
+Host timmons
+HostName forsman.isa-geek.org
+User bjornfor
+Port 8383
+
+Host dvr
+HostName 192.0.2.178
+User root
