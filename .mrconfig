@@ -5,13 +5,14 @@ checkout = git clone /media/raid/bjornfor/bare-repos/my-config-files.git
 
 [raid/projects/documents]
 checkout = git clone /media/raid/bjornfor/bare-repos/documents.git
+order = 15
 
 [raid/projects/dvr-control]
 checkout = git clone /media/raid/bjornfor/bare-repos/dvr-control.git
 
-#[projects/email]
-#checkout = git clone /media/raid/bjornfor/bare-repos/email.git
-#order = 20
+[raid/projects/email]
+checkout = git clone /media/raid/bjornfor/bare-repos/email.git
+order = 20
 
 [raid/projects/finance]
 checkout = git clone /media/raid/bjornfor/bare-repos/finance.git
@@ -22,9 +23,15 @@ checkout = git clone /media/raid/bjornfor/bare-repos/fortifyband.com.git
 [raid/projects/fpga-forum-presentasjon]
 checkout = git clone /media/raid/bjornfor/bare-repos/fpga-forum-presentasjon.git
 
+[raid/projects/gehc-dvr-linux]
+checkout = git clone /media/raid/bjornfor/bare-repos/gehc-dvr-linux.git
+
 [raid/projects/hin]
 checkout = git clone /media/raid/bjornfor/bare-repos/hin.git
 order = 15
+
+[raid/projects/learning-latex]
+checkout = git clone /media/raid/bjornfor/bare-repos/learning-latex.git
 
 [raid/projects/learning-avr32]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-avr32.git
@@ -92,6 +99,9 @@ checkout = git clone /media/raid/bjornfor/bare-repos/simple-crosstool.git
 
 [todo]
 checkout = git clone /media/raid/bjornfor/bare-repos/todo.git
+
+[todo.txt-cli]
+checkout = git clone /media/raid/bjornfor/bare-repos/todo.txt-cli.git
 
 [raid/projects/vim-wiki]
 checkout = git clone /media/raid/bjornfor/bare-repos/vim-wiki.git
