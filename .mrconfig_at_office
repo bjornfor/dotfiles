@@ -43,6 +43,9 @@ checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfo
 [bjornfor-projects/learning-languages]
 checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-languages.git
 
+[bjornfor-projects/learning-latex]
+checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-latex.git
+
 [bjornfor-projects/learning-lkm]
 checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-lkm.git
 
