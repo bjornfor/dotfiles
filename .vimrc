@@ -95,9 +95,9 @@ nmap ,e :edit $HOME/.vimrc<cr>
 "nnoremap ` '
 
 " easier working with split windows
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-set wmh=0
+"map <C-J> <C-W>j<C-W>_
+"map <C-K> <C-W>k<C-W>_
+"set wmh=0
 
 " Host specific
 if filereadable(expand("~/.vimrc.local"))
