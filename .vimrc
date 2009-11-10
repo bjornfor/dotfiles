@@ -46,10 +46,6 @@ endif
 
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
-" for the vim wiki:
-set tags+=/media/raid/bjornfor/documents/vim-wiki/tags
-autocmd BufWritePost /media/raid/bjornfor/documents/vim-wiki/* :helptags /media/raid/bjornfor/documents/vim-wiki
-
 "autocmd BufWinLeave *.[ch] mkview
 "autocmd BufWinEnter *.[ch] silent loadview
 
@@ -102,3 +98,18 @@ nmap ,e :edit $HOME/.vimrc<cr>
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 set wmh=0
+
+" Host specific
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
+
+"if hostname() == "foo"
+"  " do something
+"endif
+
+if hostname() == "timmons"
+  " for the vim wiki:
+  set tags+=/media/raid/bjornfor/documents/vim-wiki/tags
+  autocmd BufWritePost /media/raid/bjornfor/documents/vim-wiki/* :helptags /media/raid/bjornfor/documents/vim-wiki
+endif
