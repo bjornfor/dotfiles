@@ -1,7 +1,5 @@
 " My .vimrc file
 
-"source ~/.vim/plugin/cscope_maps.vim
-
 filetype on
 filetype plugin on
 filetype plugin indent on
