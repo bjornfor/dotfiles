@@ -20,7 +20,7 @@ set showmode	" status line displays 'insert' or 'visual' when not in normal mode
 set wildmenu	" when tab'ing on the vim command line, a menu appear just above the command line
 set ruler	" show the cursor position all the time
 "set autoindent " uses the indent from prev line
-set cindent	" smarter indent
+"set cindent	" smarter indent
 set smartindent	" is smarter than autoindent. Knows to go back a tab, if you
 " have closed a block using '}' or goes front a tab if you have opened one with '{'.
 "set showmatch	" briefly jump to matching bracket when the cursor is on a bracket
