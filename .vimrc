@@ -58,6 +58,10 @@ autocmd BufRead *sup.reply-mode set ft=mail
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 autocmd BufRead *.txt set ft=asciidoc
 
+
+" easy mappings for the taglist plugin (vim-addons install taglist)
+nnoremap <silent> <F8> :TlistToggle<CR>
+
 " vimperator-like keyboard shortcuts for jumping to next/previous buffers
 nmap <C-n> :bn<cr>
 nmap <C-p> :bp<cr>
