@@ -113,6 +113,6 @@ endif
 
 if hostname() == "timmons"
   " for the vim wiki:
-  set tags+=/media/raid/bjornfor/documents/vim-wiki/tags
-  autocmd BufWritePost /media/raid/bjornfor/documents/vim-wiki/* :helptags /media/raid/bjornfor/documents/vim-wiki
+  set tags+=/media/raid/bjornfor/projects/vim-wiki/tags
+  autocmd BufWritePost /media/raid/bjornfor/projects/vim-wiki/* :helptags /media/raid/bjornfor/projects/vim-wiki
 endif
