@@ -39,7 +39,7 @@ alias cddvr="cd /media/raid/bjornfor/projects/dvr-control"
 alias t='/media/raid/bjornfor/projects/todo.txt-cli/todo.sh'
 #alias todo='vim $HOME/todo.txt'
 #alias t='todo'
-alias gtd='vim ~/raid/documents/vim-wiki/index.txt'
+alias gtd='vim ~/raid/projects/vim-wiki/index.txt'
 #alias gtd='vim -c "cd %:h" ~/raid/documents/vim-wiki/index.txt'
 
 
