@@ -102,6 +102,8 @@ nmap ,e :edit $HOME/.vimrc<cr>
 "map <C-K> <C-W>k<C-W>_
 "set wmh=0
 
+imap jj <esc>
+
 " Host specific
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
