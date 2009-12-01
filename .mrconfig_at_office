@@ -93,6 +93,6 @@ order = 12
 checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/ntnu.git
 order = 12
 
-[bjornfor-projects/email]
-checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/email.git
-order = 20
+#[bjornfor-projects/email]
+#checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/email.git
+#order = 20
