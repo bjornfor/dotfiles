@@ -35,6 +35,7 @@ set laststatus=2 "always show status bar/line
 " joinspaces: use two spaces after '.' when joining a line (or not: nojs)
 set nojs
 set modeline " read modelines
+set dictionary+=/usr/share/dict/words
 
 " Get gvim colorschemes in vim (the CSApprox plugin is required).
 " When the CSApprox plugin is installed we just need to tell vim that
