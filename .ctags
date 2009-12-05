@@ -1,0 +1,4 @@
+--c-kinds=+pl
+--c++-kinds=+pl
+--fields=+iaS
+--extra=+q
