@@ -111,6 +111,12 @@ nmap ,e :edit $HOME/.vimrc<cr>
 
 imap jj <esc>
 
+"" from a forum
+"ino jj <esc>
+"cno jj <c-c>
+""For visual mode, just use "v" to toggle it on and off:
+"vno v <esc>
+
 " Host specific
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
