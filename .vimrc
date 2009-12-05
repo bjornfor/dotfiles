@@ -62,6 +62,13 @@ autocmd BufRead *.txt set ft=asciidoc
 " easy mappings for the taglist plugin (vim-addons install taglist)
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+" These options seem to be needed for extracting C structure member info
+" when used with local variables:
+"   --c-kinds=+l
+"   --fields=+a
+"   --extra=+q
+nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>
+
 " vimperator-like keyboard shortcuts for jumping to next/previous buffers
 nmap <C-n> :bn<cr>
 nmap <C-p> :bp<cr>
