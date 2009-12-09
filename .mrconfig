@@ -105,3 +105,16 @@ checkout = git clone /media/raid/bjornfor/bare-repos/todo.txt-cli.git
 
 [raid/projects/vim-wiki]
 checkout = git clone /media/raid/bjornfor/bare-repos/vim-wiki.git
+
+[raid/projects/activity-log]
+checkout = git clone /media/raid/bjornfor/bare-repos/activity-log.git
+
+[raid/projects/learning-qt]
+checkout = git clone /media/raid/bjornfor/bare-repos/learning-qt.git
+
+# this is a Mercurial repo
+#[raid/projects/life-simulator]
+#checkout = git clone /media/raid/bjornfor/?????????
+
+[raid/projects/ppm-max-intensity]
+checkout = git clone /media/raid/bjornfor/bare-repos/ppm-max-intensity.git
