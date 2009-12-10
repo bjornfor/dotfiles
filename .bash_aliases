@@ -36,7 +36,6 @@ function cl() {
 alias cddvr="cd /media/raid/bjornfor/projects/dvr-control"
 #alias gvc=gnome-volume-control
 
-alias t='/media/raid/bjornfor/projects/todo.txt-cli/todo.sh'
 #alias todo='vim $HOME/todo.txt'
 #alias t='todo'
 alias gtd='vim ~/raid/projects/vim-wiki/index.txt'
