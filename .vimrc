@@ -1,4 +1,6 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " My .vimrc file
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 filetype on
 filetype plugin on
@@ -12,10 +14,6 @@ set bg=light
 set hidden	" hide abandoned buffers. This option removes the demand for buffers to be 'unmodified' when left. This is very handy when working with lots of buffers!
 set ts=4	" tabstop, number of spaces for tab character, defaults to 8
 set sw=4	" shiftwidth, number of spaces for autoindent, defaults to 8
-set hlsearch	" highlight search. Turn off with :noh{lsearch}
-set incsearch	" incremental search, i.e. search while typing
-set ic		" ignore case in searches
-set smartcase	" only care about case if search word uses upper case (use with ignorecase)
 set showmode	" status line displays 'insert' or 'visual' when not in normal mode
 set wildmenu	" when tab'ing on the vim command line, a menu appear just above the command line
 set ruler	" show the cursor position all the time
@@ -38,15 +36,25 @@ set modeline " read modelines
 set dictionary+=/usr/share/dict/words
 set cursorline	" highlight the line the cursor is on
 
-" Get gvim colorschemes in vim (the CSApprox plugin is required).
-" When the CSApprox plugin is installed we just need to tell vim that
-" we have a terminal with lots of colors.
-if &term =~ '^\(xterm\|screen\)$'
-  set t_Co=256
-endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Searching
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set hlsearch    " highlight search. Turn off with :noh{lsearch}
+set incsearch   " incremental search, i.e. search while typing
+set ic          " ignore case in searches
+set smartcase   " only care about case if search word uses upper case (use with ignorecase)
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Highlighting
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" autocmd's
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "autocmd BufWinLeave *.[ch] mkview
 "autocmd BufWinEnter *.[ch] silent loadview
 
@@ -61,9 +69,9 @@ autocmd BufRead *sup.reply-mode set ft=mail
 "autocmd BufRead *.txt set ft=asciidoc
 
 
-" easy mappings for the taglist plugin (vim-addons install taglist)
-nnoremap <silent> <F8> :TlistToggle<CR>
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These options seem to be needed for extracting C structure member info
 " when used with local variables:
 "   --c-kinds=+l
@@ -122,7 +130,24 @@ imap jj <esc>
 ""For visual mode, just use "v" to toggle it on and off:
 "vno v <esc>
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Get gvim colorschemes in vim (the CSApprox plugin is required).
+" When the CSApprox plugin is installed we just need to tell vim that
+" we have a terminal with lots of colors.
+if &term =~ '^\(xterm\|screen\)$'
+  set t_Co=256
+endif
+
+" easy mappings for the taglist plugin (vim-addons install taglist)
+nnoremap <silent> <F8> :TlistToggle<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
