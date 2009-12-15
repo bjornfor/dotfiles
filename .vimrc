@@ -58,7 +58,7 @@ endif
 autocmd BufRead *sup.reply-mode set ft=mail
 
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
-autocmd BufRead *.txt set ft=asciidoc
+"autocmd BufRead *.txt set ft=asciidoc
 
 
 " easy mappings for the taglist plugin (vim-addons install taglist)
