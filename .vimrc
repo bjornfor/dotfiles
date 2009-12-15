@@ -71,6 +71,9 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 "   --extra=+q
 nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>
 
+" toggle invisible chars
+noremap ,i :set list!<cr>
+
 " vimperator-like keyboard shortcuts for jumping to next/previous buffers
 nmap <C-n> :bn<cr>
 nmap <C-p> :bp<cr>
