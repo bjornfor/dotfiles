@@ -100,7 +100,7 @@ checkout = git clone /media/raid/bjornfor/bare-repos/simple-crosstool.git
 [todo]
 checkout = git clone /media/raid/bjornfor/bare-repos/todo.git
 
-[raid/projects/todo.txt-cli]
+[raid/forks/todo.txt-cli]
 checkout = git clone /media/raid/bjornfor/bare-repos/todo.txt-cli.git
 
 [raid/projects/vim-wiki]
