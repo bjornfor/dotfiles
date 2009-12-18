@@ -30,6 +30,9 @@ checkout = git clone /media/raid/bjornfor/bare-repos/gehc-dvr-linux.git
 checkout = git clone /media/raid/bjornfor/bare-repos/hin.git
 order = 15
 
+[raid/projects/learning-framebuffer]
+checkout = git clone /media/raid/bjornfor/bare-repos/learning-framebuffer.git
+
 [raid/projects/learning-latex]
 checkout = git clone /media/raid/bjornfor/bare-repos/learning-latex.git
 
