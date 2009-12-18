@@ -67,6 +67,18 @@ checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfo
 [bjornfor-projects/learning-x86]
 checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-x86.git
 
+[bjornfor-projects/learning-framebuffer]
+checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-framebuffer.git
+
+[bjornfor-projects/learning-google-maps-api]
+checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-google-maps-api.git
+
+[bjornfor-projects/learning-sinatra]
+checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-sinatra.git
+
+[bjornfor-projects/learning-taskjuggler]
+checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/learning-taskjuggler.git
+
 [bjornfor-projects/libcfr]
 checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/libcfr.git
 
