@@ -178,3 +178,8 @@ for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+
+" Create a Python tags file:
+"   ctags -R -f ~/.vim/tags/python.ctags /usr/lib/python2.6
+" and then use it in Vim:
+set tags+=~/.vim/tags/python.ctags
