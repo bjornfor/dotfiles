@@ -106,6 +106,10 @@ nmap ,e :edit $HOME/.vimrc<cr>
 "nmap <S-Enter> O<ESC>		" insert above
 "nmap <Enter> o<ESC>		" insert below
 
+" Easier omnicomplete mapping
+" <Nul> is Ctrl-Space
+inoremap <Nul> <C-x><C-o>
+
 " Easier navigation with C compilation errors, grep searches and tags.
 " Note: After finding the :cw command, I think there is not much use in
 " these mappings anymore...
