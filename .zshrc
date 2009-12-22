@@ -24,7 +24,7 @@ export PS1="$(print '%{\e[1;34m%}%n%{\e[0m%}'):$(print '%{\e[0;34m%}%~%{\e[0m%}'
 export PS2="$(print '%{\e[0;34m%}>%{\e[0m%}')"
 
 # Vars used later on by Zsh
-export EDITOR="gvim -geom 82x35"
+export EDITOR="vim"
 export BROWSER=links
 export XTERM="aterm +sb -geometry 80x29 -fg black -bg lightgoldenrodyellow -fn -xos4-terminus-medium-*-normal-*-14-*-*-*-*-*-iso8859-15"
 
