@@ -20,6 +20,7 @@ localfolders = /home/bjornfor/raid/projects/email/gmail/maildir
 
 [Repository MyRemote]
 type = IMAP
+maxconnections = 10
 remotehost = imap.gmail.com
 remoteuser = bjorn.forsman@gmail.com
 ssl = yes

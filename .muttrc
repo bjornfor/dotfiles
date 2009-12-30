@@ -1,13 +1,17 @@
 # .muttrc for Gmail IMAP and SMTP setup
 set imap_user = "bjorn.forsman@gmail.com"
-set imap_pass = "<password>"
-set smtp_url = "smtp://username@smtp.gmail.com:587/"
-set smtp_pass = "<password>"
+# if no password, mutt will ask
+#set imap_pass = "<password>"
+## mutt can use smtp directly or use sendmail (see below)
+#set smtp_url = "smtp://bjorn.forsman@smtp.gmail.com:587/"
+#set smtp_pass = "<password>"
 #set spoolfile = "imaps://imap.gmail.com:993"
 set spoolfile = "imaps://imap.gmail.com:993/INBOX"
 set folder = "imaps://imap.gmail.com:993"
-set record = "imaps://imap.gmail.com/[Gmail]/Sent Mail"
-set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set record = "imaps://imap.gmail.com/[Google Mail]/Sent Mail"
+set postponed = "imaps://imap.gmail.com/[Google Mail]/Drafts"
+set sendmail=/usr/bin/msmtp
+set copy = no
 
 set header_cache = ~/.mutt/cache/headers
 set message_cachedir = ~/.mutt/cache/bodies
