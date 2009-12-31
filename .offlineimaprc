@@ -20,9 +20,12 @@ localfolders = /home/bjornfor/raid/projects/email/gmail/maildir
 
 [Repository MyRemote]
 type = IMAP
-maxconnections = 10
+maxconnections = 1
 remotehost = imap.gmail.com
 remoteuser = bjorn.forsman@gmail.com
 ssl = yes
 remoteuser = bjorn.forsman@gmail.com
 remotepass = <password>
+folderfilter = lambda foldername: foldername in ['INBOX', 'Sent']
+#folderfilter = lambda foldername: foldername in ['INBOX', 'Sent', '[Google Mail]/All Mail']
+#folderfilter = lambda foldername: foldername in ['INBOX', 'Sent', 'davinci-linux-mailing-list']

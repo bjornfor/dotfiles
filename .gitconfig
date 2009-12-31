@@ -11,3 +11,12 @@
 	ci = commit
 	co = checkout
 	wc = whatchanged
+	f = fetch
+	a = add
+	l = log
+#[format]
+	# Add the patch number and the total number of patches in the series to
+	# the subject of the patch email if more than one patch is being produced.
+	#numbered = auto
+[sendemail]
+	smtpserver = /usr/bin/msmtp
