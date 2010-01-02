@@ -63,7 +63,7 @@ set smartcase   " only care about case if search word uses upper case (use with 
 "autocmd BufNewFile,BufRead *.py compiler python
 
 " let vim recognize Sup (MUA) temp files
-autocmd BufRead *sup.reply-mode set ft=mail
+autocmd BufRead *sup.*-mode set ft=mail
 
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufRead *.txt set ft=asciidoc
