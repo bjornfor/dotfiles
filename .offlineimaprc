@@ -8,6 +8,8 @@
 
 [general]
 accounts = GMail
+maxsyncaccounts = 3
+ui = Noninteractive.Basic
 
 [Account GMail]
 localrepository = MyLocal
@@ -20,12 +22,20 @@ localfolders = /home/bjornfor/raid/projects/email/gmail/maildir
 
 [Repository MyRemote]
 type = IMAP
-maxconnections = 1
+maxconnections = 5
 remotehost = imap.gmail.com
 remoteuser = bjorn.forsman@gmail.com
+#remotepass = passwd
+# or use remotepassfile: just the password on a single line
+remotepassfile = ~/.offlineimap.gmail.password
 ssl = yes
-remoteuser = bjorn.forsman@gmail.com
-remotepass = <password>
-folderfilter = lambda foldername: foldername in ['INBOX', 'Sent']
-#folderfilter = lambda foldername: foldername in ['INBOX', 'Sent', '[Google Mail]/All Mail']
-#folderfilter = lambda foldername: foldername in ['INBOX', 'Sent', 'davinci-linux-mailing-list']
+realdelete = no
+#folderfilter = lambda foldername: foldername in ['INBOX', 'Sent']
+folderfilter = lambda foldername: foldername in ['[Google Mail]/All Mail', '[Google Mail]/Sent Mail', '[Google Mail]/Drafts']
+# Sup does not like brackets or spaces with Maildir paths (and with IMAP it has
+# to be url encoded) so just do it simple and map brackets and space to
+# underscore.
+nametrans = lambda s: s.replace('[','').replace(']','').replace(' ', '_')
+# trashfolder + spamfolder not tested yet
+#trashfolder = [Google Mail]/Bin
+#spamfolder = [Goolge Mail]/Spam
