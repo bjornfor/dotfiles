@@ -19,6 +19,7 @@ dotfiles="
 .signature
 .vimrc
 .Xmodmap
+.xmonad
 .zshrc
 "
 
@@ -51,7 +52,9 @@ do_install()
 		if [ -h $HOME/$file ]; then  # symbolic link
 			true
 		elif [ -d $HOME/$file ]; then  # directory
-			true
+			echo "$HOME/$file -> $PWD/$file (backup: $HOME/${file}.orig)"
+			mv $HOME/$file $HOME/${file}.orig
+			ln -s $PWD/$file $HOME
 		elif [ -f $HOME/$file ]; then  # regular file
 			echo "$HOME/$file -> $PWD/$file (backup: $HOME/${file}.orig)"
 			mv $HOME/$file $HOME/${file}.orig
