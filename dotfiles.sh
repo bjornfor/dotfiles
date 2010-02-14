@@ -18,6 +18,7 @@ dotfiles="
 .rdesktop.kitron.dvr-sw
 .signature
 .vimrc
+.Xmodmap
 .zshrc
 "
 
