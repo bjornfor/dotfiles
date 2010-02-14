@@ -1,13 +1,26 @@
-My config files
-===============
+dotfiles
+========
 
-This repo contains my config files.
-
-Most of them are supposed to be located in $HOME, but some are not.
+This is my configuration files, aka. 'dotfiles'.
 
 
 Usage
 -----
 
-Check out the repo somewhere and use symlinks to specific
-configuration files.
+Check out the repo somewhere and use the ./dotfiles.sh script to manage
+dotfile symlinks.
+
+List installed/not installed symlinks:
+----
+  ./dotfiles.sh list
+----
+
+Install symlinks:
+----
+  ./dotfiles.sh install
+----
+
+Remove symlinks:
+----
+  ./dotfiles.sh remove
+----
