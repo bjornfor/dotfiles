@@ -1,7 +1,7 @@
 # multiple repository (mr) tool config
 
-[bjornfor-projects/my-config-files]
-checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/my-config-files.git
+[bjornfor-projects/dotfiles]
+checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/dotfiles.git
 
 [bjornfor-projects/documents]
 checkout = git clone ssh://bjornfor@forsman.isa-geek.org:8383/media/raid/bjornfor/bare-repos/documents.git
