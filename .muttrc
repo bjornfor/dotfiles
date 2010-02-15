@@ -41,3 +41,10 @@ ignore "Authentication-Results:"
 ignore "DomaniKey-Signature:"
 ignore "DKIM-Signature:"
 hdr_order Date From To Cc
+
+# some handy keybindings
+#bind editor <space> noop
+macro index gi "<change-folder> =INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder> =[Google Mail]/All Mail<enter>" "Go to All Mail"
+macro index gs "<change-folder> =[Google Mail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder> =[Google Mail]/Drafts<enter>" "Go to Drafts"
