@@ -101,7 +101,7 @@ do_list_not_installed()
 		elif [ -f $HOME/$file ]; then  # regular file
 			echo "$HOME/$file -> (Regular file)"
 		else
-			echo "$file"
+			echo "$HOME/$file -> (Does not exist)"
 		fi
 	done
 }
