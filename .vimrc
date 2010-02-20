@@ -144,7 +144,7 @@ if &term =~ '^\(xterm\|screen\)$'
 endif
 
 " easy mappings for the taglist plugin (vim-addons install taglist)
-nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> T :TlistToggle<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
