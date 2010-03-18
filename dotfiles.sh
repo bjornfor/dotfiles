@@ -17,6 +17,7 @@ dotfiles="
 .offlineimaprc
 .rdesktop.kitron.dvr-sw
 .signature
+.tigrc
 .vimrc
 .Xmodmap
 .xmonad

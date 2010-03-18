@@ -1,0 +1,8 @@
+# ~/.tigrc -- config file for tig (text-mode interface to git)
+
+bind generic J scroll-line-down
+bind generic K scroll-line-up
+
+## these don't work
+#bind generic 1 Home
+#bind generic 0 End
