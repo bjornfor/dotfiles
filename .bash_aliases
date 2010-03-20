@@ -28,6 +28,11 @@ function cl() {
    fi
 }
 
+# Pronounce an English word using Merriam-Webster.com
+pronounce() {
+	wget -qO- $(wget -qO- "http://www.m-w.com/dictionary/$@" | grep 'return au' | sed -r "s|.*return au\('([^']*)', '([^'])[^']*'\).*|http://cougar.eb.com/soundc11/\2/\1|") | aplay -q;
+}
+
 #alias cdl='cl'
 # prevent annoying typo's
 #alias lc='cl'
