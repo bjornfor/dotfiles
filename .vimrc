@@ -139,7 +139,7 @@ imap jj <esc>
 " Get gvim colorschemes in vim (the CSApprox plugin is required).
 " When the CSApprox plugin is installed we just need to tell vim that
 " we have a terminal with lots of colors.
-if &term =~ '^\(xterm\|screen\)$'
+if &term =~ '^\(xterm\|screen\|screen-bce\)$'
   set t_Co=256
 endif
 
