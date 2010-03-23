@@ -16,6 +16,7 @@ alias s='sudo'
 alias v=vim
 alias gdb='gdb --quiet' # suppress the introductory and copyright messages
 alias pacman='pacman-color'
+alias xo=xdg-open
 
 alias sshtunnel="ssh -ND 4711 -v -p 8383 bjornfor@forsman.isa-geek.org"
 
