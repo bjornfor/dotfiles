@@ -5,6 +5,7 @@ username = Bjørn Forsman <bjorn.forsman@gmail.com>
 hgext.bookmarks =
 hggit =
 color =
+hgext.graphlog =
 
 [defaults]
 # suppress noisy extdiff header message
