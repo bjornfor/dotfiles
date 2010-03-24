@@ -1,6 +1,11 @@
 [ui]
 username = Bjørn Forsman <bjorn.forsman@gmail.com>
 
+[extensions]
+hgext.bookmarks =
+hggit =
+color =
+
 [defaults]
 # suppress noisy extdiff header message
 cdiff = -q
