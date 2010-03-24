@@ -6,6 +6,7 @@ hgext.bookmarks =
 hggit =
 color =
 hgext.graphlog =
+rebase =
 
 [defaults]
 # suppress noisy extdiff header message
