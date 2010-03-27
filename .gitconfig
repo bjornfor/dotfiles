@@ -11,6 +11,7 @@
 	ci = commit
 	co = checkout
 	wc = whatchanged
+	br = branch
 	f = fetch
 	a = add
 	l = log
