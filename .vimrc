@@ -85,7 +85,7 @@ nmap <C-n> :bn<cr>
 nmap <C-p> :bp<cr>
 
 " <space> by default behaves like 'l', make it more useful
-nmap <space> <C-f>		" scroll one screenful down
+"nmap <space> <C-f>		" scroll one screenful down
 "nmap <space> za		" toggle folds
 
 " :%s for search and replace is hard to type
