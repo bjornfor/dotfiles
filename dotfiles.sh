@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Manage dotfile symlinks.
 #
 # Usage:
