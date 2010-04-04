@@ -1,5 +1,11 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " My .vimrc file
+"
+" How to install my standard set of vim plugins:
+"  $ sudo apt-get install vim-addon-manager
+"  $ vim-addons install asciidoc bufexplorer detectindent git-commit matchit \
+"    omnicppcomplete project python-indent surround taglist utl vcscommand \
+"    vimoutliner
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 filetype on
