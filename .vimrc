@@ -130,11 +130,9 @@ inoremap <Nul> <C-x><C-o>
 "map <C-K> <C-W>k<C-W>_
 "set wmh=0
 
-imap jj <esc>
-
 "" from a forum
-"ino jj <esc>
-"cno jj <c-c>
+ino jj <esc>
+cno jj <c-c>
 ""For visual mode, just use "v" to toggle it on and off:
 "vno v <esc>
 
