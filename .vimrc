@@ -39,6 +39,11 @@ set laststatus=2 "always show status bar/line
 set nojs
 set modeline " read modelines
 set dictionary+=/usr/share/dict/words
+" Get mthesaur.txt:
+"   wget http://www.gutenberg.org/dirs/etext02/mthes10.zip
+"   unzip mthes10.zip
+"   mv mthesaur.txt ~/.mthesaur.txt
+set thesaurus+=~/.mthesaur.txt
 set cursorline	" highlight the line the cursor is on
 
 
