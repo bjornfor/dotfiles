@@ -156,6 +156,9 @@ endif
 " easy mappings for the taglist plugin (vim-addons install taglist)
 nnoremap <silent> T :TlistToggle<CR>
 
+" FuzzyFinder http://www.vim.org/scripts/script.php?script_id=1984
+map ,f :FufFile<cr>
+map ,b :FufBuffer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
