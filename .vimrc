@@ -8,6 +8,10 @@
 "    vimoutliner
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Generic stuff
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype plugin indent on
 
 syntax on
@@ -24,8 +28,6 @@ set ruler	" show the cursor position all the time
 "set autoindent " uses the indent from prev line
 "set cindent	" smarter indent
 "set showmatch	" briefly jump to matching bracket when the cursor is on a bracket
-set path+=/usr/include/**
-"set path+=./**
 set mouse=a " allow using the mouse to change marker position and enter visual mode
 set laststatus=2 "always show status bar/line
 "set fdm=indent " fold method: fold sections based on indent level
@@ -36,33 +38,23 @@ set laststatus=2 "always show status bar/line
 " joinspaces: use two spaces after '.' when joining a line (or not: nojs)
 set nojs
 set modeline " read modelines
+set cursorline	" highlight the line the cursor is on
+set hlsearch    " highlight search. Turn off with :noh{lsearch}
+set incsearch   " incremental search, i.e. search while typing
+set ic          " ignore case in searches
+set smartcase   " only care about case if search word uses upper case (use with ignorecase)
+
+set path+=/usr/include/**
+"set path+=./**
 set dictionary+=/usr/share/dict/words
 " Get mthesaur.txt:
 "   wget http://www.gutenberg.org/dirs/etext02/mthes10.zip
 "   unzip mthes10.zip
 "   mv mthesaur.txt ~/.mthesaur.txt
 set thesaurus+=~/.mthesaur.txt
-set cursorline	" highlight the line the cursor is on
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Searching
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set hlsearch    " highlight search. Turn off with :noh{lsearch}
-set incsearch   " incremental search, i.e. search while typing
-set ic          " ignore case in searches
-set smartcase   " only care about case if search word uses upper case (use with ignorecase)
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Highlighting
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" autocmd's
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "autocmd BufWinLeave *.[ch] mkview
 "autocmd BufWinEnter *.[ch] silent loadview
 
@@ -73,13 +65,6 @@ set smartcase   " only care about case if search word uses upper case (use with 
 " let vim recognize Sup (MUA) temp files
 autocmd BufRead *sup.*-mode set ft=mail
 
-" Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
-"autocmd BufRead *.txt set ft=asciidoc
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Key mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " These options seem to be needed for extracting C structure member info
 " when used with local variables:
 "   --c-kinds=+l
@@ -142,7 +127,20 @@ cno jj <c-c>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins
+" OS Specific
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if has("mac")
+	" settings for mac goes here
+endif
+
+if has ("gui_win32")
+	" settings for windows goes here
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Settings related to plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Get gvim colorschemes in vim (the CSApprox plugin is required).
 " When the CSApprox plugin is installed we just need to tell vim that
@@ -157,6 +155,10 @@ nnoremap <silent> T :TlistToggle<CR>
 " FuzzyFinder http://www.vim.org/scripts/script.php?script_id=1984
 map ,f :FufFile<cr>
 map ,b :FufBuffer<cr>
+
+" Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
+"autocmd BufRead *.txt set ft=asciidoc
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
