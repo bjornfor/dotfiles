@@ -104,7 +104,7 @@ nmap <C-p> :bp<cr>
 " lets map them to gs...
 nmap gs :%s/
 
-"nmap M :make<cr>	" default binding for 'M' is to place the cursor on the line in the middle
+map ,m :make<cr>
 "nmap <C-a> ggVG	" ctrl+a is normally used for incrementing the number under the cursor
 
 " easy .vimrc access
