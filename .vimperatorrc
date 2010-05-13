@@ -1,0 +1,8 @@
+"2.3.1 (created: 2010/04/07 18:25:13)
+
+noremap j 2j
+noremap k 2k
+set runtimepath=/home/bjornfor/.vimperator
+source! /home/bjornfor/.vimperatorrc.local
+
+" vim: set ft=vimperator:
