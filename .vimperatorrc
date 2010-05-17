@@ -2,6 +2,7 @@
 
 noremap j 2j
 noremap k 2k
+set complete=bslf
 set runtimepath=/home/bjornfor/.vimperator
 source! /home/bjornfor/.vimperatorrc.local
 
