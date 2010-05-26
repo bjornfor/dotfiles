@@ -59,6 +59,7 @@ bindkey '^[[A' up-line-or-search
 bindkey '^[[D' backward-char
 bindkey '^[[B' down-line-or-search
 bindkey '^[[C' forward-char
+bindkey '^[[Z' reverse-menu-complete
 
 ##################################################################
 # My aliases
