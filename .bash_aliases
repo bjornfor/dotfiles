@@ -17,6 +17,8 @@ alias v=vim
 alias gdb='gdb --quiet' # suppress the introductory and copyright messages
 alias pacman='pacman-color'
 alias xo=xdg-open
+# copy with a progress bar
+alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
 
 alias sshtunnel="ssh -ND 4711 -v -p 8383 bjornfor@forsman.isa-geek.org"
 
