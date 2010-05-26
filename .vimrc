@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" My .vimrc file
+" My .vimrc file v0.1
 "
 " How to install my standard set of vim plugins:
 "  $ sudo apt-get install vim-addon-manager
