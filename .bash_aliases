@@ -16,6 +16,7 @@ alias s='sudo'
 alias v=vim
 alias gdb='gdb --quiet' # suppress the introductory and copyright messages
 alias pacman='pacman-color'
+alias ain='sudo aptitude install'
 alias aup='sudo aptitude update; sudo aptitude safe-upgrade'
 alias xo=xdg-open
 # copy with a progress bar
