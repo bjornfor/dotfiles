@@ -16,6 +16,7 @@ alias s='sudo'
 alias v=vim
 alias gdb='gdb --quiet' # suppress the introductory and copyright messages
 alias pacman='pacman-color'
+alias aup='sudo aptitude update; sudo aptitude safe-upgrade'
 alias xo=xdg-open
 # copy with a progress bar
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
