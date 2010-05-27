@@ -70,7 +70,7 @@ autocmd BufRead *sup.*-mode set ft=mail
 "   --c-kinds=+l
 "   --fields=+a
 "   --extra=+q
-nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>\|:!cscope -R -b<cr>\|:cs r<cr>
+nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>\|:!cscope -R -b<cr>\|:cs r<cr><cr>
 
 " toggle invisible chars
 noremap ,i :set list!<cr>
