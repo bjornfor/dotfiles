@@ -1,20 +1,65 @@
 -- This XMonad configuration file plays very well with Gnome.
--- I also put "export WINDOW_MANAGER=xmonad" in ~/.gnomerc.
+--
+-- TODO:
+-- * don't tile gnome-do (tile'd gnome-do doesn't look good!)
+
 import XMonad
 import XMonad.Config.Gnome
-import XMonad.ManageHook
---import XMonad.Layout.NoBorders
- 
-myManageHook :: [ManageHook]
-myManageHook = 
-    [ resource  =? "Do"   --> doIgnore ]
- 
-main = xmonad gnomeConfig
-    { manageHook = manageHook gnomeConfig <+> composeAll myManageHook}
+import XMonad.Layout.NoBorders
+import XMonad.Config.Desktop (desktopLayoutModifiers)
 
--- using the smartBorder layout modifier (does not work with Gnome
--- as-is below!)
---main = xmonad $
--- 	defaultConfig
--- 		{ layoutHook = smartBorders $ layoutHook defaultConfig
--- 		}
+myLayout = tiled ||| Mirror tiled ||| noBorders Full
+  where
+     -- default tiling algorithm partitions the screen into two panes
+     tiled   = Tall nmaster delta ratio
+
+     -- The default number of windows in the master pane
+     nmaster = 1
+
+     -- Default proportion of screen occupied by master pane
+     ratio   = 1/2
+
+     -- Percent of screen to increment by when resizing panes
+     delta   = 3/100
+
+------------------------------------------------------------------------
+-- Window rules:
+
+-- Execute arbitrary actions and WindowSet manipulations when managing
+-- a new window. You can use this to, for example, always float a
+-- particular program, or have a client always appear on a particular
+-- workspace.
+--
+-- To find the property name associated with a program, use
+-- > xprop | grep WM_CLASS
+-- and click on the client you're interested in.
+--
+-- To match on the WM_NAME, you can use 'title' in the same way that
+-- 'className' and 'resource' are used below.
+--
+--myManageHook =
+--myManageHook = composeAll
+--    [ manageHook gnomeConfig
+--      className =? "Gimp"          --> doFloat
+--    , resource  =? "Do"            --> doIgnore ]
+
+myTerminal      = "gnome-terminal"
+
+-- Whether focus follows the mouse pointer.
+myFocusFollowsMouse :: Bool
+myFocusFollowsMouse = False
+
+-- Width of the window border in pixels.
+myBorderWidth   = 2
+
+
+main = xmonad defaults
+
+--defaults = gnomeConfig
+defaults = gnomeConfig {
+        layoutHook         = desktopLayoutModifiers (myLayout),
+        terminal           = myTerminal,
+        focusFollowsMouse  = myFocusFollowsMouse,
+        borderWidth        = myBorderWidth
+    }
+--        manageHook         = myManageHook
