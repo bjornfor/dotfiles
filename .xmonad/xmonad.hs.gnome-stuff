@@ -1,7 +1,4 @@
 -- This XMonad configuration file plays very well with Gnome.
---
--- TODO:
--- * don't tile gnome-do (tile'd gnome-do doesn't look good!)
 
 import XMonad
 import XMonad.Config.Gnome
@@ -37,11 +34,10 @@ myLayout = tiled ||| Mirror tiled ||| noBorders Full
 -- To match on the WM_NAME, you can use 'title' in the same way that
 -- 'className' and 'resource' are used below.
 --
---myManageHook =
---myManageHook = composeAll
---    [ manageHook gnomeConfig
---      className =? "Gimp"          --> doFloat
---    , resource  =? "Do"            --> doIgnore ]
+myManageHook = composeAll
+    [ manageHook gnomeConfig
+    , title  =? "Do"            --> doIgnore
+    ]
 
 myTerminal      = "gnome-terminal"
 
@@ -60,6 +56,6 @@ defaults = gnomeConfig {
         layoutHook         = desktopLayoutModifiers (myLayout),
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
-        borderWidth        = myBorderWidth
+        borderWidth        = myBorderWidth,
+        manageHook         = myManageHook
     }
---        manageHook         = myManageHook
