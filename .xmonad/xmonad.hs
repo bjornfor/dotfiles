@@ -1,1 +1,1 @@
-xmonad.hs.gnome-config
+xmonad.hs.gnome-stuff
