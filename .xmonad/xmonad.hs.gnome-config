@@ -1,10 +1,5 @@
 -- xmonad configuration file for use with the GNOME desktop environment
--- Ubuntu 10.04 setup:
---   $ sudo apt-get install xmonad
---   put this file in ~/.xmonad/xmonad.hs
---   $ xmonad --recompile
---   $ gconftool-2 -s /desktop/gnome/session/required_components/windowmanager xmonad --type string
---   logout+login/reboot
+
 import XMonad
 import XMonad.Config.Gnome
  

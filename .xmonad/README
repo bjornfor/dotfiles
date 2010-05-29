@@ -1,0 +1,19 @@
+Setup xmonad
+============
+
+On Ubuntu 10.04:
+
+----
+$ sudo apt-get install xmonad
+----
+
+NOTE: To override the default settings, put a config file in
+~/.xmonad/xmonad.hs, then recompile xmonad with `xmonad --recompile`.
+
+Set xmonad as window manager:
+
+----
+$ gconftool-2 -s /desktop/gnome/session/required_components/windowmanager xmonad --type string
+----
+
+Now, logout and back in again to start using xmonad.
