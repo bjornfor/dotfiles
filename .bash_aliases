@@ -38,6 +38,12 @@ pronounce() {
 	wget -qO- $(wget -qO- "http://www.m-w.com/dictionary/$@" | grep 'return au' | sed -r "s|.*return au\('([^']*)', '([^'])[^']*'\).*|http://cougar.eb.com/soundc11/\2/\1|") | aplay -q;
 }
 
+# awk calculator (remember to quote arguments if they contain parentheses)
+c ()
+{
+    awk "BEGIN{ pi=4.0*atan2(1.0,1.0); deg=pi/180.0;  print $* }";
+}
+
 #alias cdl='cl'
 # prevent annoying typo's
 #alias lc='cl'
