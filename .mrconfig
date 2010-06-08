@@ -3,6 +3,9 @@
 [.dotfiles]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dotfiles.git
 
+[.local/share/gtg]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/gtg.git
+
 [todo]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.git
 
