@@ -1,123 +1,123 @@
 # My 'mr' (Multiple Repository) tool config file
 
-[dotfiles]
-checkout = git clone /media/raid/bjornfor/bare-repos/dotfiles.git
-
-[raid/projects/documents]
-checkout = git clone /media/raid/bjornfor/bare-repos/documents.git
-order = 15
-
-[raid/projects/dvr-control]
-checkout = git clone /media/raid/bjornfor/bare-repos/dvr-control.git
-
-[raid/projects/email]
-checkout = git clone /media/raid/bjornfor/bare-repos/email.git
-order = 20
-
-[raid/projects/finance]
-checkout = git clone /media/raid/bjornfor/bare-repos/finance.git
-
-[raid/projects/fortifyband.com]
-checkout = git clone /media/raid/bjornfor/bare-repos/fortifyband.com.git
-
-[raid/projects/fpga-forum-presentasjon]
-checkout = git clone /media/raid/bjornfor/bare-repos/fpga-forum-presentasjon.git
-
-[raid/projects/gehc-dvr-linux]
-checkout = git clone /media/raid/bjornfor/bare-repos/gehc-dvr-linux.git
-
-[raid/projects/hin]
-checkout = git clone /media/raid/bjornfor/bare-repos/hin.git
-order = 15
-
-[raid/projects/learning-framebuffer]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-framebuffer.git
-
-[raid/projects/learning-latex]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-latex.git
-
-[raid/projects/learning-avr32]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-avr32.git
-
-[raid/projects/learning-asciidoc]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-asciidoc.git
-
-[raid/projects/learning-cmake]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-cmake.git
-
-[raid/projects/learning-directfb]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-directfb.git
-
-[raid/projects/learning-fltk]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-fltk.git
-
-[raid/projects/learning-gnu-autotools]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-gnu-autotools.git
-
-[raid/projects/learning-gstreamer]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-gstreamer.git
-
-[raid/projects/learning-gtk]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-gtk.git
-
-[raid/projects/learning-languages]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-languages.git
-
-[raid/projects/learning-lkm]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-lkm.git
-
-[raid/projects/learning-opencv]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-opencv.git
-
-[raid/projects/learning-opengl]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-opengl.git
-
-[raid/projects/learning-pic]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-pic.git
-
-[raid/projects/learning-sdl]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-sdl.git
-
-[raid/projects/learning-stm32]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-stm32.git
-
-[raid/projects/learning-x86]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-x86.git
-
-[raid/projects/libcfr]
-checkout = git clone /media/raid/bjornfor/bare-repos/libcfr.git
-
-[raid/projects/minibuildroot]
-checkout = git clone /media/raid/bjornfor/bare-repos/minibuildroot.git
-
-[raid/projects/mp3parser]
-checkout = git clone /media/raid/bjornfor/bare-repos/mp3parser.git
-
-[raid/projects/ntnu]
-checkout = git clone /media/raid/bjornfor/bare-repos/ntnu.git
-order = 15
-
-[raid/projects/simple-crosstool]
-checkout = git clone /media/raid/bjornfor/bare-repos/simple-crosstool.git
+[.dotfiles]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dotfiles.git
 
 [todo]
-checkout = git clone /media/raid/bjornfor/bare-repos/todo.git
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.git
 
-[raid/forks/todo.txt-cli]
-checkout = git clone /media/raid/bjornfor/bare-repos/todo.txt-cli.git
+[forks/todo.txt-cli]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.txt-cli.git
 
-[raid/projects/vim-wiki]
-checkout = git clone /media/raid/bjornfor/bare-repos/vim-wiki.git
+[projects/documents]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/documents.git
+order = 15
 
-[raid/projects/activity-log]
-checkout = git clone /media/raid/bjornfor/bare-repos/activity-log.git
+[projects/dvr-control]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dvr-control.git
 
-[raid/projects/learning-qt]
-checkout = git clone /media/raid/bjornfor/bare-repos/learning-qt.git
+[projects/email]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/email.git
+order = 20
+
+[projects/finance]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/finance.git
+
+[projects/fortifyband.com]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/fortifyband.com.git
+
+[projects/fpga-forum-presentasjon]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/fpga-forum-presentasjon.git
+
+[projects/gehc-dvr-linux]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/gehc-dvr-linux.git
+
+[projects/hin]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/hin.git
+order = 15
+
+[projects/learning-framebuffer]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-framebuffer.git
+
+[projects/learning-latex]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-latex.git
+
+[projects/learning-avr32]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-avr32.git
+
+[projects/learning-asciidoc]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-asciidoc.git
+
+[projects/learning-cmake]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-cmake.git
+
+[projects/learning-directfb]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-directfb.git
+
+[projects/learning-fltk]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-fltk.git
+
+[projects/learning-gnu-autotools]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-gnu-autotools.git
+
+[projects/learning-gstreamer]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-gstreamer.git
+
+[projects/learning-gtk]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-gtk.git
+
+[projects/learning-languages]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-languages.git
+
+[projects/learning-lkm]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-lkm.git
+
+[projects/learning-opencv]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-opencv.git
+
+[projects/learning-opengl]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-opengl.git
+
+[projects/learning-pic]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-pic.git
+
+[projects/learning-sdl]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-sdl.git
+
+[projects/learning-stm32]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-stm32.git
+
+[projects/learning-x86]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-x86.git
+
+[projects/libcfr]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/libcfr.git
+
+[projects/minibuildroot]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/minibuildroot.git
+
+[projects/mp3parser]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/mp3parser.git
+
+[projects/ntnu]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/ntnu.git
+order = 15
+
+[projects/simple-crosstool]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/simple-crosstool.git
+
+[projects/vim-wiki]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/vim-wiki.git
+
+[projects/activity-log]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/activity-log.git
+
+[projects/learning-qt]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-qt.git
 
 # this is a Mercurial repo
-#[raid/projects/life-simulator]
+#[projects/life-simulator]
 #checkout = git clone /media/raid/bjornfor/?????????
 
-[raid/projects/ppm-max-intensity]
-checkout = git clone /media/raid/bjornfor/bare-repos/ppm-max-intensity.git
+[projects/ppm-max-intensity]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/ppm-max-intensity.git
