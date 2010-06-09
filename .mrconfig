@@ -10,7 +10,9 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/gtg.git
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.git
 
 [forks/todo.txt-cli]
-checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.txt-cli.git
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.txt-cli.git &&
+	cd forks/todo.txt-cli &&
+	git checkout --track origin/edit
 
 [projects/documents]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/documents.git
