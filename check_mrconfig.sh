@@ -4,5 +4,5 @@
 PROJECTS=$HOME/raid/projects
 
 for dir in $(ls -d1 $PROJECTS/*); do
-	grep -lq "\[.*$(basename $dir).*\]" $HOME/.mrconfig && echo $(basename $dir) OK || echo $dir is not in $HOME/.mrconfig!;
+	grep -lq "\[.*$(basename $dir).*\]" $HOME/.mrconfig && echo $(basename $dir) OK || echo $(basename $dir) not found in $HOME/.mrconfig
 done
