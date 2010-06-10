@@ -2,12 +2,15 @@
 
 [.dotfiles]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dotfiles.git
+order = 9
 
 [.local/share/gtg]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/gtg.git
+order = 9
 
 [todo]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.git
+order = 9
 
 [forks/todo.txt-cli]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.txt-cli.git &&
@@ -116,6 +119,7 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/vim-wiki.git
 
 [projects/activity-log]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/activity-log.git
+order = 9
 
 [projects/learning-qt]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-qt.git
