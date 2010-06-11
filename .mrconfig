@@ -130,3 +130,9 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-qt.gi
 
 [projects/ppm-max-intensity]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/ppm-max-intensity.git
+
+[projects/medontime-mdd]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/medontime-mdd.git
+
+[projects/thermtech-friluftslader]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/thermtech-friluftslader.git
