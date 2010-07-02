@@ -122,6 +122,10 @@ inoremap <Nul> <C-x><C-o>
 "nnoremap ' ` " swap single-quote and back-tick
 "nnoremap ` '
 
+" scroll faster
+nnoremap <C-e> 2<C-e>
+nnoremap <C-y> 2<C-y>
+
 " easier working with split windows
 "map <C-J> <C-W>j<C-W>_
 "map <C-K> <C-W>k<C-W>_
