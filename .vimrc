@@ -141,6 +141,9 @@ cno jj <c-c>
 nmap <Leader>hon :%!xxd<cr>
 nmap <Leader>hof :%!xxd -r<cr>
 
+" leader is default '\', but it's difficult to reach
+let mapleader = ","
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " OS Specific
