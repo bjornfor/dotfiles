@@ -49,6 +49,7 @@ set hlsearch    " highlight search. Turn off with :noh{lsearch}
 set incsearch   " incremental search, i.e. search while typing
 set ic          " ignore case in searches
 set smartcase   " only care about case if search word uses upper case (use with ignorecase)
+set scrolloff=1
 
 set path+=/usr/include/**
 "set path+=./**
