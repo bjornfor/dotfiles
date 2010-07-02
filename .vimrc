@@ -24,6 +24,12 @@ set hidden	" hide abandoned buffers. This option removes the demand for buffers 
 "set sw=4	" shiftwidth, number of spaces for autoindent, defaults to 8
 set showmode	" status line displays 'insert' or 'visual' when not in normal mode
 set wildmenu	" when tab'ing on the vim command line, a menu appear just above the command line
+"To have the completion behave similarly to a shell, i.e. complete only up to
+"the point of ambiguity (while still showing you what your options are), also
+"add the following:
+"set wildmode=list:longest
+" Or use a combination:
+"set wildmode=list:longest,full
 set ruler	" show the cursor position all the time
 "set autoindent " uses the indent from prev line
 "set cindent	" smarter indent
