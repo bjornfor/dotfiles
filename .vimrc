@@ -34,6 +34,9 @@ set ruler	" show the cursor position all the time
 "set autoindent " uses the indent from prev line
 "set cindent	" smarter indent
 "set showmatch	" briefly jump to matching bracket when the cursor is on a bracket
+" ask what to do instead of just failing (e.g. when :q notices there are
+" unsaved changes and refuses to quit):
+set confirm
 set mouse=a " allow using the mouse to change marker position and enter visual mode
 set laststatus=2 "always show status bar/line
 "set fdm=indent " fold method: fold sections based on indent level
