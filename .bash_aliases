@@ -57,6 +57,10 @@ alias cddvr="cd /media/raid/bjornfor/projects/dvr-control"
 alias gtd='vim ~/raid/projects/vim-wiki/index.txt'
 #alias gtd='vim -c "cd %:h" ~/raid/documents/vim-wiki/index.txt'
 
+# Remember 'sudo apt-get install libnotify-bin' for this.
+# Usage: sleep 5; alert
+alias alert_helper='history|tail -n1|sed -e "s/^\s*[0-9]\+\s*//" -e "s/;\s*alert$//"'
+alias alert='notify-send -i /usr/share/icons/gnome/32x32/apps/gnome-terminal.png "[$?] $(alert_helper)"'
 
 #export PS1="\[\033[1;30m\]\[\033[1;34m\]\W\[\033[1;30m\] $ "
 #export PS1="\W $ "
