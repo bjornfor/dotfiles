@@ -2,10 +2,11 @@
 
 import XMonad
 import XMonad.Config.Gnome
+import XMonad.Hooks.ManageHelpers
 import XMonad.Layout.NoBorders
 import XMonad.Config.Desktop (desktopLayoutModifiers)
 
-myLayout = tiled ||| Mirror tiled ||| noBorders Full
+myLayout = tiled ||| Mirror tiled ||| smartBorders Full
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -37,6 +38,8 @@ myLayout = tiled ||| Mirror tiled ||| noBorders Full
 myManageHook = composeAll
     [ manageHook gnomeConfig
     , title  =? "Do"            --> doIgnore
+    , (title =? "VLC (XVideo output)" --> doFullFloat) -- use layout smartBorders Full to hide border
+--  , (title =? "VLC (XVideo output)" --> doIgnore) -- no border, but focus is lost when exiting fullscreen
     ]
 
 myTerminal      = "gnome-terminal"
