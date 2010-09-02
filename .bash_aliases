@@ -82,3 +82,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] \
 export EDITOR=vim
 export BROWSER=firefox
 export PATH=$PATH:/var/lib/gems/1.8/bin
+
+export HISTCONTROL=ignoreboth   # ignorespace + ignoredups
+export HISTSIZE=1000000         # big big history
+export HISTFILESIZE=$HISTSIZE
+shopt -s histappend             # append to history, don't overwrite it
