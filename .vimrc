@@ -181,6 +181,18 @@ map ,b :FufBuffer<cr>
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufRead *.txt set ft=asciidoc
 
+" TODO: revisit rope/ropevim
+"let ropevim_vim_completion=1
+"function! TabWrapperRope()
+"	if strpart(getline('.'), 0, col('.')-1) =~ '^\s*$'
+"		return "\<Tab>"
+"	else
+"		return "\<C-R>=RopeCodeAssistInsertMode()\<CR>"
+"	endif
+"endfunction
+"
+"imap <Tab> <C-R>=TabWrapperRope()<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
