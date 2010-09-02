@@ -38,12 +38,20 @@ usage()
 {
 	cat << EOF
 Usage:
-  $prog [install|remove|list]
+  $prog [install|remove|list|howto]
 
 install  - install dotfile symlinks (first: move any existing DOTFILE to DOTFILE.orig)
 remove   - remove dotfile symlinks
 list     - list installed (and not installed) dotfile symlinks
+howto    - print commands that install would do (great for manual installation)
 EOF
+}
+
+do_howto()
+{
+	for file in $dotfiles; do
+		echo "ln -s $PWD/$file $HOME"
+	done | column -t
 }
 
 do_install()
@@ -120,6 +128,8 @@ elif [ "$cmd" == "list" ]; then
 	do_list_installed
 	echo "### Not installed symlinks:"
 	do_list_not_installed
+elif [ "$cmd" = "howto" ]; then
+	do_howto
 else
 	usage
 	exit 1
