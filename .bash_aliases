@@ -46,6 +46,15 @@ c ()
     awk "BEGIN{ pi=4.0*atan2(1.0,1.0); deg=pi/180.0;  print $* }";
 }
 
+ssh()
+{
+	if [[ "$2" == "" ]]; then
+		command ssh "$1" -Xt screen -aAdr -RR work bash
+	else
+		command ssh $@
+	fi
+}
+
 #alias cdl='cl'
 # prevent annoying typo's
 #alias lc='cl'
