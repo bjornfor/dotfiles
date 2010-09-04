@@ -16,6 +16,6 @@ Set xmonad as window manager:
 $ gconftool-2 -s /desktop/gnome/session/required_components/windowmanager xmonad --type string
 ----
 
-Now, logout and back in again to start using xmonad.
+Now, logout and back in again to start using xmonad. (Once I had to reboot.)
 
 NOTE: To enable compiz instead of xmonad, just replace "xmonad" with "compiz" in the above command.
