@@ -21,6 +21,7 @@ dotfiles="
 .Xmodmap
 .xmonad
 .zshrc
+.newsbeuter
 "
 
 ##for dotfile in $(ls -1 .*); do
