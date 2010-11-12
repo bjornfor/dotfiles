@@ -18,6 +18,7 @@ alias gdb='gdb --quiet' # suppress the introductory and copyright messages
 alias pacman='pacman-color'
 alias a='sudo aptitude'
 alias as='aptitude search'
+alias ashow='aptitude show'
 alias ain='sudo aptitude install'
 alias aup='sudo aptitude update; sudo aptitude safe-upgrade'
 alias xo=xdg-open
