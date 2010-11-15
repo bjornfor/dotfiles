@@ -16,6 +16,10 @@ filetype plugin indent on
 
 syntax on
 
+" look for 'tags' in current directory and work up the tree towards root until
+" one is found
+set tags+=tags;/
+
 "colorscheme desert
 set bg=light
 
