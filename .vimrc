@@ -232,3 +232,24 @@ EOF
 "   ctags -R -f ~/.vim/tags/python.ctags /usr/lib/python2.6
 " and then use it in Vim:
 set tags+=~/.vim/tags/python.ctags
+
+
+" 'Find' command from http://vim.wikia.com/wiki/Find_files_in_subdirectories
+python << EOL
+import vim
+
+def Finder(*args):
+    ''' Operation is as follows:
+        - request the starting dir
+        - find command finds the requested file
+        - the printf param formats it to accomodate the errorformat '%f:%l:%m'
+        - line is always 1, message is empty (-)
+        - the 'cgete' vim command puts it into the quickfix errorlist
+        - 'botright copen' opens the quickfix list
+    '''
+    start_dir = vim.eval('input("Start from dir: ", getcwd(), "dir")')
+    find_cmd = (r'find %s -name %s -printf %%p:1:-\\n' % (start_dir, args[0]))
+    vim.command("cgete system('%s')" % find_cmd)
+    vim.command('botright copen')
+EOL
+command! -nargs=1 Find :py Finder("<args>")
