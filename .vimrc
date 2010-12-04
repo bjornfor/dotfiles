@@ -126,8 +126,8 @@ inoremap <Nul> <C-x><C-o>
 "nmap <F7> :tp<cr>
 "nmap <F8> :tn<cr>
 
-"nnoremap ' ` " swap single-quote and back-tick
-"nnoremap ` '
+" make single-quote act as back-tick
+map ' `
 
 " scroll faster
 nnoremap <C-e> 2<C-e>
