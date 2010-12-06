@@ -71,9 +71,8 @@ alias gtd='vim ~/raid/projects/vim-wiki/index.txt'
 
 # Remember 'sudo apt-get install libnotify-bin' for this.
 # Usage: sleep 5; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] \
-  && echo terminal || echo error)" "$(history|tail -n1| \
-  sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# (this alias is actually in .bashrc in Ubuntu 10.10)
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1| sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 #export PS1="\[\033[1;30m\]\[\033[1;34m\]\W\[\033[1;30m\] $ "
 #export PS1="\W $ "
