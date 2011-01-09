@@ -5,3 +5,4 @@ bind-key k up
 #bind-key ESC quit
 bind-key h quit
 bind-key l open
+article-sort-order date-desc
