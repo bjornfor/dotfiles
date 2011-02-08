@@ -24,6 +24,9 @@ order = 15
 [projects/dvr-control]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dvr-control.git
 
+[projects/skipper-iunit]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/skipper-iunit.git
+
 [projects/snoradar]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/snoradar.git
 
