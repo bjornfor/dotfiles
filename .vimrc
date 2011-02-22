@@ -231,7 +231,7 @@ EOF
 " Create a Python tags file:
 "   ctags -R -f ~/.vim/tags/python.ctags /usr/lib/python2.6
 " and then use it in Vim:
-set tags+=~/.vim/tags/python.ctags
+"set tags+=~/.vim/tags/python.ctags
 
 
 " 'Find' command from http://vim.wikia.com/wiki/Find_files_in_subdirectories
