@@ -33,7 +33,7 @@ set wildmenu	" when tab'ing on the vim command line, a menu appear just above th
 "add the following:
 "set wildmode=list:longest
 " Or use a combination:
-"set wildmode=list:longest,full
+set wildmode=list:longest,full
 set ruler	" show the cursor position all the time
 "set autoindent " uses the indent from prev line
 "set cindent	" smarter indent
