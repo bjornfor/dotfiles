@@ -162,6 +162,7 @@ endif
 
 if has ("gui_win32")
 	" settings for windows goes here
+	set backspace=indent,eol,start
 endif
 
 
