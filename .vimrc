@@ -144,6 +144,11 @@ cno jj <c-c>
 ""For visual mode, just use "v" to toggle it on and off:
 "vno v <esc>
 
+" n is for normal mode
+nnoremap Q gqap
+" v is for visual mode.
+vnoremap Q gq
+
 " edit binary files (xxd is normally included in base installs)
 nmap <Leader>hon :%!xxd<cr>
 nmap <Leader>hof :%!xxd -r<cr>
