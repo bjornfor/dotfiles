@@ -68,6 +68,9 @@ set dictionary+=/usr/share/dict/words
 "   mv mthesaur.txt ~/.mthesaur.txt
 set thesaurus+=~/.mthesaur.txt
 
+" see ':help directory' and ':help swap-file'
+set directory-=.
+
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
 "autocmd BufWinLeave *.[ch] mkview
