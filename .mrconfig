@@ -53,6 +53,9 @@ order = 15
 [projects/learning-framebuffer]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-framebuffer.git
 
+[projects/learning-web]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-web.git
+
 [projects/learning-latex]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-latex.git
 
