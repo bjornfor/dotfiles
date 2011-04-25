@@ -74,8 +74,6 @@ set smartcase   " only care about case if search word uses upper case (use with 
 set scrolloff=1
 set visualbell
 
-set path+=/usr/include/**
-"set path+=./**
 set dictionary+=/usr/share/dict/words
 " Get mthesaur.txt:
 "   wget http://www.gutenberg.org/dirs/etext02/mthes10.zip
