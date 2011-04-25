@@ -1,7 +1,22 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" My .vimrc file v0.1
+" My .vimrc file v0.2
 "
-" How to install my standard set of vim plugins:
+" Plugins:
+" * AutoTag: http://www.vim.org/scripts/script.php?script_id=1343
+" * clang_complete: http://www.vim.org/scripts/script.php?script_id=3302
+"                   https://github.com/Rip-Rip/clang_complete
+" * omnicppcomplete: http://www.vim.org/scripts/script.php?script_id=1520
+" * taglist: http://www.vim.org/scripts/script.php?script_id=273
+" * bufexplorer: http://www.vim.org/scripts/script.php?script_id=42
+" * NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
+" * surround: http://www.vim.org/scripts/script.php?script_id=1697
+" * snipMate: http://www.vim.org/scripts/script.php?script_id=2540
+" * EasyGrep: http://www.vim.org/scripts/script.php?script_id=2438
+"
+" * project: http://www.vim.org/scripts/script.php?script_id=69 (TODO: try out)
+" * indexer: http://www.vim.org/scripts/script.php?script_id=3221 (TODO: try out)
+"
+" How to install vim plugins (Debian/Ubuntu):
 "  $ sudo apt-get install vim-scripts vim-addon-manager
 "  $ vim-addons install asciidoc bufexplorer detectindent git-commit matchit \
 "    omnicppcomplete project python-indent surround taglist utl vcscommand \
