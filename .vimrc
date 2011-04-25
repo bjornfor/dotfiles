@@ -243,13 +243,16 @@ endif
 " Python stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 python << EOF
-import os
-import sys
-import vim
-for p in sys.path:
-    if os.path.isdir(p):
-        vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
+def setPythonPath():
+    import os
+    import sys
+    import vim
+    vim.command(r"setlocal path-=/usr/include")  # remove C/C++ header path
+    for p in sys.path:
+        if os.path.isdir(p):
+            vim.command(r"setlocal path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+autocmd FileType python python setPythonPath()
 
 " Create a Python tags file:
 "   ctags -R -f ~/.vim/tags/python.ctags /usr/lib/python2.6
