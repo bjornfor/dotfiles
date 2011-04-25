@@ -287,6 +287,11 @@ autocmd FileType python python setPythonPath()
 " TODO: try pylint/pyunit/python compilers
 au FileType python compiler pylint
 
+" Change pylint behaviour (see pylint.vim for doc):
+"let g:pylint_onwrite = 0
+"let g:pylint_show_rate = 0
+let g:pylint_cwindow = 0
+
 " Create a Python tags file:
 "   ctags -R -f ~/.vim/tags/python.ctags /usr/lib/python2.6
 " and then use it in Vim:
