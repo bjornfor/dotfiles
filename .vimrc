@@ -13,6 +13,8 @@
 " * snipMate: http://www.vim.org/scripts/script.php?script_id=2540
 " * EasyGrep: http://www.vim.org/scripts/script.php?script_id=2438
 " * matchit: http://www.vim.org/scripts/script.php?script_id=39
+" * indent/python.vim: http://www.vim.org/scripts/script.php?script_id=974
+"     Set the preferred indent in .vimrc: au FileType python setlocal sw=4
 "
 " * project: http://www.vim.org/scripts/script.php?script_id=69 (TODO: try out)
 " * indexer: http://www.vim.org/scripts/script.php?script_id=3221 (TODO: try out)
@@ -283,6 +285,7 @@ def setPythonPath():
             vim.command(r"setlocal path+=%s" % (p.replace(" ", r"\ ")))
 EOF
 autocmd FileType python python setPythonPath()
+autocmd FileType python setlocal sw=4
 
 " :make invokes pylint and errors are directed to offending line.
 " TODO: try pylint/pyunit/python compilers
