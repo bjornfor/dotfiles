@@ -15,6 +15,8 @@
 " * matchit: http://www.vim.org/scripts/script.php?script_id=39
 " * indent/python.vim: http://www.vim.org/scripts/script.php?script_id=974
 "     Set the preferred indent in .vimrc: au FileType python setlocal sw=4
+" * Detectindent: http://www.vim.org/scripts/script.php?script_id=1171
+"     Hook it up: autocmd BufReadPost * :DetectIndent
 "
 " * project: http://www.vim.org/scripts/script.php?script_id=69 (TODO: try out)
 " * indexer: http://www.vim.org/scripts/script.php?script_id=3221 (TODO: try out)
