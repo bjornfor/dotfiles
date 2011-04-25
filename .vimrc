@@ -288,6 +288,7 @@ def setPythonPath():
 EOF
 autocmd FileType python python setPythonPath()
 autocmd FileType python setlocal sw=4
+autocmd FileType python setlocal sts=4
 
 " :make invokes pylint and errors are directed to offending line.
 " TODO: try pylint/pyunit/python compilers
