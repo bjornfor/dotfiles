@@ -36,8 +36,9 @@ syntax on
 " one is found
 set tags+=tags;/
 
-"colorscheme desert
-set bg=light
+"set bg=light
+" Set colorscheme so CSApprox can fix up colors (*after* "set bg=...")
+colorscheme default
 
 set hidden	" hide abandoned buffers. This option removes the demand for buffers to be 'unmodified' when left. This is very handy when working with lots of buffers!
 "set ts=4	" tabstop, number of spaces for tab character, defaults to 8
