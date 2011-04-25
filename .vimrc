@@ -12,6 +12,7 @@
 " * surround: http://www.vim.org/scripts/script.php?script_id=1697
 " * snipMate: http://www.vim.org/scripts/script.php?script_id=2540
 " * EasyGrep: http://www.vim.org/scripts/script.php?script_id=2438
+" * matchit: http://www.vim.org/scripts/script.php?script_id=39
 "
 " * project: http://www.vim.org/scripts/script.php?script_id=69 (TODO: try out)
 " * indexer: http://www.vim.org/scripts/script.php?script_id=3221 (TODO: try out)
