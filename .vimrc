@@ -90,10 +90,6 @@ set directory-=.
 "autocmd BufWinLeave *.[ch] mkview
 "autocmd BufWinEnter *.[ch] silent loadview
 
-" eases Python work: :make invokes python and errors are directed to offending
-" line
-"autocmd BufNewFile,BufRead *.py compiler python
-
 " let vim recognize Sup (MUA) temp files
 autocmd BufRead *sup.*-mode set ft=mail
 
@@ -286,6 +282,10 @@ def setPythonPath():
             vim.command(r"setlocal path+=%s" % (p.replace(" ", r"\ ")))
 EOF
 autocmd FileType python python setPythonPath()
+
+" :make invokes pylint and errors are directed to offending line.
+" TODO: try pylint/pyunit/python compilers
+au FileType python compiler pylint
 
 " Create a Python tags file:
 "   ctags -R -f ~/.vim/tags/python.ctags /usr/lib/python2.6
