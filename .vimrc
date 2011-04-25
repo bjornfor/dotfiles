@@ -104,6 +104,23 @@ autocmd BufRead *sup.*-mode set ft=mail
 "   --extra=+q
 nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>\|:!cscope -R -b<cr>\|:cs r<cr><cr>
 
+" Code completion tips (from http://vim.wikia.com/wiki/VimTip1608):
+"
+" mkdir ~/.vim/tags
+" cd ~/.vim/tags
+" ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f cpp /path/to/cpp_src  # or /usr/include/c++/VERSION/ ?
+" ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f gl /usr/include/GL/   # for OpenGL
+" ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f sdl /usr/include/SDL/ # for SDL
+" ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f qt /usr/include/Qt* # for Qt
+" ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f directfb /usr/include/directfb* # for directfb
+"
+" load the needed tag files
+"set tags+=~/.vim/tags/cpp
+"set tags+=~/.vim/tags/gl
+"set tags+=~/.vim/tags/sdl
+"set tags+=~/.vim/tags/qt
+"set tags+=~/.vim/tags/directfb
+
 " toggle invisible chars
 noremap ,i :set list!<cr>
 
@@ -219,6 +236,22 @@ map ,b :FufBuffer<cr>
 "endfunction
 "
 "imap <Tab> <C-R>=TabWrapperRope()<CR>
+
+"" OmniCppComplete http://www.vim.org/scripts/script.php?script_id=1520
+"let OmniCpp_NamespaceSearch = 1
+"let OmniCpp_GlobalScopeSearch = 1
+"let OmniCpp_ShowAccess = 1
+"let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+"let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+"let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+"let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+"let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+"" automatically open and close the popup menu / preview window
+"au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+"set completeopt=menuone,menu,longest,preview
+
+" AutoTag
+"let g:autotagCtagsCmd="ctags --c++-kinds=+p --c-kinds=+l --fields=+iaS --extra=+q"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
