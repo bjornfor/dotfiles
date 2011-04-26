@@ -276,6 +276,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python stuff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("python")
 python << EOF
 def setPythonPath():
     import os
@@ -287,6 +288,8 @@ def setPythonPath():
             vim.command(r"setlocal path+=%s" % (p.replace(" ", r"\ ")))
 EOF
 autocmd FileType python python setPythonPath()
+endif " has("python")
+
 autocmd FileType python setlocal sw=4 sts=4
 
 " :make invokes pylint and errors are directed to offending line.
@@ -305,6 +308,7 @@ let g:pylint_cwindow = 0
 
 
 " 'Find' command from http://vim.wikia.com/wiki/Find_files_in_subdirectories
+if has("python")
 python << EOL
 import vim
 
@@ -323,3 +327,4 @@ def Finder(*args):
     vim.command('botright copen')
 EOL
 command! -nargs=1 Find :py Finder("<args>")
+endif " has("python")
