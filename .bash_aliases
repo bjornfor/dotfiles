@@ -24,6 +24,9 @@ alias aup='sudo aptitude update; sudo aptitude safe-upgrade'
 alias xo=xdg-open
 # copy with a progress bar
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
+# untested rsync aliases (copy/move with progress bar)
+alias rsynccopy="rsync --partial --progress --append --rsh=ssh -r -h "
+alias rsyncmove="rsync --partial --progress --append --rsh=ssh -r -h --remove-sent-files"
 
 alias sshtunnel="ssh -ND 4711 -v -p 8383 bjornfor@forsman.isa-geek.org"
 
