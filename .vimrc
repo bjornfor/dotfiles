@@ -255,6 +255,10 @@ map ,b :FufBuffer<cr>
 " AutoTag
 "let g:autotagCtagsCmd="ctags --c++-kinds=+p --c-kinds=+l --fields=+iaS --extra=+q"
 
+" clang_complete
+let g:clang_complete_copen=1
+let g:clang_snippets=1
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
