@@ -6,6 +6,7 @@
 " * clang_complete: http://www.vim.org/scripts/script.php?script_id=3302
 "                   https://github.com/Rip-Rip/clang_complete
 " * omnicppcomplete: http://www.vim.org/scripts/script.php?script_id=1520
+"     This plugin conflicts with clang_complete.
 " * taglist: http://www.vim.org/scripts/script.php?script_id=273
 " * bufexplorer: http://www.vim.org/scripts/script.php?script_id=42
 " * NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
