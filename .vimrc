@@ -143,11 +143,6 @@ nmap gs :%s/
 map ,m :make<cr>
 "nmap <C-a> ggVG	" ctrl+a is normally used for incrementing the number under the cursor
 
-" easy .vimrc access
-nmap ,s :source $HOME/.vimrc<cr>
-nmap ,e :edit $HOME/.vimrc<cr>
-"autocmd BufWritePost .vimrc source % " automatically source .vimrc when written - DOES NOT WORK!
-
 " Insert new line without going into insert mode
 "nmap <S-Enter> O<ESC>		" insert above
 "nmap <Enter> o<ESC>		" insert below
@@ -199,13 +194,25 @@ nmap <Leader>hof :%!xxd -r<cr>
 " OS Specific
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if has("mac")
-	" settings for mac goes here
+if has("unix")
+	" easy .vimrc access
+	nmap ,s :source $HOME/.vimrc<cr>
+	nmap ,e :edit $HOME/.vimrc<cr>
+	" source .vimrc when written - FIXME: messes up colorscheme!
+	"autocmd BufWritePost .vimrc source %
 endif
 
-if has ("gui_win32")
+if has("gui_win32")
 	" settings for windows goes here
 	set backspace=indent,eol,start
+
+	" easy _vimrc access
+	nmap ,s :source $HOME/_vimrc<cr>
+	nmap ,e :edit $HOME/_vimrc<cr>
+endif
+
+if has("mac")
+	" settings for mac goes here
 endif
 
 
