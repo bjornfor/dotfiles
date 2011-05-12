@@ -133,6 +133,9 @@ order = 9
 [projects/learning-qt]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-qt.git
 
+[projects/qt_serial_port]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/qt_serial_port.git
+
 # this is a Mercurial repo
 #[projects/life-simulator]
 #checkout = git clone /media/raid/bjornfor/?????????
