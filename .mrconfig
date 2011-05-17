@@ -34,6 +34,10 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/snoradar.git
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/email.git
 order = 20
 
+# origin: svn co https://blstools.svn.sourceforge.net/svnroot/blstools blstools
+[projects/blstools]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/blstools.git
+
 [projects/finance]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/finance.git
 
