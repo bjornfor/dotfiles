@@ -1,0 +1,10 @@
+"1.0b6 (created: 2011/03/09 09:25:18)
+
+loadplugins '\.(js|penta)$'
+group user
+map -modes=n,v <C-l> <Pass>
+map -modes=n,v j -builtin 2j
+map -modes=n,v k -builtin 2k
+set guioptions=bCrsmT
+
+" vim: set ft=pentadactyl:

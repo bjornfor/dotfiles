@@ -22,6 +22,7 @@ dotfiles="
 .xmonad
 .zshrc
 .newsbeuter
+.pentadactylrc
 "
 
 ##for dotfile in $(ls -1 .*); do
