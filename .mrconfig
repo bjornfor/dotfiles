@@ -21,6 +21,9 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.txt-cli.g
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/documents.git
 order = 15
 
+[projects/learning-wt]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-wt.git
+
 [projects/dvr-control]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dvr-control.git
 
