@@ -276,6 +276,7 @@ map ,b :FufBuffer<cr>
 
 " clang_complete
 let g:clang_complete_copen=1
+let g:clang_complete_auto=0
 let g:clang_snippets=1
 
 
