@@ -20,6 +20,8 @@
 "     Hook it up: autocmd BufReadPost * :DetectIndent
 " * The NERD Commenter: http://www.vim.org/scripts/script.php?script_id=1218
 "                       https://github.com/scrooloose/nerdcommenter
+" * SuperTab: http://www.vim.org/scripts/script.php?script_id=1643
+"     This is a continuation of the original SuperTab script (script_id=182).
 "
 " * project: http://www.vim.org/scripts/script.php?script_id=69 (TODO: try out)
 " * indexer: http://www.vim.org/scripts/script.php?script_id=3221 (TODO: try out)
