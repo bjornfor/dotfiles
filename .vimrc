@@ -95,7 +95,7 @@ set dictionary+=/usr/share/dict/words
 set thesaurus+=~/.mthesaur.txt
 
 " see ':help directory' and ':help swap-file'
-set directory-=.
+"set directory-=.
 
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
