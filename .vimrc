@@ -31,6 +31,8 @@
 "  $ vim-addons install asciidoc bufexplorer detectindent git-commit matchit \
 "    omnicppcomplete project python-indent surround taglist utl vcscommand \
 "    vimoutliner
+"
+" Great source of Vim tips: http://www.rayninfo.co.uk/vimtips.html
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
