@@ -27,6 +27,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "asciidoc",
 			\ "fugitive",
 			\ "FuzzyFinder",
+			\ "speeddating",
 			\ "CSApprox"])
 " Plugin notes:
 " * OmniCppComplete conflicts with clang_complete
