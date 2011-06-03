@@ -46,6 +46,9 @@ syntax on
 " one is found
 set tags+=tags;/
 
+" leader is default '\', but it's difficult to reach
+let mapleader = ","
+
 "set bg=light
 " Set colorscheme so CSApprox can fix up colors (*after* "set bg=...")
 colorscheme default
@@ -199,8 +202,6 @@ vnoremap Q gq
 nmap <Leader>hon :%!xxd<cr>
 nmap <Leader>hof :%!xxd -r<cr>
 
-" leader is default '\', but it's difficult to reach
-"let mapleader = ","
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
