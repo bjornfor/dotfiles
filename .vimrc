@@ -26,6 +26,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "SuperTab",
 			\ "asciidoc",
 			\ "fugitive",
+			\ "FuzzyFinder",
 			\ "CSApprox"])
 " Plugin notes:
 " * OmniCppComplete conflicts with clang_complete
