@@ -132,7 +132,7 @@ nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<C
 "set tags+=~/.vim/tags/directfb
 
 " toggle invisible chars
-noremap ,i :set list!<cr>
+noremap <Leader>i :set list!<cr>
 
 " Bash like keys for the command line
 cnoremap <C-A> <Home>
@@ -150,7 +150,7 @@ nmap <C-p> :bp<cr>
 " lets map them to gs...
 nmap gs :%s/
 
-map ,m :w<cr>:make<cr>
+map <Leader>m :w<cr>:make<cr>
 "nmap <C-a> ggVG	" ctrl+a is normally used for incrementing the number under the cursor
 
 " Insert new line without going into insert mode
@@ -218,8 +218,8 @@ endif
 
 if has("unix")
 	" easy .vimrc access
-	nmap ,s :source $HOME/.vimrc<cr>
-	nmap ,e :edit $HOME/.vimrc<cr>
+	nmap <Leader>s :source $HOME/.vimrc<cr>
+	nmap <Leader>e :edit $HOME/.vimrc<cr>
 	" source .vimrc when written - FIXME: messes up colorscheme!
 	"autocmd BufWritePost .vimrc source %
 endif
@@ -229,8 +229,8 @@ if has("gui_win32")
 	set backspace=indent,eol,start
 
 	" easy _vimrc access
-	nmap ,s :source $HOME/_vimrc<cr>
-	nmap ,e :edit $HOME/_vimrc<cr>
+	nmap <Leader>s :source $HOME/_vimrc<cr>
+	nmap <Leader>e :edit $HOME/_vimrc<cr>
 endif
 
 if has("mac")
@@ -252,8 +252,8 @@ endif
 nnoremap <silent> T :TlistToggle<CR>
 
 " FuzzyFinder http://www.vim.org/scripts/script.php?script_id=1984
-map ,f :FufFile<cr>
-map ,b :FufBuffer<cr>
+map <Leader>f :FufFile<cr>
+map <Leader>b :FufBuffer<cr>
 
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufRead *.txt set ft=asciidoc
