@@ -249,7 +249,7 @@ if &term =~ '^\(xterm\|screen\|screen-bce\)$'
 endif
 
 " easy mappings for the taglist plugin (vim-addons install taglist)
-nnoremap <silent> T :TlistToggle<CR>
+nnoremap <silent> <Leader>t :TlistToggle<CR>
 
 " FuzzyFinder http://www.vim.org/scripts/script.php?script_id=1984
 map <Leader>f :FufFile<cr>
