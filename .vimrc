@@ -24,6 +24,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "The_NERD_tree",
 			\ "The_NERD_Commenter",
 			\ "SuperTab_continued.",
+			\ "snipMate",
 			\ "asciidoc",
 			\ "fugitive",
 			\ "FuzzyFinder",
@@ -33,6 +34,10 @@ call vam#ActivateAddons(["AutoTag",
 " Plugin notes:
 " * OmniCppComplete conflicts with clang_complete
 " * DetectIndent must be hooked up: autocmd BufReadPost * :DetectIndent
+" * snipMate messes somewhat with autocomplete (<c-o> and <c-u>) so
+"   that multiple TAB keys do not cycle through the list. One can still use
+"   <c-n>/<c-p> though...
+"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
