@@ -282,7 +282,7 @@ map <Leader>b :FufBuffer<cr>
 "" automatically open and close the popup menu / preview window
 "au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 "set completeopt=menuone,menu,longest,preview
-set completeopt-=preview
+set completeopt=menuone
 
 " AutoTag
 "let g:autotagCtagsCmd="ctags --c++-kinds=+p --c-kinds=+l --fields=+iaS --extra=+q"
