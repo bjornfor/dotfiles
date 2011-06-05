@@ -202,7 +202,7 @@ vnoremap Q gq
 nmap <Leader>hon :%!xxd<cr>
 nmap <Leader>hof :%!xxd -r<cr>
 
-map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <Leader>d :NERDTreeToggle<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
