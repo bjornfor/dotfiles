@@ -5,7 +5,7 @@
 "   http://www.vim.org/scripts/script.php?script_id=2905
 "   https://github.com/MarcWeber/vim-addon-manager
 "
-" Similar tools: vimana, pathogen
+" Similar tools: vimana, pathogen, vundle, :h GLVS (built-in)
 "
 " Great source of Vim tips: http://www.rayninfo.co.uk/vimtips.html
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
