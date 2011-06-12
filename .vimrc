@@ -1,8 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" My .vimrc file v0.3
+" My .vimrc file v0.4
 "
-" Plugins are managed with vim-addon-manager. Get it from vim.org or github:
-"   http://www.vim.org/scripts/script.php?script_id=2905
+" Plugins are managed with vim-addon-manager:
 "   https://github.com/MarcWeber/vim-addon-manager
 "
 " Similar tools: vimana, pathogen, vundle, :h GLVS (built-in)
@@ -10,7 +9,19 @@
 " Great source of Vim tips: http://www.rayninfo.co.uk/vimtips.html
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Configuration for vim-addon-manager
+if !filereadable(expand("~/vim-addons/vim-addon-manager/vim-addon-manager-addon-info.txt"))
+	echo "vim-addon-manager not found. Installing it..."
+	if !isdirectory(expand("~/vim-addons/vim-addon-manager/"))
+		call mkdir(expand("~/vim-addons/vim-addon-manager"), "p")
+	endif
+	cd ~/vim-addons/vim-addon-manager
+	" Get VAM with wget and tar
+	call system("wget -O- https://github.com/MarcWeber/vim-addon-manager/tarball/master | tar --strip-components=1 -xzvf -")
+	" or with git
+	"cd ~/vim-addons
+	"call system("git clone git://github.com/MarcWeber/vim-addon-manager.git")
+endif
+
 set runtimepath+=$HOME/vim-addons/vim-addon-manager
 call vam#ActivateAddons(["AutoTag",
 			\ "clang_complete",
