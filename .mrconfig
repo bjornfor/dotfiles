@@ -24,6 +24,9 @@ order = 15
 [projects/learning-wt]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-wt.git
 
+[projects/novelda_radarlib2]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/novelda_radarlib2.git
+
 [projects/dvr-control]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dvr-control.git
 
