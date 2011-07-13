@@ -10,6 +10,7 @@ dotfiles="
 .bash_aliases
 .ctags
 .gitconfig
+.gdbinit
 .hgrc
 .mrconfig
 .muttrc
