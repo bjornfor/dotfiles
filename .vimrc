@@ -25,6 +25,7 @@ endif
 set runtimepath+=$HOME/vim-addons/vim-addon-manager
 call vam#ActivateAddons(["AutoTag",
 			\ "clang_complete",
+			\ "cscope_macros",
 			\ "taglist-plus",
 			\ "bufexplorer.zip",
 			\ "surround",
