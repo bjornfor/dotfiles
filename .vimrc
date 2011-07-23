@@ -108,6 +108,7 @@ set smartcase   " only care about case if search word uses upper case (use with 
 set scrolloff=1
 set visualbell
 
+" 'sudo apt-get install wnorwegian' for /usr/share/dict/bokmaal
 set dictionary+=/usr/share/dict/words
 " Get mthesaur.txt:
 "   wget http://www.gutenberg.org/dirs/etext02/mthes10.zip
