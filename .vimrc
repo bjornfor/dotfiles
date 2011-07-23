@@ -224,6 +224,7 @@ nmap <Leader>hof :%!xxd -r<cr>
 map <Leader>d :NERDTreeToggle<CR>
 
 autocmd FileType haskell map <buffer> <f5> :update<cr>:!runghc %<cr>
+autocmd FileType haskell setlocal sw=4 sts=4
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GVim stuff
