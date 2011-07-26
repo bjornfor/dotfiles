@@ -86,6 +86,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 #export PS1="\W $ "
 #export PS1="\[\033[1;30m\][\[\033[1;34m\]\u\[\033[1;30m\]@\[\033[0;35m\]\h\[\033[1;30m\]] \[\033[0;37m\]\W \[\033[1;30m\]\$\[\033[0m\] "
 
+export PS1='\u@\h:\w$(__git_ps1 " [git::%s]")$ '
 
 export EDITOR=vim
 export BROWSER=firefox
