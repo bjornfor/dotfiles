@@ -88,6 +88,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 export PS1='\u@\h:\w$(__git_ps1 " [git::%s]")$ '
 
+export CDPATH=~:~/projects
+
 export EDITOR=vim
 export BROWSER=firefox
 
