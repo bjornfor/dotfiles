@@ -155,6 +155,8 @@ nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<C
 " toggle invisible chars
 noremap <Leader>i :set list!<cr>
 
+nnoremap <leader><space> :noh<cr>
+
 " Bash like keys for the command line
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
