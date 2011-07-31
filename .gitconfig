@@ -5,6 +5,7 @@
 	diff = auto
 	status = auto
 	branch = auto
+	interactive = auto
 [alias]
 	st = status
 	df = diff
