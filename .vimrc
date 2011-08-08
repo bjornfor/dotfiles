@@ -30,6 +30,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "taglist-plus",
 			\ "bufexplorer.zip",
 			\ "surround",
+			\ "javacomplete",
 			\ "EasyGrep",
 			\ "matchit.zip",
 			\ "ManPageView",
@@ -230,6 +231,9 @@ map <Leader>d :NERDTreeToggle<CR>
 
 autocmd FileType haskell map <buffer> <f5> :update<cr>:!runghc %<cr>
 autocmd FileType haskell setlocal sw=4 sts=4
+
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GVim stuff
