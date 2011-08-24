@@ -104,7 +104,7 @@ set laststatus=2 "always show status bar/line
 " joinspaces: use two spaces after '.' when joining a line (or not: nojs)
 set nojs
 set modeline " read modelines
-set cursorline	" highlight the line the cursor is on
+"set cursorline	" highlight the line the cursor is on
 set hlsearch    " highlight search. Turn off with :noh{lsearch}
 set incsearch   " incremental search, i.e. search while typing
 set ic          " ignore case in searches
