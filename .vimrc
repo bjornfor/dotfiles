@@ -235,6 +235,8 @@ autocmd FileType haskell setlocal sw=4 sts=4
 
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 
+autocmd FileType python map <buffer> <f5> :update<cr>:!python %<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GVim stuff
