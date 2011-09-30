@@ -45,6 +45,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "FuzzyFinder",
 			\ "speeddating",
 			\ "repeat",
+			\ "wmgraphviz",
 			\ "Mustang2",
 			\ "CSApprox"])
 " Plugin notes:
