@@ -16,10 +16,10 @@ if !filereadable(expand("~/vim-addons/vim-addon-manager/vim-addon-manager-addon-
 	endif
 	cd ~/vim-addons/vim-addon-manager
 	" Get VAM with wget and tar
-	call system("wget -O- https://github.com/MarcWeber/vim-addon-manager/tarball/master | tar --strip-components=1 -xzvf -")
+	"call system("wget -O- https://github.com/MarcWeber/vim-addon-manager/tarball/master | tar --strip-components=1 -xzvf -")
 	" or with git
-	"cd ~/vim-addons
-	"call system("git clone git://github.com/MarcWeber/vim-addon-manager.git")
+	cd ~/vim-addons
+	call system("git clone git://github.com/MarcWeber/vim-addon-manager.git")
 endif
 
 set runtimepath+=$HOME/vim-addons/vim-addon-manager
