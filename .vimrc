@@ -238,6 +238,8 @@ autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 
 autocmd FileType python map <buffer> <f5> :update<cr>:!python %<cr>
 
+autocmd FileType html setlocal ts=4
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GVim stuff
