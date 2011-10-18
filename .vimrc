@@ -373,7 +373,7 @@ autocmd FileType python setlocal sw=4 sts=4
 
 " :make invokes pylint and errors are directed to offending line.
 " TODO: try pylint/pyunit/python compilers
-au FileType python compiler pylint
+"au FileType python compiler pylint
 
 " Change pylint behaviour (see pylint.vim for doc):
 "let g:pylint_onwrite = 0
