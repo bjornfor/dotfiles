@@ -234,6 +234,12 @@ nmap <Leader>hof :%!xxd -r<cr>
 
 map <Leader>d :NERDTreeToggle<CR>
 
+" This is for working across multiple xterms and/or gvims
+map ;w :w! ~/.vimxfer<CR>
+map ;r :r ~/.vimxfer<CR>
+" Append
+map ;a :w! >>~/.vimxfer<CR>
+
 autocmd FileType haskell map <buffer> <f5> :update<cr>:!runghc %<cr>
 autocmd FileType haskell setlocal sw=4 sts=4
 
