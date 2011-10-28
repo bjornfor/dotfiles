@@ -168,6 +168,10 @@ cnoremap <C-E> <End>
 nmap <C-n> :bn<cr>
 nmap <C-p> :bp<cr>
 
+" search will center on the line it's found in
+map N Nzz
+map n nzz
+
 " <space> by default behaves like 'l', make it more useful
 "nmap <space> <C-f>		" scroll one screenful down
 "nmap <space> za		" toggle folds
