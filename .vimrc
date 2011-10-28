@@ -291,6 +291,9 @@ nnoremap <silent> <Leader>t :TlistToggle<CR>
 map <Leader>f :FufFile<cr>
 map <Leader>b :FufBuffer<cr>
 
+" (snipmate) see :h g:snips_author
+let g:snips_author = 'Bjørn Forsman'
+
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufRead *.txt set ft=asciidoc
 
