@@ -22,3 +22,6 @@
 	#numbered = auto
 [sendemail]
 	smtpserver = /usr/bin/msmtp
+
+[diff "word"]
+	textconv = antiword
