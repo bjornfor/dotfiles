@@ -24,6 +24,7 @@ dotfiles="
 .zshrc
 .newsbeuter
 .pentadactylrc
+.vimperatorrc
 "
 
 ##for dotfile in $(ls -1 .*); do
