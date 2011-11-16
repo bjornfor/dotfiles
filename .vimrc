@@ -41,6 +41,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "javacomplete",
 			\ "matchit.zip",
 			\ "repeat",
+			\ "SingleCompile",
 			\ "snipmate-snippets",
 			\ "speeddating",
 			\ "surround",
@@ -136,6 +137,10 @@ autocmd BufRead *sup.*-mode set ft=mail
 "   --fields=+a
 "   --extra=+q
 nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>\|:!cscope -R -b<cr>\|:cs r<cr><cr>
+
+" SingleCompile plugin
+nmap <F9> :SCCompile<cr>
+nmap <F10> :SCCompileRun<cr>
 
 " Code completion tips (from http://vim.wikia.com/wiki/VimTip1608):
 "
