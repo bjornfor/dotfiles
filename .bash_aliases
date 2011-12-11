@@ -35,6 +35,9 @@ alias rsyncmove="rsync --partial --progress --append --rsh=ssh -r -h --remove-se
 
 alias sshtunnel="ssh -ND 4711 -v -p 8383 bjornfor@forsman.isa-geek.org"
 
+# for Red Hat based distros
+test -e /usr/bin/vimx && alias vim='/usr/bin/vimx'
+
 # Compress the cd, ls -l series of commands.
 function cl() {
    if [ $# = 0 ]; then
