@@ -81,6 +81,7 @@ set showmode	" status line displays 'insert' or 'visual' when not in normal mode
 set showcmd
 set undofile
 set wildmenu	" when tab'ing on the vim command line, a menu appear just above the command line
+set clipboard=unnamedplus
 "To have the completion behave similarly to a shell, i.e. complete only up to
 "the point of ambiguity (while still showing you what your options are), also
 "add the following:
