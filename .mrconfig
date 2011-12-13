@@ -33,6 +33,9 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dvr-control.gi
 [projects/skipper-iunit]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/skipper-iunit.git
 
+[projects/skipper_browser]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/skipper_browser.git
+
 [projects/snoradar]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/snoradar.git
 
