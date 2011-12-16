@@ -30,6 +30,9 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/novelda_radarl
 [projects/dvr-control]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/dvr-control.git
 
+[projects/sca-fasttracklogger-server]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/sca-fasttracklogger-server.git
+
 [projects/skipper-iunit]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/skipper-iunit.git
 
