@@ -67,6 +67,12 @@ ssh()
 	fi
 }
 
+genpasswd() {
+	local len=$1
+	test "$len" == "" && len=8
+	tr -dc "A-Za-z0-9" < /dev/urandom | head -c ${len} | xargs
+}
+
 #alias cdl='cl'
 # prevent annoying typo's
 #alias lc='cl'
