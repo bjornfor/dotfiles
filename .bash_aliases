@@ -25,7 +25,7 @@ alias a='sudo aptitude'
 alias as='aptitude search'
 alias ashow='apt-cache show'
 alias ain='sudo aptitude install'
-alias aup='sudo aptitude update; sudo aptitude safe-upgrade'
+alias aup='sudo aptitude update && sudo aptitude safe-upgrade'
 alias xo=xdg-open
 # copy with a progress bar
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
