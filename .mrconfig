@@ -21,6 +21,9 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/todo.txt-cli.g
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/documents.git
 order = 15
 
+[projects/kps-glmc-testutils]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/kps-glmc-testutils.git
+
 [projects/learning-wt]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-wt.git
 
