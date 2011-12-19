@@ -2,10 +2,7 @@
 	name = Bjørn Forsman
 	email = bjorn.forsman@gmail.com
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
+	ui = auto
 [alias]
 	st = status
 	df = diff
