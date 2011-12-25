@@ -49,6 +49,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "speeddating",
 			\ "surround",
 			\ "taglist-plus",
+			\ "vim-ruby",
 			\ "wmgraphviz"])
 " Plugin notes:
 " * OmniCppComplete conflicts with clang_complete
