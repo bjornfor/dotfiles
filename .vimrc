@@ -253,6 +253,8 @@ map ;a :w! >>~/.vimxfer<CR>
 autocmd FileType haskell map <buffer> <f5> :update<cr>:!runghc %<cr>
 autocmd FileType haskell setlocal sw=4 sts=4
 
+autocmd FileType ruby setlocal sw=2 sts=2 expandtab
+
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 
 autocmd FileType python map <buffer> <f5> :update<cr>:!python %<cr>
