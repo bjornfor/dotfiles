@@ -24,6 +24,9 @@ order = 15
 [projects/kps-glmc-testutils]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/kps-glmc-testutils.git
 
+[projects/kps-mos-scripts]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/kps-mos-scripts.git
+
 [projects/learning-wt]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/learning-wt.git
 
