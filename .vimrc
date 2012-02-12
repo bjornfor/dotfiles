@@ -24,6 +24,7 @@ endif
 
 set runtimepath+=$HOME/vim-addons/vim-addon-manager
 call vam#ActivateAddons(["AutoTag",
+			\ "CCTree",
 			\ "CSApprox",
 			\ "DetectIndent",
 			\ "EasyGrep",
