@@ -122,6 +122,9 @@ set smartcase   " only care about case if search word uses upper case (use with 
 set scrolloff=1
 set visualbell
 
+" fix for the annoying purple background "shining through" on ubuntu
+set ttyscroll=0
+
 " 'sudo apt-get install wnorwegian' for /usr/share/dict/bokmaal
 set dictionary+=/usr/share/dict/words
 " Get mthesaur.txt:
