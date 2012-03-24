@@ -1,5 +1,9 @@
 # .gdbinit
 
+# for freertos POSIX simulation:
+handle SIGUSR1 nostop noignore noprint
+handle SIG34 nostop noignore noprint
+
 set prompt [31m(gdb) [m
 
 # log gdb output (defaults to gdb.txt in current directory)
