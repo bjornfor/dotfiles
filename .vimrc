@@ -400,7 +400,7 @@ autocmd FileType python python setPythonPath()
 autocmd FileType python nmap <Leader>pdb oimport pdb; pdb.set_trace()<esc>^
 endif " has("python")
 
-autocmd FileType python setlocal sw=4 sts=4
+autocmd FileType python setlocal sw=4 sts=4 et
 
 " :make invokes pylint and errors are directed to offending line.
 " TODO: try pylint/pyunit/python compilers
