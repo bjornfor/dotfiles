@@ -234,9 +234,11 @@ map <C-l> <C-W>l
 "map <C-K> <C-W>k<C-W>_
 "set wmh=0
 
-"" from a forum
-ino jj <esc>
-cno jj <c-c>
+"" maps for jj/jk to act as escape
+inoremap jj <esc>
+cnoremap jj <c-c>
+inoremap jk <esc>
+cnoremap jk <c-c>
 ""For visual mode, just use "v" to toggle it on and off:
 "vno v <esc>
 
