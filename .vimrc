@@ -291,6 +291,7 @@ if has("unix")
 	nmap <Leader>e :edit $HOME/.vimrc<cr>
 	" source .vimrc when written - FIXME: messes up colorscheme!
 	"autocmd BufWritePost .vimrc source %
+	let g:clipbrdDefaultReg = '+'
 endif
 
 if has("gui_win32")
