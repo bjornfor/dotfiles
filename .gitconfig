@@ -1,10 +1,13 @@
 [user]
 	name = Bjørn Forsman
 	email = bjorn.forsman@gmail.com
+
 [core]
 	editor = vim
+
 [color]
 	ui = auto
+
 [alias]
 	st = status
 	df = diff
@@ -16,6 +19,7 @@
 	a = add
 	l = log
 	lga = log --graph --pretty=oneline --abbrev-commit --decorate --all
+
 [sendemail]
 	smtpserver = /usr/bin/msmtp
 
