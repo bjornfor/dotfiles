@@ -1,6 +1,8 @@
 [user]
 	name = Bjørn Forsman
 	email = bjorn.forsman@gmail.com
+[core]
+	editor = vim
 [color]
 	ui = auto
 [alias]
