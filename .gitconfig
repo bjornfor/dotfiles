@@ -13,6 +13,7 @@
 	f = fetch
 	a = add
 	l = log
+	lga = log --graph --pretty=oneline --abbrev-commit --decorate --all
 [sendemail]
 	smtpserver = /usr/bin/msmtp
 
