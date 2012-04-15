@@ -1,5 +1,7 @@
 # .gdbinit
 
+set print pretty
+
 # for freertos POSIX simulation:
 handle SIGUSR1 nostop noignore noprint
 handle SIG34 nostop noignore noprint
