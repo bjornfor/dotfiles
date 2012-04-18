@@ -155,8 +155,8 @@ autocmd BufRead *.bnf set ft=bnf
 nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>\|:!cscope -R -b<cr>\|:cs r<cr><cr>
 
 " SingleCompile plugin
-nmap <F9> :SCCompile<cr>
-nmap <F10> :SCCompileRun<cr>
+nmap <F8> :SCCompile<cr>
+nmap <F9> :SCCompileRun<cr>
 
 " Code completion tips (from http://vim.wikia.com/wiki/VimTip1608):
 "
