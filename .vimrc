@@ -24,6 +24,7 @@ endif
 
 set runtimepath+=$HOME/vim-addons/vim-addon-manager
 call vam#ActivateAddons(["AutoTag",
+			\ "bnf",
 			\ "CCTree",
 			\ "CSApprox",
 			\ "DetectIndent",
@@ -143,6 +144,8 @@ set thesaurus+=~/.mthesaur.txt
 
 " let vim recognize Sup (MUA) temp files
 autocmd BufRead *sup.*-mode set ft=mail
+
+autocmd BufRead *.bnf set ft=bnf
 
 " These options seem to be needed for extracting C structure member info
 " when used with local variables:
