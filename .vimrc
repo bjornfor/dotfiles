@@ -340,6 +340,9 @@ let g:snips_author = 'Bjørn Forsman'
 " instead of this (default):
 "   /*int foo=2;*/
 let NERDSpaceDelims = 1
+" toggle comments in visual mode with '*'
+vmap * <Leader>ci
+
 
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufRead *.txt set ft=asciidoc
