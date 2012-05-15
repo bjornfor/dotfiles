@@ -334,6 +334,13 @@ map <Leader>b :FufBuffer<cr>
 " (snipmate) see :h g:snips_author
 let g:snips_author = 'Bjørn Forsman'
 
+" NERDCommenter
+" Add (and remove) spaces inside comments so that we get this:
+"   /* int foo=2; */
+" instead of this (default):
+"   /*int foo=2;*/
+let NERDSpaceDelims = 1
+
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufRead *.txt set ft=asciidoc
 
