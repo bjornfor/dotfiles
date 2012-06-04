@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" My .vimrc file v0.4
+" Bjørn Forsman's .vimrc file v0.5
 "
 " Plugins are managed with vim-addon-manager:
 "   https://github.com/MarcWeber/vim-addon-manager
