@@ -173,3 +173,6 @@ checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/medontime-mdd.
 
 [projects/thermtech-friluftslader]
 checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/thermtech-friluftslader.git
+
+[projects/fgui]
+checkout = git clone ssh://timmons/media/raid/bjornfor/bare-repos/fgui.git
