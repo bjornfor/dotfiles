@@ -66,14 +66,14 @@ ssh()
 	if [[ "$2" == "" ]]; then
 		command ssh "$1" -Xt screen -aAdr -RR work bash
 	else
-		command ssh $@
+		command ssh "$@"
 	fi
 }
 
 genpasswd() {
-	local len=$1
+	local len="$1"
 	test "$len" == "" && len=8
-	tr -dc "A-Za-z0-9" < /dev/urandom | head -c ${len} | xargs
+	tr -dc "A-Za-z0-9" < /dev/urandom | head -c "$len" | xargs
 }
 
 #alias cdl='cl'
