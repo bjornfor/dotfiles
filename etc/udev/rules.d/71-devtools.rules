@@ -1,0 +1,15 @@
+# udev rules to let users in group "plugdev" access development tools
+#
+# NOTE: do "sudo service udev reload" after modifying udev rules
+
+# Atmel Corp. STK600 development board
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2106", GROUP="plugdev", MODE="0660"
+
+# Atmel Corp. JTAG ICE mkII
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2103", GROUP="plugdev", MODE="0660"
+
+# TinCanTools Flyswatter 2
+SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", GROUP="plugdev", MODE="0660"
+
+# Amontec JTAGkey2
+SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="cff8", GROUP="plugdev", MODE="0660"
