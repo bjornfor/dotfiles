@@ -13,3 +13,6 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", GROUP="plugde
 
 # Amontec JTAGkey2
 SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="cff8", GROUP="plugdev", MODE="0660"
+
+# STMicroelectronics ST-LINK/V2
+SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="3748", GROUP="plugdev", MODE="0660"
