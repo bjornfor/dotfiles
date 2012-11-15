@@ -2,6 +2,9 @@
 
 set print pretty
 
+# disable clumsy paging (use terminal scrollback buffer instead)
+set height 0
+
 # for freertos POSIX simulation:
 handle SIGUSR1 nostop noignore noprint
 handle SIG34 nostop noignore noprint
