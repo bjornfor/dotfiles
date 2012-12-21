@@ -224,8 +224,8 @@ inoremap <Nul> <C-x><C-o>
 "nmap <F6> :cn<cr>
 "nmap <F7> :tp<cr>
 "nmap <F8> :tn<cr>
-nmap <up> :cp<cr>
-nmap <down> :cn<cr>
+"nmap <up> :cp<cr>
+"nmap <down> :cn<cr>
 
 " make single-quote act as back-tick
 map ' `
