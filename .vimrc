@@ -421,7 +421,8 @@ def setPythonPath():
             vim.command(r"setlocal path+=%s" % (p.replace(" ", r"\ ")))
 EOF
 autocmd FileType python python setPythonPath()
-autocmd FileType python nmap <Leader>pdb oimport pdb; pdb.set_trace()<esc>^
+" ipdb is the IPython debugger: pip install ipdb
+autocmd FileType python nmap <Leader>pdb oimport ipdb; ipdb.set_trace()<esc>^
 endif " has("python")
 
 autocmd FileType python setlocal sw=4 sts=4 et
