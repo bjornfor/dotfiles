@@ -128,6 +128,11 @@ set smartcase   " only care about case if search word uses upper case (use with 
 set scrolloff=1
 set visualbell
 
+" This makes backspace behave like everyone expects it to. Needed on Windows
+" and some Linux distros.
+set backspace=indent,eol,start
+
+
 " fix for the annoying purple background "shining through" on ubuntu
 set ttyscroll=0
 
