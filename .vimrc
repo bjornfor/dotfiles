@@ -311,7 +311,6 @@ endif
 
 if has("gui_win32")
 	" settings for windows goes here
-	set backspace=indent,eol,start
 
 	" easy _vimrc access
 	nmap <Leader>s :source $HOME/_vimrc<cr>
