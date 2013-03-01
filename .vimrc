@@ -60,6 +60,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "speeddating",
 			\ "surround",
 			\ "taglist-plus",
+			\ "vim-addon-local-vimrc",
 			\ "vim-addon-nix",
 			\ "vim-ruby",
 			\ "wmgraphviz"])
