@@ -8,6 +8,7 @@ color =
 hgext.graphlog =
 rebase =
 purge =
+hgk =
 
 [defaults]
 # suppress noisy extdiff header message
