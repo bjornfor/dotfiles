@@ -160,6 +160,8 @@ autocmd BufRead *sup.*-mode set ft=mail
 
 autocmd BufRead *.bnf set ft=bnf
 autocmd BufRead *.ebnf set ft=ebnf
+" .gv is the new GraphViz/dot filename extension
+autocmd BufRead *.gv set ft=dot
 
 " These options seem to be needed for extracting C structure member info
 " when used with local variables:
