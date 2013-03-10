@@ -158,12 +158,12 @@ set thesaurus+=~/.mthesaur.txt
 "autocmd BufWinEnter *.[ch] silent loadview
 
 " let vim recognize Sup (MUA) temp files
-autocmd BufRead *sup.*-mode set ft=mail
+autocmd BufNewFile,BufRead *sup.*-mode set ft=mail
 
-autocmd BufRead *.bnf set ft=bnf
-autocmd BufRead *.ebnf set ft=ebnf
+autocmd BufNewFile,BufRead *.bnf set ft=bnf
+autocmd BufNewFile,BufRead *.ebnf set ft=ebnf
 " .gv is the new GraphViz/dot filename extension
-autocmd BufRead *.gv set ft=dot
+autocmd BufNewFile,BufRead *.gv set ft=dot
 
 " These options seem to be needed for extracting C structure member info
 " when used with local variables:
@@ -365,7 +365,7 @@ vmap * <Leader>ci
 
 
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
-"autocmd BufRead *.txt set ft=asciidoc
+"autocmd BufNewFile,BufRead *.txt set ft=asciidoc
 
 " TODO: revisit rope/ropevim
 "let ropevim_vim_completion=1
