@@ -87,6 +87,8 @@ set tags+=tags;/
 
 " leader is default '\', but it's difficult to reach
 let mapleader = ","
+" wmgraphviz plugin uses <LocalLeader>, just set them to the same value
+let maplocalleader = ","
 
 "set bg=light
 " Set colorscheme so CSApprox can fix up colors (*after* "set bg=...")
