@@ -401,6 +401,10 @@ let g:clang_snippets=1
 " SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 
+" delimitMate
+" Disable for text files
+au Filetype text let b:loaded_delimitMate = 1
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
