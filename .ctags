@@ -2,3 +2,7 @@
 --c++-kinds=+pl
 --fields=+iaS
 --extra=+qf
+
+--langdef=NIX
+--langmap=NIX:.nix
+--regex-NIX=/\([^ \\t*]*\)[ \\t]*=/\\1/f/
