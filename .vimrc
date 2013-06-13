@@ -1,12 +1,17 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bjørn Forsman's .vimrc file v0.5
 "
-" Plugins are managed with vim-addon-manager:
+" Plugins are managed with vim-addon-manager (VAM):
 "   https://github.com/MarcWeber/vim-addon-manager
 "
 " Similar tools: vimana, pathogen, vundle, :h GLVS (built-in)
 "
 " Great source of Vim tips: http://www.rayninfo.co.uk/vimtips.html
+"
+" VAM downloader for Windows users (because installing git, mercurial, zip
+" commands can be tedious on Windows):
+"
+"   http://vam.mawercer.de/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if !filereadable(expand("~/vim-addons/vim-addon-manager/vim-addon-manager-addon-info.txt"))
