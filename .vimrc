@@ -236,7 +236,9 @@ inoremap <Nul> <C-x><C-o>
 "nmap <up> :cp<cr>
 "nmap <down> :cn<cr>
 
-" make single-quote act as back-tick
+" Make single-quote act as back-tick, because single-quote is easier to reach
+" on my keyboard. Now, typing '. gets us back to the last edit location, both
+" line *and column*.
 map ' `
 
 " scroll faster
