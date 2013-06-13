@@ -274,6 +274,8 @@ nnoremap Q gqap
 " v is for visual mode.
 vnoremap Q gq
 
+nmap Y y$
+
 " edit binary files (xxd is normally included in base installs)
 nmap <Leader>hon :%!xxd<cr>
 nmap <Leader>hof :%!xxd -r<cr>
