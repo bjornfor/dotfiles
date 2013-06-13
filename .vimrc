@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Bjørn Forsman's .vimrc file v0.5
+" Bjørn Forsman's .vimrc file v0.6
 "
 " Plugins are managed with vim-addon-manager (VAM):
 "   https://github.com/MarcWeber/vim-addon-manager
