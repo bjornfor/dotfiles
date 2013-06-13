@@ -23,6 +23,16 @@ if !filereadable(expand("~/vim-addons/vim-addon-manager/vim-addon-manager-addon-
 endif
 
 set runtimepath+=$HOME/vim-addons/vim-addon-manager
+
+" This block of code is useful if behind some proxy or firewall that blocks
+" the git port. It replaces git://github URLs with http://github.
+let g:vim_addon_manager = {'scms': {'git': {}}}
+fun! MyGitCheckout(repository, targetDir)
+	let a:repository.url = substitute(a:repository.url, '^git://github', 'http://github', '')
+	return vam#utils#RunShell('git clone --depth=1 $.url $p', a:repository, a:targetDir)
+endfun
+let g:vim_addon_manager.scms.git.clone=['MyGitCheckout']
+
 call vam#ActivateAddons(["AutoTag",
 			\ "asciidoc",
 			\ "bnf",
