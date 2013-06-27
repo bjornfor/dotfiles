@@ -26,5 +26,6 @@
 
 [diff "word"]
 	textconv = antiword
+
 [push]
 	default = simple
