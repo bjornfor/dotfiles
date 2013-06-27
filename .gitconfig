@@ -19,6 +19,7 @@
 	a = add
 	l = log
 	lga = log --graph --pretty=oneline --abbrev-commit --decorate --all
+	rup = remote update -p
 
 [sendemail]
 	smtpserver = /usr/bin/msmtp
