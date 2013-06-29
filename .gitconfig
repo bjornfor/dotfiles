@@ -20,6 +20,11 @@
 	l = log
 	lga = log --graph --pretty=oneline --abbrev-commit --decorate --all
 	rup = remote update -p
+	# Working with github pull-requests:
+        #   - git pullify  # just once
+        #   - git fetch
+        #   - git checkout pr/PULL_REQUEST_NUMBER
+	pullify = !git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
 
 [sendemail]
 	smtpserver = /usr/bin/msmtp
