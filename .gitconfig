@@ -25,6 +25,8 @@
         #   - git fetch
         #   - git checkout pr/PULL_REQUEST_NUMBER
 	pullify = !git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
+	incoming = log ..@{u}
+	outgoing = log @{u}..
 
 [sendemail]
 	smtpserver = /usr/bin/msmtp
