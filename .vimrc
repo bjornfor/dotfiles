@@ -14,20 +14,20 @@
 "   http://vam.mawercer.de/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if !filereadable(expand("~/vim-addons/vim-addon-manager/vim-addon-manager-addon-info.txt"))
+if !filereadable(expand("~/.vim-addons/vim-addon-manager/vim-addon-manager-addon-info.txt"))
 	echo "vim-addon-manager not found. Installing it..."
-	if !isdirectory(expand("~/vim-addons/vim-addon-manager/"))
-		call mkdir(expand("~/vim-addons/vim-addon-manager"), "p")
+	if !isdirectory(expand("~/.vim-addons/vim-addon-manager/"))
+		call mkdir(expand("~/.vim-addons/vim-addon-manager"), "p")
 	endif
-	cd ~/vim-addons/vim-addon-manager
+	cd ~/.vim-addons/vim-addon-manager
 	" Get VAM with wget and tar
 	"call system("wget -O- https://github.com/MarcWeber/vim-addon-manager/tarball/master | tar --strip-components=1 -xzvf -")
 	" or with git
-	cd ~/vim-addons
+	cd ~/.vim-addons
 	call system("git clone git://github.com/MarcWeber/vim-addon-manager.git")
 endif
 
-set runtimepath+=$HOME/vim-addons/vim-addon-manager
+set runtimepath+=$HOME/.vim-addons/vim-addon-manager
 
 " This block of code is useful if behind some proxy or firewall that blocks
 " the git port. It replaces git://github URLs with http://github.
