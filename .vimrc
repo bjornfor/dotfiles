@@ -335,6 +335,12 @@ if has("unix")
 	" source .vimrc when written - FIXME: messes up colorscheme!
 	"autocmd BufWritePost .vimrc source %
 	let g:clipbrdDefaultReg = '+'
+
+	for line in readfile('/etc/os-release', '', 10)
+		if line =~ 'NAME=NixOS'
+			let g:clang_library_path = "/run/current-system/sw/lib/"
+		endif
+	endfor
 endif
 
 if has("gui_win32")
