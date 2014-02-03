@@ -14,7 +14,7 @@
 "   http://vam.mawercer.de/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if !filereadable(expand("~/.vim-addons/vim-addon-manager/vim-addon-manager-addon-info.txt"))
+if !filereadable(expand("~/.vim-addons/vim-addon-manager/addon-info.json"))
 	echo "vim-addon-manager not found. Installing it..."
 	if !isdirectory(expand("~/.vim-addons/vim-addon-manager/"))
 		call mkdir(expand("~/.vim-addons/vim-addon-manager"), "p")
