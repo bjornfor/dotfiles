@@ -160,6 +160,11 @@ set dictionary+=/usr/share/dict/words
 "   unzip mthes10.zip
 "   mv mthesaur.txt ~/.mthesaur.txt
 set thesaurus+=~/.mthesaur.txt
+" Vim integrated spell support:
+" :set[local] spell spelllang=nb   # will download spell files (to $HOME) if needed
+" :set[local] spell spelllang=en_us  # change language (and region)
+" :set[local] nospell  # turn off spelling (highlighting)
+" Type 'z=' when on a misspelled word to get suggestions
 
 " see ':help directory' and ':help swap-file'
 "set directory-=.
