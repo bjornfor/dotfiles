@@ -2,7 +2,8 @@
 
 bind generic J scroll-line-down
 bind generic K scroll-line-up
-set show-rev-graph = yes
+# "show-rev-graph" option is obsolete in tig 2.x (it's the default behaviour)
+#set show-rev-graph = yes
 
 ## these don't work
 #bind generic 1 Home
