@@ -118,4 +118,8 @@ export FONTCONFIG_FILE=/etc/fonts/fonts.conf
 ## Save and reload the history after each command finishes
 ##export PROMPT_COMMAND="history -a; history -r; $PROMPT_COMMAND"
 #export PROMPT_COMMAND="history -a; history -n"
-export PATH=$HOME/.nix-profile/bin:$HOME/.nix-profile/sbin:$PATH
+
+# Don't add duplicate ~/.nix-profile/bin to PATH on NixOS
+if [ "$(. /etc/os-release; echo $ID)" != nixos -a -d $HOME/.nix-profile/bin ]; then
+    export PATH=$HOME/.nix-profile/bin:$HOME/.nix-profile/sbin:$PATH
+fi
