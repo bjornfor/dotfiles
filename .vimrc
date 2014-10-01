@@ -42,7 +42,6 @@ call vam#ActivateAddons(["AutoTag",
 			\ "asciidoc",
 			\ "bnf",
 			\ "CCTree",
-			\ "clang_complete",
 			\ "CSApprox",
 			\ "cscope_macros",
 			\ "csv",
@@ -60,7 +59,6 @@ call vam#ActivateAddons(["AutoTag",
 			\ "indenthaskell",
 			\ "indentpython%3461",
 			\ "javacomplete",
-			\ "jedi-vim",
 			\ "matchit.zip",
 			\ "Mustang2",
 			\ "python_match",
@@ -69,7 +67,6 @@ call vam#ActivateAddons(["AutoTag",
 			\ "repeat",
 			\ "snipmate-snippets",
 			\ "speeddating",
-			\ "SuperTab%1643",
 			\ "surround",
 			\ "taglist-plus",
 			\ "The_NERD_Commenter",
@@ -79,7 +76,6 @@ call vam#ActivateAddons(["AutoTag",
 			\ "vim-ruby",
 			\ "wmgraphviz"])
 " Plugin notes:
-" * OmniCppComplete conflicts with clang_complete
 " * DetectIndent must be hooked up: autocmd BufReadPost * :DetectIndent
 " * snipMate messes somewhat with autocomplete (<c-o> and <c-u>) so
 "   that multiple TAB keys do not cycle through the list. One can still use
@@ -242,10 +238,6 @@ map <Leader>m :w<cr>:make<cr>
 "nmap <S-Enter> O<ESC>		" insert above
 "nmap <Enter> o<ESC>		" insert below
 
-" Easier omnicomplete mapping
-" <Nul> is Ctrl-Space
-inoremap <Nul> <C-x><C-o>
-
 " Easier navigation with C compilation errors, grep searches and tags.
 " Note: After finding the :cw command, I think there is not much use in
 " these mappings anymore...
@@ -341,12 +333,6 @@ if has("unix")
 	" source .vimrc when written - FIXME: messes up colorscheme!
 	"autocmd BufWritePost .vimrc source %
 	let g:clipbrdDefaultReg = '+'
-
-	for line in readfile('/etc/os-release', '', 10)
-		if line =~ 'NAME=NixOS'
-			let g:clang_library_path = "/run/current-system/sw/lib/"
-		endif
-	endfor
 endif
 
 if has("gui_win32")
@@ -408,15 +394,6 @@ autocmd BufNewFile,BufRead *.asciidoc setlocal ft=asciidoc
 "
 "imap <Tab> <C-R>=TabWrapperRope()<CR>
 
-"" OmniCppComplete http://www.vim.org/scripts/script.php?script_id=1520
-"let OmniCpp_NamespaceSearch = 1
-"let OmniCpp_GlobalScopeSearch = 1
-"let OmniCpp_ShowAccess = 1
-"let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
-"let OmniCpp_MayCompleteDot = 1 " autocomplete after .
-"let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
-"let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
-"let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 "" automatically open and close the popup menu / preview window
 "au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 "set completeopt=menuone,menu,longest,preview
@@ -424,14 +401,6 @@ set completeopt=menuone
 
 " AutoTag
 "let g:autotagCtagsCmd="ctags --c++-kinds=+p --c-kinds=+l --fields=+iaS --extra=+q"
-
-" clang_complete
-let g:clang_complete_copen=1
-let g:clang_complete_auto=0
-let g:clang_snippets=1
-
-" SuperTab
-let g:SuperTabDefaultCompletionType = "context"
 
 " delimitMate
 " Disable for text files
