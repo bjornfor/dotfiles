@@ -382,6 +382,8 @@ vmap * <Leader>ci
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufNewFile,BufRead *.txt set ft=asciidoc
 autocmd BufNewFile,BufRead *.asciidoc setlocal ft=asciidoc
+" RoboMachine is Robot Framework syntax
+autocmd BufNewFile,BufRead *.robomachine setlocal ft=robot
 
 " TODO: revisit rope/ropevim
 "let ropevim_vim_completion=1
