@@ -9,7 +9,7 @@
 [general]
 accounts = GMail
 maxsyncaccounts = 3
-ui = Noninteractive.Basic
+ui = basic
 
 [Account GMail]
 localrepository = MyLocal
@@ -39,3 +39,5 @@ nametrans = lambda s: s.replace('[','').replace(']','').replace(' ', '_')
 # trashfolder + spamfolder not tested yet
 #trashfolder = [Google Mail]/Bin
 #spamfolder = [Goolge Mail]/Spam
+# Necessary as of OfflineIMAP 6.5.4 (found it in Archlinux wiki)
+sslcacertfile = /etc/ssl/certs/ca-bundle.crt
