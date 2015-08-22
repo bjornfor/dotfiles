@@ -113,7 +113,7 @@ shopt -s histappend             # append to history, don't overwrite it
 # This is a fix for nixpkgs programs. They get broken fonts on non-NixOS
 # distros without this. Eelco says that this is a regression (it used to work
 # before).
-export FONTCONFIG_FILE=/etc/fonts/fonts.conf
+#export FONTCONFIG_FILE=/etc/fonts/fonts.conf
 
 ## Save and reload the history after each command finishes
 ##export PROMPT_COMMAND="history -a; history -r; $PROMPT_COMMAND"
