@@ -408,6 +408,8 @@ set completeopt=menuone
 " delimitMate
 " Disable for text files
 au Filetype text let b:loaded_delimitMate = 1
+" See 'help delimitMate_eol_marker'
+"au FileType c,cpp,java,perl let b:delimitMate_eol_marker = ";"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
