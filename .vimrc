@@ -108,6 +108,8 @@ set hidden	" hide abandoned buffers. This option removes the demand for buffers 
 set showmode	" status line displays 'insert' or 'visual' when not in normal mode
 set showcmd
 set undofile
+" WARNING: clipboard=unnamedplus causes ssh/screen to disconnect (segfault?) when
+" copying text.
 set clipboard=unnamedplus
 "set wildmenu	" when tab'ing on the vim command line, a menu appear just above the command line
 "To have the completion behave similarly to a shell, i.e. complete only up to
