@@ -65,7 +65,6 @@ call vam#ActivateAddons(["AutoTag",
 			\ "rails",
 			\ "repeat",
 			\ "robotframework-vim",
-			\ "snipmate-snippets",
 			\ "speeddating",
 			\ "surround",
 			\ "taglist-plus",
@@ -74,6 +73,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "vim-addon-local-vimrc",
 			\ "vim-addon-nix",
 			\ "vim-ruby",
+			\ "vim-snippets",
 			\ "wmgraphviz"])
 " Plugin notes:
 " * DetectIndent must be hooked up: autocmd BufReadPost * :DetectIndent
