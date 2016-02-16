@@ -50,7 +50,6 @@ call vam#ActivateAddons(["AutoTag",
 			\ "DrawIt",
 			\ "EasyGrep",
 			\ "ebnf",
-			\ "EvalSelection",
 			\ "fugitive",
 			\ "FuzzyFinder",
 			\ "Gundo",
@@ -75,6 +74,9 @@ call vam#ActivateAddons(["AutoTag",
 			\ "vim-ruby",
 			\ "vim-snippets",
 			\ "wmgraphviz"])
+" Commented out plugins:
+			 "EvalSelection",
+
 " Plugin notes:
 " * DetectIndent must be hooked up: autocmd BufReadPost * :DetectIndent
 " * snipMate messes somewhat with autocomplete (<c-o> and <c-u>) so
