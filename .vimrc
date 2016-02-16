@@ -151,7 +151,11 @@ set backspace=indent,eol,start
 
 
 " fix for the annoying purple background "shining through" on ubuntu
-set ttyscroll=0
+" Neovim doesn't have 'ttyscroll' ("E518: Unknown option: ttyscroll=0")
+if !has('nvim')
+	set ttyscroll=0
+endif
+
 
 " 'sudo apt-get install wnorwegian' for /usr/share/dict/bokmaal
 set dictionary+=/usr/share/dict/words
