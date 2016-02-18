@@ -110,6 +110,8 @@ export HISTSIZE=1000000         # big big history
 export HISTFILESIZE=$HISTSIZE
 shopt -s histappend             # append to history, don't overwrite it
 
+export LESS="--ignore-case"
+
 # This is a fix for nixpkgs programs. They get broken fonts on non-NixOS
 # distros without this. Eelco says that this is a regression (it used to work
 # before).
