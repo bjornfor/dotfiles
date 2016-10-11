@@ -25,7 +25,6 @@ alias a='sudo aptitude'
 # provide the same completion support for the 'a' alias as for the aptitude
 # command (taken from /etc/bash_completion.d/aptitude)
 complete -F _aptitude -o default a
-alias as='aptitude search'
 alias ashow='apt-cache show'
 alias ain='sudo aptitude install'
 alias aup='sudo aptitude update && sudo aptitude safe-upgrade'
