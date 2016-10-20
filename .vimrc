@@ -97,9 +97,9 @@ syntax on
 set tags+=tags;/
 
 " leader is default '\', but it's difficult to reach
-let mapleader = ","
+let mapleader = " "
 " wmgraphviz plugin uses <LocalLeader>, just set them to the same value
-let maplocalleader = ","
+let maplocalleader = " "
 
 colorscheme default
 set bg=light
