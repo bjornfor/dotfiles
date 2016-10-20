@@ -239,7 +239,7 @@ nmap <C-p> :bp<cr>
 " lets map them to gs...
 nmap gs :%s/
 
-map <Leader>m :w<cr>:make<cr>
+map <Leader>m :up<cr>:make<cr>
 "nmap <C-a> ggVG	" ctrl+a is normally used for incrementing the number under the cursor
 
 " Insert new line without going into insert mode
