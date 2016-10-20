@@ -300,7 +300,7 @@ nmap Y y$
 nmap <Leader>hon :%!xxd<cr>
 nmap <Leader>hof :%!xxd -r<cr>
 
-map <Leader>d :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeToggle<CR>
 
 " This is for working across multiple xterms and/or gvims
 map ;w :w! ~/.vimxfer<CR>
