@@ -277,13 +277,13 @@ map <C-l> <C-W>l
 "set wmh=0
 
 "" maps for jj/jk to act as escape
-inoremap jj <esc>
-cnoremap jj <c-c>
+"inoremap jj <esc>
+"cnoremap jj <c-c>
 inoremap jk <esc>
 cnoremap jk <c-c>
 " act the same if shift is pressed
-inoremap JJ <esc>
-cnoremap JJ <c-c>
+"inoremap JJ <esc>
+"cnoremap JJ <c-c>
 inoremap JK <esc>
 cnoremap JK <c-c>
 ""For visual mode, just use "v" to toggle it on and off:
