@@ -31,8 +31,10 @@
 	# "git serve" is from https://gist.github.com/datagrok/5080545
 	serve = daemon --verbose --export-all --base-path=.git --reuseaddr --strict-paths .git/
 
-[sendemail]
-	smtpserver = /usr/bin/msmtp
+# Moved to /etc/gitconfig for my NixOS machines.
+# TODO: Suggest to upstream (git) to use $PATH lookup.
+#[sendemail]
+#	smtpserver = /run/current-system/sw/bin/msmtp
 
 [diff "word"]
 	textconv = antiword
