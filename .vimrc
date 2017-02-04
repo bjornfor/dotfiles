@@ -302,6 +302,8 @@ nmap <Leader>hof :%!xxd -r<cr>
 
 map <Leader>n :NERDTreeToggle<CR>
 
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<cr>
+
 " This is for working across multiple xterms and/or gvims
 map <Leader>w :w! ~/.vimxfer<CR>
 map <Leader>r :r ~/.vimxfer<CR>
