@@ -321,7 +321,7 @@ autocmd FileType python map <buffer> <f5> :update<cr>:!python %<cr>
 
 autocmd FileType html setlocal ts=4 sw=4
 autocmd FileType xhtml setlocal ts=4 sw=4
-autocmd FileType nix setlocal sw=2 sts=2 expandtab
+autocmd FileType nix setlocal sw=2 sts=2 expandtab iskeyword+=-
 autocmd FileType robot setlocal sw=4 sts=4 expandtab
 
 
