@@ -171,7 +171,7 @@ set thesaurus+=~/.mthesaur.txt
 " Type 'z=' when on a misspelled word to get suggestions
 
 " see ':help directory' and ':help swap-file'
-"set directory-=.
+set directory-=.
 
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
