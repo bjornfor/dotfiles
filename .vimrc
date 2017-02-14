@@ -170,8 +170,22 @@ set thesaurus+=~/.mthesaur.txt
 " :set[local] nospell  # turn off spelling (highlighting)
 " Type 'z=' when on a misspelled word to get suggestions
 
-" see ':help directory' and ':help swap-file'
-set directory-=.
+" Direct backup, swap and undo files away from $PWD. Use trailing '//' to
+" ensure no filename conflict; Vim creates files where '%' is used in place of
+" the directory separator.
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
+" Create the above directories if needed
+if !isdirectory(expand("~/.vim/backup"))
+	call mkdir(expand("~/.vim/backup"), "p")
+endif
+if !isdirectory(expand("~/.vim/swap"))
+	call mkdir(expand("~/.vim/swap"), "p")
+endif
+if !isdirectory(expand("~/.vim/undo"))
+	call mkdir(expand("~/.vim/undo"), "p")
+endif
 
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
 
