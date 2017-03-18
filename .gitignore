@@ -1,3 +1,5 @@
 # .gitignore
 *~
+.*.un~
 .*.swp
+*.pyc
