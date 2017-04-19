@@ -93,6 +93,9 @@ alias gtd='vim ~/raid/projects/vim-wiki/index.txt'
 # (this alias is actually in .bashrc in Ubuntu 10.10)
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1| sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+alias nix-shell-callPackage="nix-shell -E '(import <nixpkgs> {}).callPackage ./. {}'"
+alias nix-build-callPackage="nix-build -E '(import <nixpkgs> {}).callPackage ./. {}'"
+
 #export PS1="\[\033[1;30m\]\[\033[1;34m\]\W\[\033[1;30m\] $ "
 #export PS1="\W $ "
 #export PS1="\[\033[1;30m\][\[\033[1;34m\]\u\[\033[1;30m\]@\[\033[0;35m\]\h\[\033[1;30m\]] \[\033[0;37m\]\W \[\033[1;30m\]\$\[\033[0m\] "
