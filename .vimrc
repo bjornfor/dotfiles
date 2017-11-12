@@ -162,6 +162,11 @@ if !has('nvim')
 	set ttyscroll=0
 endif
 
+" Use ripgrep if available (it's fast)
+if executable("rg")
+  set grepprg=rg\ --vimgrep
+  set grepformat^=%f:%l:%c:%m
+endif
 
 " 'sudo apt-get install wnorwegian' for /usr/share/dict/bokmaal
 set dictionary+=/usr/share/dict/words
