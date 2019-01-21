@@ -62,7 +62,7 @@ Plug 'vim-scripts/speeddating.vim'
 Plug 'vim-scripts/surround.vim'
 Plug 'vim-scripts/taglist-plus'
 Plug 'vim-scripts/The-NERD-Commenter'
-Plug 'vim-scripts/The-NERD-tree'
+"Plug 'vim-scripts/The-NERD-tree'
 Plug 'vim-scripts/wmgraphviz'
 
 " Initialize plugin system
