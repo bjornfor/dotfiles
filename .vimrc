@@ -1,97 +1,65 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Bjørn Forsman's .vimrc file v0.6
+" Bjørn Forsman's .vimrc file v0.7
 "
-" Plugins are managed with vim-addon-manager (VAM):
-"   https://github.com/MarcWeber/vim-addon-manager
+" Plugins are managed with vim-plug:
+"   https://github.com/junegunn/vim-plug
 "
-" Similar tools: vimana, pathogen, vundle, :h GLVS (built-in)
+" Run :PlugInstall to install plugins.
 "
-" VAM downloader for Windows users (because installing git, mercurial, zip
-" commands can be tedious on Windows):
-"
-"   http://vam.mawercer.de/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if !filereadable(expand("~/.vim-addons/vim-addon-manager/addon-info.json"))
-	echo "vim-addon-manager not found. Installing it..."
-	if !isdirectory(expand("~/.vim-addons/vim-addon-manager/"))
-		call mkdir(expand("~/.vim-addons/vim-addon-manager"), "p")
-	endif
-	cd ~/.vim-addons/vim-addon-manager
-	" Get VAM with wget and tar
-	"call system("wget -O- https://github.com/MarcWeber/vim-addon-manager/tarball/master | tar --strip-components=1 -xzvf -")
-	" or with git
-	cd ~/.vim-addons
-	call system("git clone git://github.com/MarcWeber/vim-addon-manager.git")
+if !filereadable(expand("~/.vim/autoload/plug.vim"))
+	echo "vim-plug not found. Installing it..."
+	call system("curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
 endif
 
-set runtimepath+=$HOME/.vim-addons/vim-addon-manager
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
-" This block of code is useful if behind some proxy or firewall that blocks
-" the git port. It replaces git://github URLs with http://github.
-let g:vim_addon_manager = {'scms': {'git': {}}}
-fun! MyGitCheckout(repository, targetDir)
-	let a:repository.url = substitute(a:repository.url, '^git://github', 'http://github', '')
-	return vam#utils#RunShell('git clone --depth=1 $.url $p', a:repository, a:targetDir)
-endfun
-let g:vim_addon_manager.scms.git.clone=['MyGitCheckout']
+" Make sure you use single quotes
+Plug 'vim-scripts/AutoTag'
+Plug 'vim-scripts/asciidoc.vim'
+Plug 'vim-scripts/bnf.vim'
+Plug 'vim-scripts/CCTree'
+Plug 'vim-scripts/CSApprox'
+Plug 'vim-scripts/cscope_macros.vim'
+Plug 'vim-scripts/csv.vim'
+Plug 'vim-scripts/delimitMate.vim'
+Plug 'vim-scripts/DetectIndent'
+Plug 'vim-scripts/DrawIt'
+Plug 'vim-scripts/EasyGrep'
+Plug 'vim-scripts/ebnf.vim'
+Plug 'vim-scripts/fugitive.vim'
+Plug 'vim-scripts/FuzzyFinder'
+Plug 'vim-scripts/Gundo'
+Plug 'vim-scripts/headerguard'
+Plug 'vim-scripts/indenthaskell.vim'
+Plug 'vim-scripts/indentpython.vim--nianyang'
+Plug 'vim-scripts/javacomplete'
+Plug 'vim-scripts/L9'
+Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/Mustang2'
+Plug 'vim-scripts/python_match.vim'
+Plug 'vim-scripts/pydoc.vim'
+Plug 'vim-scripts/rails.vim'
+Plug 'vim-scripts/repeat.vim'
+Plug 'mfukar/robotframework-vim'
+Plug 'vim-scripts/speeddating.vim'
+Plug 'vim-scripts/surround.vim'
+Plug 'vim-scripts/taglist-plus'
+Plug 'vim-scripts/The-NERD-Commenter'
+Plug 'vim-scripts/The-NERD-tree'
+"Plug 'MarcWeber/vim-addon-local-vimrc'  " error
+"Plug 'MarcWeber/vim-addon-nix'          " error
+Plug 'vim-ruby/vim-ruby'
+Plug 'honza/vim-snippets'
+Plug 'vim-scripts/wmgraphviz'
+" Plug 'vim-scripts/EvalSelection'
 
-" VAM fetches FuzzyFinder (and L9) from broken URL bitbucket.org URL so
-" manually override it to a working one from vim.org. For the download URL,
-" mind that src_id != script_id. The override loses dependency info, so
-" explicitly add L9 dependency for FuzzyFinder in vam#ActivateAddons. (Perhaps
-" there is a better way to override, but this will have to do for now.)
-let g:vim_addon_manager.plugin_sources={
-            \'FuzzyFinder': {'type': 'archive',
-            \                'url': 'https://www.vim.org/scripts/download_script.php?src_id=13961',
-            \                'version': '4.2.2',
-            \                'archive_name': 'vim-fuzzyfinder.zip',
-            \               },
-            \'L9':          {'type': 'archive',
-            \                'url': 'https://www.vim.org/scripts/download_script.php?src_id=13948',
-            \                'version': '1.1',
-            \                'archive_name': 'vim-l9.zip',
-            \               },
-        \}
-call vam#ActivateAddons(["AutoTag",
-			\ "asciidoc",
-			\ "bnf",
-			\ "CCTree",
-			\ "CSApprox",
-			\ "cscope_macros",
-			\ "csv",
-			\ "delimitMate",
-			\ "DetectIndent",
-			\ "DrawIt",
-			\ "EasyGrep",
-			\ "ebnf",
-			\ "fugitive",
-			\ "FuzzyFinder",
-			\ "Gundo",
-			\ "headerguard",
-			\ "indenthaskell",
-			\ "indentpython%3461",
-			\ "javacomplete",
-			\ "L9",
-			\ "matchit.zip",
-			\ "Mustang2",
-			\ "python_match",
-			\ "python_pydoc",
-			\ "rails",
-			\ "repeat",
-			\ "robotframework-vim",
-			\ "speeddating",
-			\ "surround",
-			\ "taglist-plus",
-			\ "The_NERD_Commenter",
-			\ "The_NERD_tree",
-			\ "vim-addon-local-vimrc",
-			\ "vim-addon-nix",
-			\ "vim-ruby",
-			\ "vim-snippets",
-			\ "wmgraphviz"])
-" Commented out plugins:
-			 "EvalSelection",
+" Initialize plugin system
+call plug#end()
 
 " Plugin notes:
 " * DetectIndent must be hooked up: autocmd BufReadPost * :DetectIndent
