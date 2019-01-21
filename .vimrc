@@ -19,8 +19,13 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'vim-scripts/AutoTag'
+Plug 'honza/vim-snippets'
+"Plug 'MarcWeber/vim-addon-local-vimrc'  " error
+"Plug 'MarcWeber/vim-addon-nix'          " error
+Plug 'mfukar/robotframework-vim'
+Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/asciidoc.vim'
+Plug 'vim-scripts/AutoTag'
 Plug 'vim-scripts/bnf.vim'
 Plug 'vim-scripts/CCTree'
 Plug 'vim-scripts/CSApprox'
@@ -31,6 +36,7 @@ Plug 'vim-scripts/DetectIndent'
 Plug 'vim-scripts/DrawIt'
 Plug 'vim-scripts/EasyGrep'
 Plug 'vim-scripts/ebnf.vim'
+" Plug 'vim-scripts/EvalSelection'
 Plug 'vim-scripts/fugitive.vim'
 Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/Gundo'
@@ -41,22 +47,16 @@ Plug 'vim-scripts/javacomplete'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/Mustang2'
-Plug 'vim-scripts/python_match.vim'
 Plug 'vim-scripts/pydoc.vim'
+Plug 'vim-scripts/python_match.vim'
 Plug 'vim-scripts/rails.vim'
 Plug 'vim-scripts/repeat.vim'
-Plug 'mfukar/robotframework-vim'
 Plug 'vim-scripts/speeddating.vim'
 Plug 'vim-scripts/surround.vim'
 Plug 'vim-scripts/taglist-plus'
 Plug 'vim-scripts/The-NERD-Commenter'
 Plug 'vim-scripts/The-NERD-tree'
-"Plug 'MarcWeber/vim-addon-local-vimrc'  " error
-"Plug 'MarcWeber/vim-addon-nix'          " error
-Plug 'vim-ruby/vim-ruby'
-Plug 'honza/vim-snippets'
 Plug 'vim-scripts/wmgraphviz'
-" Plug 'vim-scripts/EvalSelection'
 
 " Initialize plugin system
 call plug#end()
