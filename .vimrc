@@ -25,7 +25,9 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" Make sure you use single quotes
+" Make sure you use single quotes.
+" Tracking down slow Vim startup (caused by too many plugins):
+"   time vim --startuptime /dev/stdout +q
 Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
