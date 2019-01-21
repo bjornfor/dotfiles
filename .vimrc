@@ -9,15 +9,15 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has('nvim')
-	let local_path_to_vim_plug = "~/.local/share/nvim/site/autoload/plug.vim"
+    let local_path_to_vim_plug = "~/.local/share/nvim/site/autoload/plug.vim"
 else
-	let local_path_to_vim_plug = "~/.vim/autoload/plug.vim"
+    let local_path_to_vim_plug = "~/.vim/autoload/plug.vim"
 endif
 
 if !filereadable(expand(local_path_to_vim_plug))
-	echo "vim-plug not found. Installing it..."
-	call system("curl -fLo " . local_path_to_vim_plug . " --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
-	echo "...done. Now run :PlugInstall to install all plugins."
+    echo "vim-plug not found. Installing it..."
+    call system("curl -fLo " . local_path_to_vim_plug . " --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+    echo "...done. Now run :PlugInstall to install all plugins."
 endif
 
 " Specify a directory for plugins
@@ -115,7 +115,7 @@ set undofile
 "   Host host1
 "   ForwardX11Trusted yes
 if ! $SSH_CONNECTION
-  set clipboard=unnamedplus
+    set clipboard=unnamedplus
 endif
 "set wildmenu	" when tab'ing on the vim command line, a menu appear just above the command line
 "To have the completion behave similarly to a shell, i.e. complete only up to
@@ -156,13 +156,13 @@ set backspace=indent,eol,start
 " fix for the annoying purple background "shining through" on ubuntu
 " Neovim doesn't have 'ttyscroll' ("E518: Unknown option: ttyscroll=0")
 if !has('nvim')
-	set ttyscroll=0
+    set ttyscroll=0
 endif
 
 " Use ripgrep if available (it's fast)
 if executable("rg")
-  set grepprg=rg\ --vimgrep
-  set grepformat^=%f:%l:%c:%m
+    set grepprg=rg\ --vimgrep
+    set grepformat^=%f:%l:%c:%m
 endif
 
 " 'sudo apt-get install wnorwegian' for /usr/share/dict/bokmaal
@@ -186,13 +186,13 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 " Create the above directories if needed
 if !isdirectory(expand("~/.vim/backup"))
-	call mkdir(expand("~/.vim/backup"), "p")
+    call mkdir(expand("~/.vim/backup"), "p")
 endif
 if !isdirectory(expand("~/.vim/swap"))
-	call mkdir(expand("~/.vim/swap"), "p")
+    call mkdir(expand("~/.vim/swap"), "p")
 endif
 if !isdirectory(expand("~/.vim/undo"))
-	call mkdir(expand("~/.vim/undo"), "p")
+    call mkdir(expand("~/.vim/undo"), "p")
 endif
 
 "hi SpecialKey guifg=bg " hide all special characters, e.g. dos newlines ^M
@@ -360,24 +360,24 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has("unix")
-	" easy .vimrc access
-	nmap <Leader>s :source $HOME/.vimrc<CR>
-	nmap <Leader>e :edit $HOME/.vimrc<CR>
-	" source .vimrc when written - FIXME: messes up colorscheme!
-	"autocmd BufWritePost .vimrc source %
-	let g:clipbrdDefaultReg = '+'
+    " easy .vimrc access
+    nmap <Leader>s :source $HOME/.vimrc<CR>
+    nmap <Leader>e :edit $HOME/.vimrc<CR>
+    " source .vimrc when written - FIXME: messes up colorscheme!
+    "autocmd BufWritePost .vimrc source %
+    let g:clipbrdDefaultReg = '+'
 endif
 
 if has("gui_win32")
-	" settings for windows goes here
+    " settings for windows goes here
 
-	" easy _vimrc access
-	nmap <Leader>s :source $HOME/_vimrc<CR>
-	nmap <Leader>e :edit $HOME/_vimrc<CR>
+    " easy _vimrc access
+    nmap <Leader>s :source $HOME/_vimrc<CR>
+    nmap <Leader>e :edit $HOME/_vimrc<CR>
 endif
 
 if has("mac")
-	" settings for mac goes here
+    " settings for mac goes here
 endif
 
 
@@ -388,7 +388,7 @@ endif
 " When the CSApprox plugin is installed we just need to tell vim that
 " we have a terminal with lots of colors.
 if &term =~ '^\(xterm\|screen\|screen-bce\)$'
-  set t_Co=256
+    set t_Co=256
 endif
 
 " easy mappings for the taglist plugin (vim-addons install taglist)
@@ -421,11 +421,11 @@ autocmd BufNewFile,BufRead *.robomachine setlocal ft=robot
 " TODO: revisit rope/ropevim
 "let ropevim_vim_completion=1
 "function! TabWrapperRope()
-"	if strpart(getline('.'), 0, col('.')-1) =~ '^\s*$'
-"		return "\<Tab>"
-"	else
-"		return "\<C-R>=RopeCodeAssistInsertMode()\<CR>"
-"	endif
+"    if strpart(getline('.'), 0, col('.')-1) =~ '^\s*$'
+"        return "\<Tab>"
+"    else
+"        return "\<C-R>=RopeCodeAssistInsertMode()\<CR>"
+"    endif
 "endfunction
 "
 "imap <Tab> <C-R>=TabWrapperRope()<CR>
@@ -455,17 +455,17 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 " Host specific
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
+    source ~/.vimrc.local
 endif
 
 "if hostname() == "foo"
-"  " do something
+"    " do something
 "endif
 
 if hostname() == "timmons"
-  " for the vim wiki:
-  set tags+=/media/raid/bjornfor/projects/vim-wiki/tags
-  autocmd BufWritePost /media/raid/bjornfor/projects/vim-wiki/* :helptags /media/raid/bjornfor/projects/vim-wiki
+    " for the vim wiki:
+    set tags+=/media/raid/bjornfor/projects/vim-wiki/tags
+    autocmd BufWritePost /media/raid/bjornfor/projects/vim-wiki/* :helptags /media/raid/bjornfor/projects/vim-wiki
 endif
 
 
