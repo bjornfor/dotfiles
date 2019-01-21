@@ -8,9 +8,15 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if !filereadable(expand("~/.vim/autoload/plug.vim"))
+if has('nvim')
+	let local_path_to_vim_plug = "~/.local/share/nvim/site/autoload/plug.vim"
+else
+	let local_path_to_vim_plug = "~/.vim/autoload/plug.vim"
+endif
+
+if !filereadable(expand(local_path_to_vim_plug))
 	echo "vim-plug not found. Installing it..."
-	call system("curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+	call system("curl -fLo " . local_path_to_vim_plug . " --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
 endif
 
 " Specify a directory for plugins
