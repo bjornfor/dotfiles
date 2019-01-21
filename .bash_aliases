@@ -63,7 +63,16 @@ c ()
 ssh()
 {
 	if [[ "$2" == "" ]]; then
-		command ssh "$1" -Xt screen -aAdr -RR work bash
+		# tmux is like screen, but with ctrl-b as escape char (instead
+		# of ctrl-a). And it doesn't mess up Vim colors.
+		command ssh "$1" -Xt tmux new-session -A -s main
+		# Byobu's most important keybindings:
+		# F2 - Create a new window
+		# F3 - Move to previous window
+		# F4 - Move to next window
+		# F6 - Detach from this session
+		# For more, see byobu(1) and look for "KEYBINDINGS".
+		#command ssh "$1" -Xt byobu-tmux
 	else
 		command ssh "$@"
 	fi
