@@ -107,6 +107,10 @@ set undofile
 "   Vim: Got X error
 "   Vim: Finished.
 " So only use unnamedplus for non-SSH sessions.
+" Alternatively, assuming you trust the host, clipboard=unnamedplus can be set
+" unconditionally if running with `ssh -Y host1` or ~/.ssh/config contains:
+"   Host host1
+"   ForwardX11Trusted yes
 if ! $SSH_CONNECTION
   set clipboard=unnamedplus
 endif
