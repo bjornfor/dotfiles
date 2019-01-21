@@ -27,6 +27,8 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 Plug 'honza/vim-snippets'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 "Plug 'MarcWeber/vim-addon-local-vimrc'  " error
 "Plug 'MarcWeber/vim-addon-nix'          " error
 Plug 'mfukar/robotframework-vim'
@@ -46,7 +48,6 @@ Plug 'vim-scripts/ebnf.vim'
 Plug 'vim-scripts/editorconfig-vim'
 " Plug 'vim-scripts/EvalSelection'
 Plug 'vim-scripts/fugitive.vim'
-Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/Gundo'
 Plug 'vim-scripts/headerguard'
 Plug 'vim-scripts/indenthaskell.vim'
@@ -392,9 +393,11 @@ endif
 " easy mappings for the taglist plugin (vim-addons install taglist)
 nnoremap <silent> <Leader>t :TlistToggle<CR>
 
-" FuzzyFinder http://www.vim.org/scripts/script.php?script_id=1984
-map <Leader>f :FufFile<cr>
-map <Leader>b :FufBuffer<cr>
+" fzf.vim
+map <Leader>f :Files<cr>
+map <Leader>b :Buffers<cr>
+" Use the whole screen
+let g:fzf_layout = { 'down': '~100%' }
 
 " (snipmate) see :h g:snips_author
 let g:snips_author = 'Bjørn Forsman'
