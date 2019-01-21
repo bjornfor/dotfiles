@@ -444,6 +444,9 @@ set completeopt=menuone
 au Filetype text let b:loaded_delimitMate = 1
 " See 'help delimitMate_eol_marker'
 "au FileType c,cpp,java,perl let b:delimitMate_eol_marker = ";"
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+"let delimitMate_autoclose = 0
 
 " EditorConfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
