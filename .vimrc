@@ -6,8 +6,6 @@
 "
 " Similar tools: vimana, pathogen, vundle, :h GLVS (built-in)
 "
-" Great source of Vim tips: http://www.rayninfo.co.uk/vimtips.html
-"
 " VAM downloader for Windows users (because installing git, mercurial, zip
 " commands can be tedious on Windows):
 "
