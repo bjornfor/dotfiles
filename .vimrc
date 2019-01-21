@@ -43,6 +43,7 @@ Plug 'vim-scripts/DetectIndent'
 Plug 'vim-scripts/DrawIt'
 Plug 'vim-scripts/EasyGrep'
 Plug 'vim-scripts/ebnf.vim'
+Plug 'vim-scripts/editorconfig-vim'
 " Plug 'vim-scripts/EvalSelection'
 Plug 'vim-scripts/fugitive.vim'
 Plug 'vim-scripts/FuzzyFinder'
@@ -440,6 +441,8 @@ au Filetype text let b:loaded_delimitMate = 1
 " See 'help delimitMate_eol_marker'
 "au FileType c,cpp,java,perl let b:delimitMate_eol_marker = ";"
 
+" EditorConfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
