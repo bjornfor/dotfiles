@@ -38,6 +38,23 @@ fun! MyGitCheckout(repository, targetDir)
 endfun
 let g:vim_addon_manager.scms.git.clone=['MyGitCheckout']
 
+" VAM fetches FuzzyFinder (and L9) from broken URL bitbucket.org URL so
+" manually override it to a working one from vim.org. For the download URL,
+" mind that src_id != script_id. The override loses dependency info, so
+" explicitly add L9 dependency for FuzzyFinder in vam#ActivateAddons. (Perhaps
+" there is a better way to override, but this will have to do for now.)
+let g:vim_addon_manager.plugin_sources={
+            \'FuzzyFinder': {'type': 'archive',
+            \                'url': 'https://www.vim.org/scripts/download_script.php?src_id=13961',
+            \                'version': '4.2.2',
+            \                'archive_name': 'vim-fuzzyfinder.zip',
+            \               },
+            \'L9':          {'type': 'archive',
+            \                'url': 'https://www.vim.org/scripts/download_script.php?src_id=13948',
+            \                'version': '1.1',
+            \                'archive_name': 'vim-l9.zip',
+            \               },
+        \}
 call vam#ActivateAddons(["AutoTag",
 			\ "asciidoc",
 			\ "bnf",
@@ -57,6 +74,7 @@ call vam#ActivateAddons(["AutoTag",
 			\ "indenthaskell",
 			\ "indentpython%3461",
 			\ "javacomplete",
+			\ "L9",
 			\ "matchit.zip",
 			\ "Mustang2",
 			\ "python_match",
