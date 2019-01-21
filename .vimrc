@@ -262,6 +262,7 @@ nmap <C-p> :bp<CR>
 "nmap gs :%s/
 " But this is needed more often
 nmap gs :Gstatus<CR>
+nmap gd :Gdiff<CR>
 
 map <Leader>m :up<CR>:make<CR>
 "nmap <C-a> ggVG	" ctrl+a is normally used for incrementing the number under the cursor
