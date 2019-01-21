@@ -259,7 +259,9 @@ nmap <C-p> :bp<CR>
 
 " :%s for search and replace is hard to type
 " lets map them to gs...
-nmap gs :%s/
+"nmap gs :%s/
+" But this is needed more often
+nmap gs :Gstatus<CR>
 
 map <Leader>m :up<CR>:make<CR>
 "nmap <C-a> ggVG	" ctrl+a is normally used for incrementing the number under the cursor
