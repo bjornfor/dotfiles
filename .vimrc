@@ -153,7 +153,6 @@ set visualbell
 " and some Linux distros.
 set backspace=indent,eol,start
 
-
 " fix for the annoying purple background "shining through" on ubuntu
 " Neovim doesn't have 'ttyscroll' ("E518: Unknown option: ttyscroll=0")
 if !has('nvim')
@@ -412,7 +411,6 @@ let NERDSpaceDelims = 1
 " toggle comments in visual mode with '*'
 vmap * <Leader>ci
 
-
 " Enable Asciidoc syntax highlighting on *.txt files (need the asciidoc plugin)
 "autocmd BufNewFile,BufRead *.txt set ft=asciidoc
 autocmd BufNewFile,BufRead *.asciidoc setlocal ft=asciidoc
@@ -450,6 +448,7 @@ let delimitMate_expand_space = 1
 
 " EditorConfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Host specific
