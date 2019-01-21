@@ -73,9 +73,9 @@ call plug#end()
 
 " Plugin notes:
 " * DetectIndent must be hooked up: autocmd BufReadPost * :DetectIndent
-" * snipMate messes somewhat with autocomplete (<c-o> and <c-u>) so
+" * snipMate messes somewhat with autocomplete (<C-o> and <C-u>) so
 "   that multiple TAB keys do not cycle through the list. One can still use
-"   <c-n>/<c-p> though...
+"   <C-n>/<C-p> though...
 "
 
 
@@ -214,11 +214,11 @@ autocmd BufNewFile,BufRead *.gv set ft=dot
 "   --c-kinds=+l
 "   --fields=+a
 "   --extra=+q
-nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>\|:!cscope -R -b<cr>\|:cs r<cr><cr>
+nmap <F12> :!ctags -R --c++-kinds=+pl --c-kinds=+pl --fields=+iaS --extra=+q .<CR>\|:!cscope -R -b<CR>\|:cs r<CR><CR>
 
 " SingleCompile plugin
-nmap <F8> :SCCompile<cr>
-nmap <F9> :SCCompileRun<cr>
+nmap <F8> :SCCompile<CR>
+nmap <F9> :SCCompileRun<CR>
 
 " Code completion tips (from http://vim.wikia.com/wiki/VimTip1608):
 "
@@ -238,46 +238,46 @@ nmap <F9> :SCCompileRun<cr>
 "set tags+=~/.vim/tags/directfb
 
 " toggle invisible chars
-noremap <Leader>i :set list!<cr>
+noremap <Leader>i :set list!<CR>
 
-nnoremap <leader><space> :noh<cr>
+nnoremap <Leader><Space> :noh<CR>
 
 " Bash like keys for the command line
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
 
 " vimperator-like keyboard shortcuts for jumping to next/previous buffers
-nmap <C-n> :bn<cr>
-nmap <C-p> :bp<cr>
+nmap <C-n> :bn<CR>
+nmap <C-p> :bp<CR>
 
 " search will center on the line it's found in
 "map N Nzz
 "map n nzz
 
-" <space> by default behaves like 'l', make it more useful
-"nmap <space> <C-f>		" scroll one screenful down
-"nmap <space> za		" toggle folds
+" <Space> by default behaves like 'l', make it more useful
+"nmap <Space> <C-f>		" scroll one screenful down
+"nmap <Space> za		" toggle folds
 
 " :%s for search and replace is hard to type
 " lets map them to gs...
 nmap gs :%s/
 
-map <Leader>m :up<cr>:make<cr>
+map <Leader>m :up<CR>:make<CR>
 "nmap <C-a> ggVG	" ctrl+a is normally used for incrementing the number under the cursor
 
 " Insert new line without going into insert mode
-"nmap <S-Enter> O<ESC>		" insert above
-"nmap <Enter> o<ESC>		" insert below
+"nmap <S-Enter> O<Esc>		" insert above
+"nmap <Enter> o<Esc>		" insert below
 
 " Easier navigation with C compilation errors, grep searches and tags.
 " Note: After finding the :cw command, I think there is not much use in
 " these mappings anymore...
-"nmap <F5> :cp<cr>
-"nmap <F6> :cn<cr>
-"nmap <F7> :tp<cr>
-"nmap <F8> :tn<cr>
-"nmap <up> :cp<cr>
-"nmap <down> :cn<cr>
+"nmap <F5> :cp<CR>
+"nmap <F6> :cn<CR>
+"nmap <F7> :tp<CR>
+"nmap <F8> :tn<CR>
+"nmap <Up> :cp<CR>
+"nmap <Down> :cn<CR>
 
 " Make single-quote act as back-tick, because single-quote is easier to reach
 " on my keyboard. Now, typing '. gets us back to the last edit location, both
@@ -300,17 +300,17 @@ map <C-l> <C-W>l
 "set wmh=0
 
 "" maps for jj/jk to act as escape
-"inoremap jj <esc>
-"cnoremap jj <c-c>
-inoremap jk <esc>
-cnoremap jk <c-c>
+"inoremap jj <Esc>
+"cnoremap jj <C-c>
+inoremap jk <Esc>
+cnoremap jk <C-c>
 " act the same if shift is pressed
-"inoremap JJ <esc>
-"cnoremap JJ <c-c>
-inoremap JK <esc>
-cnoremap JK <c-c>
+"inoremap JJ <Esc>
+"cnoremap JJ <C-c>
+inoremap JK <Esc>
+cnoremap JK <C-c>
 ""For visual mode, just use "v" to toggle it on and off:
-"vno v <esc>
+"vno v <Esc>
 
 " n is for normal mode
 nnoremap Q gqap
@@ -320,12 +320,12 @@ vnoremap Q gq
 nmap Y y$
 
 " edit binary files (xxd is normally included in base installs)
-nmap <Leader>hon :%!xxd<cr>
-nmap <Leader>hof :%!xxd -r<cr>
+nmap <Leader>hon :%!xxd<CR>
+nmap <Leader>hof :%!xxd -r<CR>
 
 map <Leader>n :NERDTreeToggle<CR>
 
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<cr>
+nnoremap <Leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " This is for working across multiple xterms and/or gvims
 map <Leader>w :w! ~/.vimxfer<CR>
@@ -333,14 +333,14 @@ map <Leader>r :r ~/.vimxfer<CR>
 " Append
 map <Leader>a :w! >>~/.vimxfer<CR>
 
-autocmd FileType haskell map <buffer> <f5> :update<cr>:!runghc %<cr>
+autocmd FileType haskell map <buffer> <F5> :update<CR>:!runghc %<CR>
 autocmd FileType haskell setlocal sw=4 sts=4 expandtab
 
 autocmd FileType ruby setlocal sw=2 sts=2 expandtab
 
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 
-autocmd FileType python map <buffer> <f5> :update<cr>:!python %<cr>
+autocmd FileType python map <buffer> <F5> :update<CR>:!python %<CR>
 
 autocmd FileType html setlocal ts=4 sw=4
 autocmd FileType xhtml setlocal ts=4 sw=4
@@ -361,8 +361,8 @@ endif
 
 if has("unix")
 	" easy .vimrc access
-	nmap <Leader>s :source $HOME/.vimrc<cr>
-	nmap <Leader>e :edit $HOME/.vimrc<cr>
+	nmap <Leader>s :source $HOME/.vimrc<CR>
+	nmap <Leader>e :edit $HOME/.vimrc<CR>
 	" source .vimrc when written - FIXME: messes up colorscheme!
 	"autocmd BufWritePost .vimrc source %
 	let g:clipbrdDefaultReg = '+'
@@ -372,8 +372,8 @@ if has("gui_win32")
 	" settings for windows goes here
 
 	" easy _vimrc access
-	nmap <Leader>s :source $HOME/_vimrc<cr>
-	nmap <Leader>e :edit $HOME/_vimrc<cr>
+	nmap <Leader>s :source $HOME/_vimrc<CR>
+	nmap <Leader>e :edit $HOME/_vimrc<CR>
 endif
 
 if has("mac")
@@ -395,8 +395,8 @@ endif
 nnoremap <silent> <Leader>t :TlistToggle<CR>
 
 " fzf.vim
-map <Leader>f :Files<cr>
-map <Leader>b :Buffers<cr>
+map <Leader>f :Files<CR>
+map <Leader>b :Buffers<CR>
 " Use the whole screen
 let g:fzf_layout = { 'down': '~100%' }
 
@@ -482,7 +482,7 @@ def setPythonPath():
 EOF
 autocmd FileType python python setPythonPath()
 " ipdb is the IPython debugger: pip install ipdb
-autocmd FileType python nmap <Leader>pdb oimport ipdb; ipdb.set_trace()<esc>^
+autocmd FileType python nmap <Leader>pdb oimport ipdb; ipdb.set_trace()<Esc>^
 endif " has("python")
 
 autocmd FileType python setlocal sw=4 sts=4 et
