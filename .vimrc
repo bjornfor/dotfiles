@@ -17,6 +17,7 @@ endif
 if !filereadable(expand(local_path_to_vim_plug))
 	echo "vim-plug not found. Installing it..."
 	call system("curl -fLo " . local_path_to_vim_plug . " --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim")
+	echo "...done. Now run :PlugInstall to install all plugins."
 endif
 
 " Specify a directory for plugins
