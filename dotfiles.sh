@@ -9,18 +9,18 @@
 dotfiles="
 .bash_aliases
 .ctags
-.gitconfig
 .gdbinit
+.gitconfig
 .hgrc
 .muttrc
 .offlineimaprc
+.pentadactylrc
 .signature
 .tigrc
+.vimperatorrc
 .vimrc
 .Xmodmap
 .xmonad
-.pentadactylrc
-.vimperatorrc
 "
 
 ##for dotfile in $(ls -1 .*); do
