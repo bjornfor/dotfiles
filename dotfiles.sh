@@ -78,8 +78,7 @@ do_remove()
 {
 	for file in $dotfiles; do
 		if [ -h $HOME/$file ]; then  # symbolic link
-			echo -n "Removing symlink: $HOME/$file -> "
-			readlink $HOME/$file
+			echo "$HOME/$file -> DELETED (was: $(readlink $HOME/$file))"
 			rm $HOME/$file
 		else
 			true
