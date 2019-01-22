@@ -103,6 +103,7 @@ export CDPATH=.:~:~/projects
 
 export EDITOR=vim
 export BROWSER=firefox
+alias e="$EDITOR"
 
 export HISTCONTROL=ignoreboth   # ignorespace + ignoredups
 export HISTSIZE=1000000         # big big history
