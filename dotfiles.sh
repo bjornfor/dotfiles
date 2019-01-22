@@ -96,7 +96,7 @@ do_list_installed()
 		else
 			true
 		fi
-	done
+	done | column -t
 }
 
 do_list_not_installed()
@@ -111,7 +111,7 @@ do_list_not_installed()
 		else
 			echo "$HOME/$file -> (Does not exist)"
 		fi
-	done
+	done | column -t
 }
 
 cmd=$1
