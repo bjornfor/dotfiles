@@ -20,7 +20,6 @@ dotfiles="
 .Xmodmap
 .xmonad
 .zshrc
-.newsbeuter
 .pentadactylrc
 .vimperatorrc
 "

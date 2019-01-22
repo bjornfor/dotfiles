@@ -1,8 +1,0 @@
-# my newsbeuter (ncurses RSS reader) config file
-bind-key j down
-bind-key k up
-# ESC pauses one second before producing any action
-#bind-key ESC quit
-bind-key h quit
-bind-key l open
-article-sort-order date-desc
