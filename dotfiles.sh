@@ -17,6 +17,7 @@ dotfiles="
 .pentadactylrc
 .signature
 .tigrc
+.tmux.conf
 .vimperatorrc
 .vimrc
 .Xmodmap
