@@ -19,7 +19,6 @@ dotfiles="
 .vimrc
 .Xmodmap
 .xmonad
-.zshrc
 .pentadactylrc
 .vimperatorrc
 "
