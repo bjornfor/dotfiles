@@ -12,7 +12,6 @@ dotfiles="
 .gitconfig
 .gdbinit
 .hgrc
-.mrconfig
 .muttrc
 .offlineimaprc
 .rdesktop.kitron.dvr-sw
