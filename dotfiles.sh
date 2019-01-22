@@ -14,7 +14,6 @@ dotfiles="
 .hgrc
 .muttrc
 .offlineimaprc
-.rdesktop.kitron.dvr-sw
 .signature
 .tigrc
 .vimrc
