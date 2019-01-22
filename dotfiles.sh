@@ -2,7 +2,7 @@
 # Manage dotfile symlinks.
 #
 # Usage:
-#   dotfiles.sh [install|remove|list]
+#   dotfiles.sh [install|remove|list|howto]
 #
 # When called with no arguments, print help text.
 
