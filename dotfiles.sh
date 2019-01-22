@@ -71,7 +71,7 @@ do_install()
 			echo "$HOME/$file -> $PWD/$file"
 			ln -s $PWD/$file $HOME
 		fi
-	done
+	done | column -t
 }
 
 do_remove()
@@ -84,7 +84,7 @@ do_remove()
 		else
 			true
 		fi
-	done
+	done | column -t
 }
 
 do_list_installed()
