@@ -20,14 +20,6 @@ alias g='git'
 alias s='sudo'
 alias v=vim
 alias gdb='gdb --quiet' # suppress the introductory and copyright messages
-alias pacman='pacman-color'
-alias a='sudo aptitude'
-# provide the same completion support for the 'a' alias as for the aptitude
-# command (taken from /etc/bash_completion.d/aptitude)
-complete -F _aptitude -o default a
-alias ashow='apt-cache show'
-alias ain='sudo aptitude install'
-alias aup='sudo aptitude update && sudo aptitude safe-upgrade'
 alias xo=xdg-open
 # copy with a progress bar
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
@@ -87,10 +79,6 @@ genpasswd() {
 #alias cdl='cl'
 # prevent annoying typo's
 #alias lc='cl'
-
-
-alias cddvr="cd /media/raid/bjornfor/projects/dvr-control"
-#alias gvc=gnome-volume-control
 
 #alias todo='vim $HOME/todo.txt'
 #alias t='todo'
