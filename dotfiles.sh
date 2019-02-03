@@ -20,7 +20,6 @@ dotfiles="
 .tmux.conf
 .vimperatorrc
 .vimrc
-.Xmodmap
 .xmonad
 "
 
