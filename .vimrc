@@ -66,7 +66,7 @@ Plug 'vim-scripts/surround.vim'
 Plug 'vim-scripts/taglist-plus'
 Plug 'vim-scripts/The-NERD-Commenter'
 "Plug 'vim-scripts/The-NERD-tree'
-Plug 'vim-scripts/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/wmgraphviz'
 
