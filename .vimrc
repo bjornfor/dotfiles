@@ -292,11 +292,12 @@ map ' `
 nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
 
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+" Smart way to move between windows.
+" It's somewhat confusing when combined with tmux, so disable for now.
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
 
 " easier working with split windows
 "map <C-J> <C-W>j<C-W>_
