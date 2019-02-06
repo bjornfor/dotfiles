@@ -25,7 +25,7 @@ dotfiles="
 
 ##for dotfile in $(ls -1 .*); do
 #for dotfile in $(find . -maxdepth 1 -type f -name ".*"); do
-#	echo "ln -s $PWD/$dotfile $HOME"
+#	echo "ln -sr $PWD/$dotfile $HOME"
 #done
 
 prog=$0
@@ -50,7 +50,7 @@ EOF
 do_howto()
 {
 	for file in $dotfiles; do
-		echo "ln -s $PWD/$file $HOME"
+		echo "ln -sr $PWD/$file $HOME"
 	done | column -t
 }
 
@@ -62,14 +62,14 @@ do_install()
 		elif [ -d $HOME/$file ]; then  # directory
 			echo "$HOME/$file -> $PWD/$file (backup: $HOME/${file}.orig)"
 			mv $HOME/$file $HOME/${file}.orig
-			ln -s $PWD/$file $HOME
+			ln -sr $PWD/$file $HOME
 		elif [ -f $HOME/$file ]; then  # regular file
 			echo "$HOME/$file -> $PWD/$file (backup: $HOME/${file}.orig)"
 			mv $HOME/$file $HOME/${file}.orig
-			ln -s $PWD/$file $HOME
+			ln -sr $PWD/$file $HOME
 		else
 			echo "$HOME/$file -> $PWD/$file"
-			ln -s $PWD/$file $HOME
+			ln -sr $PWD/$file $HOME
 		fi
 	done | column -t
 }
