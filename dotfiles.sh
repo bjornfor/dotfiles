@@ -29,9 +29,9 @@ dotfiles="
 #done
 
 prog=$0
-path=$(dirname $prog)
-base=$(basename $prog)
-cd $path > /dev/null
+path=$(dirname "$prog")
+base=$(basename "$prog")
+cd "$path" > /dev/null
 #echo -e "base: $base\npath: $path\nprog: $prog\nPWD: $PWD\n"
 
 usage()
@@ -57,19 +57,19 @@ do_howto()
 do_install()
 {
 	for file in $dotfiles; do
-		if [ -h $HOME/$file ]; then  # symbolic link
+		if [ -h "$HOME/$file" ]; then  # symbolic link
 			true
-		elif [ -d $HOME/$file ]; then  # directory
+		elif [ -d "$HOME/$file" ]; then  # directory
 			echo "$HOME/$file -> $PWD/$file (backup: $HOME/${file}.orig)"
-			mv $HOME/$file $HOME/${file}.orig
-			ln -sr $PWD/$file $HOME
-		elif [ -f $HOME/$file ]; then  # regular file
+			mv "$HOME/$file" "$HOME/${file}.orig"
+			ln -sr "$PWD/$file" "$HOME"
+		elif [ -f "$HOME/$file" ]; then  # regular file
 			echo "$HOME/$file -> $PWD/$file (backup: $HOME/${file}.orig)"
-			mv $HOME/$file $HOME/${file}.orig
-			ln -sr $PWD/$file $HOME
+			mv "$HOME/$file" "$HOME/${file}.orig"
+			ln -sr "$PWD/$file" "$HOME"
 		else
 			echo "$HOME/$file -> $PWD/$file"
-			ln -sr $PWD/$file $HOME
+			ln -sr "$PWD/$file" "$HOME"
 		fi
 	done | column -t
 }
@@ -77,9 +77,9 @@ do_install()
 do_remove()
 {
 	for file in $dotfiles; do
-		if [ -h $HOME/$file ]; then  # symbolic link
-			echo "$HOME/$file -> DELETED (was: $(readlink $HOME/$file))"
-			rm $HOME/$file
+		if [ -h "$HOME/$file" ]; then  # symbolic link
+			echo "$HOME/$file -> DELETED (was: $(readlink "$HOME/$file"))"
+			rm "$HOME/$file"
 		else
 			true
 		fi
@@ -89,9 +89,9 @@ do_remove()
 do_list_installed()
 {
 	for file in $dotfiles; do
-		if [ -h $HOME/$file ]; then  # symbolic link
+		if [ -h "$HOME/$file" ]; then  # symbolic link
 			echo -n "$HOME/$file -> "
-			readlink $HOME/$file
+			readlink "$HOME/$file"
 		else
 			true
 		fi
@@ -101,11 +101,11 @@ do_list_installed()
 do_list_not_installed()
 {
 	for file in $dotfiles; do
-		if [ -h $HOME/$file ]; then  # symbolic link
+		if [ -h "$HOME/$file" ]; then  # symbolic link
 			true
-		elif [ -d $HOME/$file ]; then  # directory
+		elif [ -d "$HOME/$file" ]; then  # directory
 			echo "$HOME/$file -> (Regular directory)"
-		elif [ -f $HOME/$file ]; then  # regular file
+		elif [ -f "$HOME/$file" ]; then  # regular file
 			echo "$HOME/$file -> (Regular file)"
 		else
 			echo "$HOME/$file -> (Does not exist)"
