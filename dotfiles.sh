@@ -23,16 +23,9 @@ dotfiles="
 .xmonad
 "
 
-##for dotfile in $(ls -1 .*); do
-#for dotfile in $(find . -maxdepth 1 -type f -name ".*"); do
-#	echo "ln -sr $PWD/$dotfile $HOME"
-#done
-
 prog=$0
 path=$(dirname "$prog")
-base=$(basename "$prog")
 cd "$path" > /dev/null
-#echo -e "base: $base\npath: $path\nprog: $prog\nPWD: $PWD\n"
 
 usage()
 {
