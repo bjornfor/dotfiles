@@ -17,6 +17,7 @@ set prompt [31m(gdb) [m
 set history save
 set history filename ~/.gdb_history
 set history size 10000
+set history remove-duplicates 500
 
 set confirm off
 
